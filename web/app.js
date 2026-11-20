@@ -1,4 +1,4 @@
-'use strict';
+﻿'use strict';
 
 const DATA = '../geojson';
 
@@ -116,7 +116,13 @@ function krbRingkas(teks) {
 
 function siapkanPeta() {
   peta = L.map('peta', {
-    preferCanvas: true,
+    /* Satu kanvas untuk semua layer, dengan toleransi klik 3 px.
+       Bawaan Leaflet 0, sehingga sebuah garis 1,1 px hanya bisa diklik dalam
+       radius 0,55 px dari sumbunya — mustahil ditunjuk dengan mouse. Dengan
+       3 px, ruas jalan dan sungai dapat diklik, sementara poligon kecamatan
+       tetap dapat diklik di bagian dalamnya karena uji titik-dalam-poligon
+       tidak memakai toleransi ini. */
+    renderer: L.canvas({ tolerance: 3 }),
     zoomControl: false,
     attributionControl: true,
     minZoom: 8,
@@ -128,6 +134,12 @@ function siapkanPeta() {
     attribution: '© OpenStreetMap',
     crossOrigin: true,
   }).addTo(peta);
+
+  /* Jalan dan sungai sengaja TIDAK diberi pane sendiri. Pane terpisah
+     memang menjaga garis di atas poligon, tetapi kanvas pane itu menelan
+     setiap klik yang tidak mengenai garis — akibatnya memilih kecamatan
+     dengan klik mati sama sekali. Semua layer karena itu memakai satu
+     kanvas, dan urutan gambar diatur naikkanGaris(). */
 
   L.control.zoom({ position: 'bottomright' }).addTo(peta);
   L.control.scale({ position: 'bottomright', imperial: false }).addTo(peta);
@@ -204,6 +216,7 @@ function terapkanWilayah() {
   isiPilihanDesa(state.kec);
   document.getElementById('pilih-desa').value = state.desa || '';
   bersihkanLapisanData();
+  aturToggleDesa();
 
   /* tingkat kabupaten */
   if (!state.kec) {
@@ -213,6 +226,7 @@ function terapkanWilayah() {
       angkaDesimal.format(state.ringkasan.total_ha) + ' ha';
     peta.fitBounds(layerIndeks.getBounds(), { padding: [24, 24] });
     gambarAktif();
+    gambarGarisKabupaten();
     perbaruiLegenda();
     setStatus('Menampilkan gabungan seluruh kabupaten. Klik wilayah untuk melihat rincian.');
     return;
@@ -314,6 +328,66 @@ function cakupanSekarang() {
   return state.desa
     ? 'per-desa/' + state.kec + '/' + state.desa
     : 'per-kecamatan/' + state.kec;
+}
+
+/* ------------------------------------------------------------------
+ * lapisan garis tingkat kabupaten
+ * ------------------------------------------------------------------
+ * Dipakai selama belum ada kecamatan dipilih. Berkasnya ikut diunduh saat
+ * aplikasi mulai (total 1,1 MB) supaya jalan dan sungai langsung tampil,
+ * tidak menunggu pengguna memilih wilayah lebih dulu.
+ *
+ * Kedua layer ini bisa diklik untuk melihat nama ruasnya. Poligon batas
+ * kecamatan tetap menerima klik di area yang tidak kena garis — perilaku itu
+ * diuji lewat klik mouse sungguhan di tools/uji_viewer.js, bukan diasumsikan.
+ */
+function gambarGarisKabupaten() {
+  ['jalan', 'sungai'].forEach(function (kunci) {
+    if (!state.lapisanData[kunci]) return;
+    peta.removeLayer(state.lapisanData[kunci]);
+    delete state.lapisanData[kunci];
+  });
+
+  if (state.tampil.jalan && state.fcKab.jalan) {
+    state.lapisanData.jalan = L.geoJSON(state.fcKab.jalan, {
+      style: function (f) {
+        const g = gayaJalan(f.properties);
+        return {
+          color: g.color,
+          /* lebih tebal daripada proporsi aslinya supaya masih bisa diklik
+             pada zoom kabupaten; 0,66 px praktis tidak tersentuh kursor */
+          weight: Math.max(1.1, g.weight * 0.7),
+          opacity: 0.8,
+          dashArray: g.dashArray,
+        };
+      },
+      onEachFeature: function (f, lyr) {
+        lyr.bindPopup(popupJalan(f.properties), { maxWidth: 300 });
+      },
+    }).addTo(peta);
+  }
+
+  if (state.tampil.sungai && state.fcKab.sungai) {
+    state.lapisanData.sungai = L.geoJSON(state.fcKab.sungai, {
+      style: { color: '#2f7cb8', weight: 1.1, opacity: 0.65 },
+      onEachFeature: function (f, lyr) {
+        lyr.bindPopup(popupSungai(f.properties), { maxWidth: 300 });
+      },
+    }).addTo(peta);
+  }
+}
+
+/* Batas desa baru ada setelah kecamatan dipilih. Toggle-nya dimatikan di
+   tingkat kabupaten supaya tidak terkesan berfungsi padahal tidak. */
+function aturToggleDesa() {
+  const el = document.getElementById('lyr-desa');
+  if (!el) return;
+  const bisa = !!state.kec;
+  el.disabled = !bisa;
+  el.closest('.toggle').classList.toggle('is-off', !bisa || !el.checked);
+  el.closest('.toggle').title = bisa
+    ? ''
+    : 'Pilih kecamatan dulu untuk menampilkan batas desa';
 }
 
 async function muatLapisanData() {
@@ -506,6 +580,22 @@ function gambarAktif() {
     }
     layerIndeks.setStyle(gayaIndeks);
   }
+
+  naikkanGaris();
+}
+
+/* Urutan gambar pada satu kanvas mengikuti urutan pendaftaran layer, dan
+   urutan itulah yang menentukan pemenang saat dua layer kena klik yang sama:
+   kanvas memilih layer teratas. Mengganti mode menggambar poligon baru, yang
+   akan menutupi garis, jadi garis didorong kembali ke atas di sini.
+   bringToFront memindahkan layer ke ujung daftar gambar, sehingga urutan
+   pemanggilan di bawah ini yang menentukan hasil akhir:
+   pola ruang -> batas desa -> jalan -> sungai. */
+function naikkanGaris() {
+  ['desa', 'jalan', 'sungai'].forEach(function (kunci) {
+    const l = state.lapisanData[kunci];
+    if (l) l.bringToFront();
+  });
 }
 
 function gantiMode(mode) {
@@ -750,7 +840,12 @@ function pasangKontrol() {
     el.addEventListener('change', function () {
       state.tampil[kunci] = el.checked;
       el.closest('.toggle').classList.toggle('is-off', !el.checked);
-      if (!state.kec) return;
+      /* di tingkat kabupaten jalan/sungai dilayani layer ringkas yang sudah
+         ada di memori; batas desa belum tersedia (lihat aturToggleDesa) */
+      if (!state.kec) {
+        gambarGarisKabupaten();
+        return;
+      }
       muatLapisanData();
     });
   };
@@ -772,13 +867,15 @@ function pasangKontrol() {
 
 async function mulai() {
   try {
-    const [indeks, daftar, desaDaftar, ringkasan, kabPola, kabKrb] = await Promise.all([
+    const [indeks, daftar, desaDaftar, ringkasan, kabPola, kabKrb, kabJalan, kabSungai] = await Promise.all([
       muatJSON(`${DATA}/index/batas_kecamatan.geojson`),
       muatJSON(`${DATA}/index/daftar_kecamatan.json`),
       muatJSON(`${DATA}/index/daftar_desa.json`),
       muatJSON(`${DATA}/index/ringkasan.json`),
       muatJSON(`${DATA}/index/kab_pola_ruang.geojson`),
       muatJSON(`${DATA}/index/kab_krb.geojson`),
+      muatJSON(`${DATA}/index/kab_transportasi.geojson`),
+      muatJSON(`${DATA}/index/kab_sungai.geojson`),
     ]);
 
     state.daftar = daftar;
@@ -786,15 +883,21 @@ async function mulai() {
     state.ringkasan = ringkasan;
     state.fcKab.pola = kabPola;
     state.fcKab.krb = kabKrb;
+    state.fcKab.jalan = kabJalan;
+    state.fcKab.sungai = kabSungai;
 
     siapkanPeta();
     gambarIndeks(indeks);
     pasangKontrol();
+    aturToggleDesa();
+    /* urutannya penting: pola ruang dulu, baru garis, supaya jalan dan sungai
+       di atas isian poligon. Kalau dibalik, garis tertimbun dan tampak hilang. */
     gambarAktif();
+    gambarGarisKabupaten();
     perbaruiLegenda();
 
     setStatus(
-      'Menampilkan pola ruang seluruh kabupaten (' + daftar.jumlah +
+      'Menampilkan pola ruang, jalan, dan sungai seluruh kabupaten (' + daftar.jumlah +
       ' kecamatan). Klik wilayah untuk rincian per desa.'
     );
   } catch (e) {
@@ -808,3 +911,37 @@ async function mulai() {
 }
 
 mulai();
+
+/* ------------------------------------------------------------------
+ * kait pemeriksaan untuk tools/uji_viewer.js
+ * ------------------------------------------------------------------
+ * Hanya membaca keadaan, tidak mengubah apa pun. Tanpa ini uji harus
+ * menebak dari piksel kanvas, yang tidak bisa membedakan "layer kosong"
+ * dari "layer tertimbun".
+ */
+window.serayu = {
+  keadaan: function () {
+    const n = function (l) { return l ? l.getLayers().length : 0; };
+    return {
+      kec: state.kec,
+      desa: state.desa,
+      mode: state.mode,
+      lapisan: Object.keys(state.lapisanData),
+      jumlah: {
+        pola: state.fcRinci ? state.fcRinci.features.length : 0,
+        jalan: n(state.lapisanData.jalan),
+        sungai: n(state.lapisanData.sungai),
+        desa: n(state.lapisanData.desa),
+      },
+      sumberKabupaten: {
+        jalan: state.fcKab.jalan ? state.fcKab.jalan.features.length : 0,
+        sungai: state.fcKab.sungai ? state.fcKab.sungai.features.length : 0,
+      },
+    };
+  },
+  peta: function () { return peta; },
+  /* dipakai uji untuk tahu layer mana yang menang di sebuah titik, tanpa
+     menebak dari isi popup */
+  lapisanData: function () { return state.lapisanData; },
+  indeks: function () { return layerIndeks; },
+};

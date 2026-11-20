@@ -15,6 +15,8 @@ geojson/
 │   ├── batas_kecamatan.geojson    # 20 poligon (dissolve desa) — 0,78 MB
 │   ├── kab_pola_ruang.geojson     # 13 kelas pola ruang, dissolve + simplify — 2,33 MB
 │   ├── kab_krb.geojson            # 3 kategori rawan bencana, dissolve + simplify — 0,58 MB
+│   ├── kab_transportasi.geojson   # 262 ruas jalan, simplify simpul — 0,15 MB
+│   ├── kab_sungai.geojson         # 3.326 ruas sungai, simplify simpul — 0,98 MB
 │   ├── ringkasan.json             # luas per kelas per kecamatan (tanpa geometri)
 │   ├── daftar_kecamatan.json      # daftar + bbox + centroid + path layer
 │   └── daftar_desa.json           # 278 desa: bbox, luas, jumlah poligon, path layer — 105 KB
@@ -41,19 +43,25 @@ geojson/
     └── ... (20 kecamatan, 1.108 file, 49,2 MB, rata-rata 45 KB)
 ```
 
-Total 140,7 MB. Tiga tingkat pemuatan: **2,33 MB** (kabupaten) → **0,55 MB**
-(kecamatan) → **45 KB** (desa).
+Total 142,0 MB. Tiga tingkat pemuatan: **3,95 MB** (kabupaten, termasuk jalan dan
+sungai) → **0,55 MB** (kecamatan) → **45 KB** (desa).
 
 ## Cara pakai di aplikasi
 
 1. Muat `index/batas_kecamatan.geojson` (0,78 MB) untuk polygon pemilihan wilayah,
-   plus `index/kab_pola_ruang.geojson` + `index/kab_krb.geojson` untuk tampilan awal.
+   plus `kab_pola_ruang.geojson`, `kab_krb.geojson`, `kab_transportasi.geojson`,
+   dan `kab_sungai.geojson` untuk tampilan awal.
 2. Saat pengguna memilih kecamatan, baca `index/daftar_kecamatan.json` → ambil
    `layers.<nama>` → muat hanya file kecamatan itu (0,2–3,6 MB).
 3. Saat pengguna memilih desa, baca `index/daftar_desa.json` →
    `kecamatan.<kec>.desa[].layers` → muat `per-desa/<kec>/<desa>/pola_ruang.geojson`.
    Batas desa tetap diambil dari folder kecamatan supaya desa tetangga masih bisa diklik.
 4. Jangan memuat `full/pola_ruang.geojson` (37 MB) di browser.
+
+`kab_transportasi` dan `kab_sungai` adalah versi kabupaten untuk layer garis.
+Garis tidak di-dissolve (tiap ruas memang objek sendiri); yang mengurangi ukuran
+hanya penyederhanaan simpul pada toleransi 25 m, karena pada zoom 10–11 detail
+sehalus itu tidak terlihat. Ukurannya turun dari 3,82 MB menjadi 1,13 MB.
 
 ## Atribut tambahan dari konversi
 

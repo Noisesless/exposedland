@@ -42,7 +42,9 @@ standar. Port uji bisa diganti: `$env:PORT=8011`.
   KKOP, kawasan strategis, dan rujukan hukum (`REMARK`).
 - **Legenda interaktif** — luas per kelas untuk wilayah terpilih; klik baris
   untuk menyembunyikan kelas itu dari peta.
-- **Lapisan tambahan** — batas desa, jaringan jalan, sungai.
+- **Lapisan tambahan** — batas desa, jaringan jalan, sungai. Ruas jalan dan
+  sungai bisa diklik untuk melihat nama ruas, kelas/jenis, panjang, dan
+  kecamatannya.
 - **Responsif** — di layar < 860 px panel menjadi bottom sheet dengan tombol
   "Panel".
 
@@ -66,19 +68,24 @@ Data dibaca relatif dari `../geojson/`:
 | `index/batas_kecamatan.geojson` | garis wilayah, klik untuk memilih kecamatan |
 | `index/kab_pola_ruang.geojson` | pola ruang seluruh kabupaten (dissolve, 2,3 MB) |
 | `index/kab_krb.geojson` | rawan bencana seluruh kabupaten (0,6 MB) |
+| `index/kab_transportasi.geojson` | 262 ruas jalan seluruh kabupaten (0,15 MB) |
+| `index/kab_sungai.geojson` | 3.326 ruas sungai seluruh kabupaten (0,98 MB) |
 | `index/daftar_kecamatan.json` | daftar menu, bbox, path layer |
 | `index/daftar_desa.json` | daftar 278 desa untuk pemilih desa |
 | `index/ringkasan.json` | angka legenda tanpa perlu unduh geometri |
 | `per-kecamatan/<slug>/<layer>.geojson` | data rinci saat kecamatan dipilih |
 | `per-desa/<kec>/<desa>/<layer>.geojson` | data rinci saat desa dipilih |
 
+Total unduhan awal di tingkat kabupaten **3,95 MB**, semuanya di-cache setelah itu.
+
 ## Tiga tingkat tampilan
 
 | | Kabupaten | Kecamatan | Desa |
 |---|---|---|---|
 | Pola ruang | 13 kelas hasil dissolve (2,3 MB) | 485–2.158 poligon asli (0,2–3,6 MB) | poligon hasil klip (~45 KB) |
-| Popup | tidak ada (`interactive: false`) | ada, per poligon | ada, per poligon |
-| Klik wilayah | memilih kecamatan | pilih desa di menu atau klik batasnya | — |
+| Jalan & sungai | `kab_*` hasil simplify (1,1 MB) | 4 layer kecamatan | folder desa |
+| Popup | hanya jalan & sungai | ada, per poligon | ada, per poligon |
+| Klik wilayah | memilih kecamatan; garis yang ditunjuk tepat membuka popup ruasnya | pilih desa di menu atau klik poligonnya | — |
 | Legenda | luas seluruh kabupaten | luas kecamatan itu | luas desa itu |
 | Sumber legenda | `ringkasan.json` | `ringkasan.json` | dihitung dari geometri yang termuat |
 
@@ -99,10 +106,29 @@ Semua berkas desa/kecamatan di-cache di memori (`state.cache`), jadi bolak-balik
 antara tingkat tidak mengunduh ulang. Permintaan yang sudah basi (pengguna
 berpindah wilayah sebelum unduhan selesai) dibuang lewat pengecekan slug.
 
+### Urutan gambar dan klik
+
+Semua layer memakai satu kanvas. Pada renderer kanvas urutan gambar mengikuti
+urutan pendaftaran layer, dan urutan itu pula yang menentukan pemenang ketika
+dua layer kena klik yang sama — kanvas memilih layer teratas. Mengganti mode
+tampilan mendaftarkan poligon baru, sehingga garis akan tertimbun. Karena itu
+`naikkanGaris()` memanggil `bringToFront()` untuk batas desa, jalan, dan sungai
+setiap kali poligon digambar ulang. Pada Leaflet 1.9.4 `bringToFront()` benar
+mengubah urutan pada kanvas: ia memindahkan layer ke ujung daftar gambar
+(`_drawFirst`/`_drawLast`), bukan sekadar memicu gambar ulang. Hasil akhirnya
+selalu pola ruang → batas desa → jalan → sungai.
+
+Toleransi klik kanvas dinaikkan dari 0 ke 3 px lewat `L.canvas({tolerance: 3})`
+di `siapkanPeta()`. Dengan bawaan Leaflet, garis 1,1 px hanya bisa diklik dalam
+radius 0,55 px dari sumbunya, jadi ruas jalan dan sungai praktis tidak mungkin
+ditunjuk dengan mouse. Poligon tidak ikut melebar, karena uji titik-dalam-poligon
+tidak memakai toleransi itu — wilayah kecamatan dan desa tetap bisa diklik di
+bagian dalamnya.
+
 ## Catatan teknis
 
-- Peta memakai `preferCanvas: true`. Dengan SVG, 947 poligon per kecamatan
-  membuat interaksi tersendat.
+- Peta memakai satu kanvas (`L.canvas({tolerance: 3})`). Dengan SVG, 947 poligon
+  per kecamatan membuat interaksi tersendat.
 - Tile OSM butuh internet. Tanpa internet, poligon tetap tampil di atas
   latar abu-abu.
 - `KODKWS` dipakai sebagai kunci warna karena stabil; `NAMOBJ` dipakai sebagai

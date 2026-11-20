@@ -12,3 +12,7 @@ tools/package-lock.json
 # dengan scripts/convert.py dan scripts/kabupaten_layer.py dari sumber aslinya.
 data/*.json
 geojson/full/
+
+# Sumber mentah tambahan (kontur 94 MB, bangunan 55 MB) melewati batas 100 MB
+# per berkas milik GitHub, dan tidak dipakai viewer.
+new/

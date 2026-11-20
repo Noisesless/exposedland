@@ -154,4 +154,37 @@ for kat, geoms in per_kat.items():
 
 sz = tulis(os.path.join(GJ, "index", "kab_krb.geojson"), fitur)
 print(f"index/kab_krb.geojson  {len(fitur)} kategori  {sz/1048576:.2f} MB")
+
+# ---------- jaringan garis tingkat kabupaten ----------
+# Garis tidak perlu di-dissolve: tiap ruas memang objek tersendiri. Yang
+# meringankan hanya penyederhanaan simpul, karena pada zoom 10-11 detail
+# di bawah ~25 m tidak terlihat.
+for nama, ket in (("transportasi", "jaringan jalan"), ("sungai", "jaringan sungai")):
+    garis = muat(nama)
+    fitur = []
+    for f in garis:
+        g = shape(f["geometry"])
+        if not g.is_valid:
+            g = make_valid(g)
+        if g.is_empty or g.geom_type not in ("LineString", "MultiLineString"):
+            continue
+        g = g.simplify(TOL, preserve_topology=False)
+        if g.is_empty:
+            continue
+        g = set_precision(g, PRESISI)
+        p = f["properties"]
+        fitur.append({
+            "type": "Feature",
+            "properties": {
+                "NAMOBJ": p.get("NAMOBJ"),
+                "REMARK": p.get("REMARK"),
+                "STSJRN": p.get("STSJRN"),
+                "panjang_km_geo": p.get("panjang_km_geo"),
+                "kecamatan": p.get("kecamatan"),
+            },
+            "geometry": mapping(g),
+        })
+    sz = tulis(os.path.join(GJ, "index", f"kab_{nama}.geojson"), fitur)
+    print(f"index/kab_{nama}.geojson  {len(fitur)} ruas {ket}  {sz/1048576:.2f} MB")
+
 print(f"selesai dalam {time.time()-t0:.0f}s")
