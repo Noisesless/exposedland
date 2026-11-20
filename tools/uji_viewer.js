@@ -524,6 +524,21 @@ async function jalan() {
       (selisih * 100).toFixed(1) + '%)');
   }
 
+  /* Desa memakai jalur kode yang sama dengan kecamatan (muatLapisanData),
+     tetapi berkasnya dipotong per desa — jadi ruas yang bisa diklik di sini
+     membuktikan potongan itu tidak memutus geometri garisnya. */
+  for (const [kunci, penanda] of [['jalan', 'Jaringan jalan'], ['sungai', 'Jaringan sungai']]) {
+    const titik = await cariTitik(page, kunci, true);
+    lapor(!!titik, 'klik desa: ada titik uji di ruas ' + kunci +
+      (titik ? ' (' + potong(titik.judul, 40) + ')' : ''));
+    if (!titik) continue;
+    await klikTitik(page, titik);
+    const teks = await popupTeks(page);
+    lapor(!!teks && teks.indexOf(titik.judul) === 0 && teks.indexOf(penanda) !== -1,
+      'klik desa: popup ' + kunci + ' -> "' + potong(teks, 80) + '"');
+    await tutupPopup(page);
+  }
+
   // ---------- 4. balik ke kecamatan ----------
   /* Berkasnya sudah di cache, jadi tidak ada permintaan jaringan baru —
      yang diperiksa di sini adalah keadaannya benar-benar kembali ke luas
