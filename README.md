@@ -1,8 +1,9 @@
-# exposedland — data & viewer tata ruang Kabupaten Banjarnegara
+# Serayu — peta interaktif tata ruang Kabupaten Banjarnegara
 
 Konversi data tata ruang dari [SIMTARU Banjarnegara](https://simtaru.banjarnegarakab.go.id/)
 menjadi GeoJSON bersih, dipecah per kecamatan dan per desa, plus viewer peta
-statis untuk melihatnya.
+statis untuk melihatnya. Namanya diambil dari Sungai Serayu, sungai yang
+membelah kabupaten ini.
 
 - **20 kecamatan, 278 desa, luas 114.484,74 ha** (geodesik)
 - **10.816 poligon** pola ruang, 13 kelas; 3.332 ruas sungai; 262 ruas jalan
@@ -23,7 +24,7 @@ pada protokol `file://`.
 ## Struktur
 
 ```
-exposedland/
+serayu/
 ├── data/                 # JSON mentah SIMTARU + DATA_INVENTORY.md
 │                         #   (berkas .json tidak diunggah — terlalu besar)
 ├── scripts/              # pipeline konversi Python
