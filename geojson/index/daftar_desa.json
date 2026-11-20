@@ -1,0 +1,6217 @@
+{
+ "jumlah": 278,
+ "kecamatan": {
+  "susukan": {
+   "nama": "Susukan",
+   "desa": [
+    {
+     "nama": "Berta",
+     "slug": "berta",
+     "luas_ha": 431.03,
+     "centroid": [
+      109.443062,
+      -7.500531
+     ],
+     "bbox": [
+      109.43561,
+      -7.527249,
+      109.451561,
+      -7.479236
+     ],
+     "poligon": 86,
+     "layers": [
+      "batas_desa",
+      "pola_ruang",
+      "transportasi",
+      "sungai"
+     ]
+    },
+    {
+     "nama": "Brengkok",
+     "slug": "brengkok",
+     "luas_ha": 163.92,
+     "centroid": [
+      109.38174,
+      -7.505691
+     ],
+     "bbox": [
+      109.371514,
+      -7.516395,
+      109.389053,
+      -7.494018
+     ],
+     "poligon": 41,
+     "layers": [
+      "batas_desa",
+      "pola_ruang",
+      "transportasi",
+      "sungai"
+     ]
+    },
+    {
+     "nama": "Derik",
+     "slug": "derik",
+     "luas_ha": 374.59,
+     "centroid": [
+      109.433584,
+      -7.500021
+     ],
+     "bbox": [
+      109.422063,
+      -7.515169,
+      109.442339,
+      -7.490052
+     ],
+     "poligon": 46,
+     "layers": [
+      "batas_desa",
+      "pola_ruang",
+      "transportasi",
+      "sungai"
+     ]
+    },
+    {
+     "nama": "Dermasari",
+     "slug": "dermasari",
+     "luas_ha": 203.66,
+     "centroid": [
+      109.399864,
+      -7.477535
+     ],
+     "bbox": [
+      109.387843,
+      -7.485265,
+      109.408093,
+      -7.467194
+     ],
+     "poligon": 26,
+     "layers": [
+      "batas_desa",
+      "pola_ruang",
+      "transportasi",
+      "sungai"
+     ]
+    },
+    {
+     "nama": "Gumelemkulon",
+     "slug": "gumelemkulon",
+     "luas_ha": 906.02,
+     "centroid": [
+      109.407585,
+      -7.519521
+     ],
+     "bbox": [
+      109.395028,
+      -7.540894,
+      109.422171,
+      -7.490214
+     ],
+     "poligon": 166,
+     "layers": [
+      "batas_desa",
+      "pola_ruang",
+      "transportasi",
+      "sungai"
+     ]
+    },
+    {
+     "nama": "Gumelemwetan",
+     "slug": "gumelemwetan",
+     "luas_ha": 986.69,
+     "centroid": [
+      109.422653,
+      -7.512643
+     ],
+     "bbox": [
+      109.407806,
+      -7.536947,
+      109.437671,
+      -7.487635
+     ],
+     "poligon": 108,
+     "layers": [
+      "batas_desa",
+      "pola_ruang",
+      "transportasi",
+      "sungai"
+     ]
+    },
+    {
+     "nama": "Karangjati",
+     "slug": "karangjati",
+     "luas_ha": 236.74,
+     "centroid": [
+      109.428354,
+      -7.483765
+     ],
+     "bbox": [
+      109.416577,
+      -7.491241,
+      109.437737,
+      -7.475125
+     ],
+     "poligon": 68,
+     "layers": [
+      "batas_desa",
+      "pola_ruang",
+      "transportasi",
+      "sungai"
+     ]
+    },
+    {
+     "nama": "Karangsalam",
+     "slug": "karangsalam",
+     "luas_ha": 246.31,
+     "centroid": [
+      109.370561,
+      -7.490542
+     ],
+     "bbox": [
+      109.361515,
+      -7.501869,
+      109.377456,
+      -7.477743
+     ],
+     "poligon": 31,
+     "layers": [
+      "batas_desa",
+      "pola_ruang",
+      "transportasi",
+      "sungai"
+     ]
+    },
+    {
+     "nama": "Kedawung",
+     "slug": "kedawung",
+     "luas_ha": 203.87,
+     "centroid": [
+      109.413957,
+      -7.481917
+     ],
+     "bbox": [
+      109.40633,
+      -7.490234,
+      109.424247,
+      -7.470418
+     ],
+     "poligon": 24,
+     "layers": [
+      "batas_desa",
+      "pola_ruang",
+      "transportasi",
+      "sungai"
+     ]
+    },
+    {
+     "nama": "Kemranggon",
+     "slug": "kemranggon",
+     "luas_ha": 244.71,
+     "centroid": [
+      109.384638,
+      -7.48671
+     ],
+     "bbox": [
+      109.376572,
+      -7.494814,
+      109.392592,
+      -7.477054
+     ],
+     "poligon": 31,
+     "layers": [
+      "batas_desa",
+      "pola_ruang",
+      "transportasi",
+      "sungai"
+     ]
+    },
+    {
+     "nama": "Pakikiran",
+     "slug": "pakikiran",
+     "luas_ha": 294.36,
+     "centroid": [
+      109.376435,
+      -7.512964
+     ],
+     "bbox": [
+      109.369176,
+      -7.523404,
+      109.386298,
+      -7.498622
+     ],
+     "poligon": 48,
+     "layers": [
+      "batas_desa",
+      "pola_ruang",
+      "transportasi",
+      "sungai"
+     ]
+    },
+    {
+     "nama": "Panarusankulon",
+     "slug": "panarusankulon",
+     "luas_ha": 330.51,
+     "centroid": [
+      109.3878,
+      -7.51418
+     ],
+     "bbox": [
+      109.376227,
+      -7.536992,
+      109.397736,
+      -7.492674
+     ],
+     "poligon": 53,
+     "layers": [
+      "batas_desa",
+      "pola_ruang",
+      "transportasi",
+      "sungai"
+     ]
+    },
+    {
+     "nama": "Panarusanwetan",
+     "slug": "panarusanwetan",
+     "luas_ha": 297.55,
+     "centroid": [
+      109.393962,
+      -7.511108
+     ],
+     "bbox": [
+      109.383708,
+      -7.53539,
+      109.399908,
+      -7.49266
+     ],
+     "poligon": 40,
+     "layers": [
+      "batas_desa",
+      "pola_ruang",
+      "transportasi",
+      "sungai"
+     ]
+    },
+    {
+     "nama": "Piasawetan",
+     "slug": "piasawetan",
+     "luas_ha": 121.78,
+     "centroid": [
+      109.366936,
+      -7.510012
+     ],
+     "bbox": [
+      109.361985,
+      -7.517757,
+      109.371178,
+      -7.500559
+     ],
+     "poligon": 18,
+     "layers": [
+      "batas_desa",
+      "pola_ruang",
+      "transportasi",
+      "sungai"
+     ]
+    },
+    {
+     "nama": "Susukan",
+     "slug": "susukan",
+     "luas_ha": 275.83,
+     "centroid": [
+      109.399507,
+      -7.4894
+     ],
+     "bbox": [
+      109.389547,
+      -7.497938,
+      109.41101,
+      -7.481637
+     ],
+     "poligon": 39,
+     "layers": [
+      "batas_desa",
+      "pola_ruang",
+      "transportasi",
+      "sungai"
+     ]
+    }
+   ]
+  },
+  "mandiraja": {
+   "nama": "Mandiraja",
+   "desa": [
+    {
+     "nama": "Banjengan",
+     "slug": "banjengan",
+     "luas_ha": 124.59,
+     "centroid": [
+      109.512479,
+      -7.461362
+     ],
+     "bbox": [
+      109.50621,
+      -7.466966,
+      109.51998,
+      -7.456842
+     ],
+     "poligon": 27,
+     "layers": [
+      "batas_desa",
+      "pola_ruang",
+      "transportasi",
+      "sungai"
+     ]
+    },
+    {
+     "nama": "Blimbing",
+     "slug": "blimbing",
+     "luas_ha": 123.8,
+     "centroid": [
+      109.478238,
+      -7.460712
+     ],
+     "bbox": [
+      109.471145,
+      -7.465852,
+      109.485124,
+      -7.456111
+     ],
+     "poligon": 57,
+     "layers": [
+      "batas_desa",
+      "pola_ruang",
+      "transportasi",
+      "sungai"
+     ]
+    },
+    {
+     "nama": "Candiwulan",
+     "slug": "candiwulan",
+     "luas_ha": 101.08,
+     "centroid": [
+      109.487954,
+      -7.461361
+     ],
+     "bbox": [
+      109.482391,
+      -7.466726,
+      109.492798,
+      -7.456201
+     ],
+     "poligon": 21,
+     "layers": [
+      "batas_desa",
+      "pola_ruang",
+      "transportasi",
+      "sungai"
+     ]
+    },
+    {
+     "nama": "Glempang",
+     "slug": "glempang",
+     "luas_ha": 641.59,
+     "centroid": [
+      109.479377,
+      -7.501207
+     ],
+     "bbox": [
+      109.463987,
+      -7.522437,
+      109.492522,
+      -7.474518
+     ],
+     "poligon": 177,
+     "layers": [
+      "batas_desa",
+      "pola_ruang",
+      "transportasi",
+      "sungai"
+     ]
+    },
+    {
+     "nama": "Jalatunda",
+     "slug": "jalatunda",
+     "luas_ha": 592.24,
+     "centroid": [
+      109.530251,
+      -7.49056
+     ],
+     "bbox": [
+      109.517662,
+      -7.512411,
+      109.543906,
+      -7.474494
+     ],
+     "poligon": 122,
+     "layers": [
+      "batas_desa",
+      "pola_ruang",
+      "transportasi",
+      "sungai"
+     ]
+    },
+    {
+     "nama": "Kaliwungu",
+     "slug": "kaliwungu",
+     "luas_ha": 560.42,
+     "centroid": [
+      109.506129,
+      -7.491919
+     ],
+     "bbox": [
+      109.497475,
+      -7.509496,
+      109.517049,
+      -7.466267
+     ],
+     "poligon": 92,
+     "layers": [
+      "batas_desa",
+      "pola_ruang",
+      "transportasi",
+      "sungai"
+     ]
+    },
+    {
+     "nama": "Kebakalan",
+     "slug": "kebakalan",
+     "luas_ha": 108.19,
+     "centroid": [
+      109.527533,
+      -7.458616
+     ],
+     "bbox": [
+      109.521838,
+      -7.465322,
+      109.533747,
+      -7.452069
+     ],
+     "poligon": 17,
+     "layers": [
+      "batas_desa",
+      "pola_ruang",
+      "transportasi",
+      "sungai"
+     ]
+    },
+    {
+     "nama": "Kebanaran",
+     "slug": "kebanaran",
+     "luas_ha": 563.3,
+     "centroid": [
+      109.493997,
+      -7.487601
+     ],
+     "bbox": [
+      109.482835,
+      -7.508322,
+      109.504256,
+      -7.466339
+     ],
+     "poligon": 84,
+     "layers": [
+      "batas_desa",
+      "pola_ruang",
+      "transportasi",
+      "sungai"
+     ]
+    },
+    {
+     "nama": "Kertayasa",
+     "slug": "kertayasa",
+     "luas_ha": 375.16,
+     "centroid": [
+      109.501131,
+      -7.457214
+     ],
+     "bbox": [
+      109.491761,
+      -7.467841,
+      109.512761,
+      -7.446762
+     ],
+     "poligon": 66,
+     "layers": [
+      "batas_desa",
+      "pola_ruang",
+      "transportasi",
+      "sungai"
+     ]
+    },
+    {
+     "nama": "Mandirajakulon",
+     "slug": "mandirajakulon",
+     "luas_ha": 164.21,
+     "centroid": [
+      109.519803,
+      -7.453462
+     ],
+     "bbox": [
+      109.512497,
+      -7.463164,
+      109.531694,
+      -7.44665
+     ],
+     "poligon": 33,
+     "layers": [
+      "batas_desa",
+      "pola_ruang",
+      "transportasi",
+      "sungai"
+     ]
+    },
+    {
+     "nama": "Mandirajawetan",
+     "slug": "mandirajawetan",
+     "luas_ha": 129.64,
+     "centroid": [
+      109.528517,
+      -7.446598
+     ],
+     "bbox": [
+      109.522699,
+      -7.452862,
+      109.533408,
+      -7.437876
+     ],
+     "poligon": 18,
+     "layers": [
+      "batas_desa",
+      "pola_ruang",
+      "transportasi",
+      "sungai"
+     ]
+    },
+    {
+     "nama": "Panggisari",
+     "slug": "panggisari",
+     "luas_ha": 300.47,
+     "centroid": [
+      109.48285,
+      -7.45
+     ],
+     "bbox": [
+      109.471943,
+      -7.456859,
+      109.493959,
+      -7.441167
+     ],
+     "poligon": 51,
+     "layers": [
+      "batas_desa",
+      "pola_ruang",
+      "transportasi",
+      "sungai"
+     ]
+    },
+    {
+     "nama": "Purwasaba",
+     "slug": "purwasaba",
+     "luas_ha": 292.04,
+     "centroid": [
+      109.473707,
+      -7.471842
+     ],
+     "bbox": [
+      109.466066,
+      -7.486198,
+      109.483635,
+      -7.46234
+     ],
+     "poligon": 58,
+     "layers": [
+      "batas_desa",
+      "pola_ruang",
+      "transportasi",
+      "sungai"
+     ]
+    },
+    {
+     "nama": "Salamerta",
+     "slug": "salamerta",
+     "luas_ha": 538.49,
+     "centroid": [
+      109.46713,
+      -7.502311
+     ],
+     "bbox": [
+      109.454177,
+      -7.519369,
+      109.477718,
+      -7.484813
+     ],
+     "poligon": 88,
+     "layers": [
+      "batas_desa",
+      "pola_ruang",
+      "transportasi",
+      "sungai"
+     ]
+    },
+    {
+     "nama": "Simbang",
+     "slug": "simbang",
+     "luas_ha": 208.12,
+     "centroid": [
+      109.489399,
+      -7.472454
+     ],
+     "bbox": [
+      109.481407,
+      -7.481237,
+      109.501521,
+      -7.4656
+     ],
+     "poligon": 41,
+     "layers": [
+      "batas_desa",
+      "pola_ruang",
+      "transportasi",
+      "sungai"
+     ]
+    },
+    {
+     "nama": "Somawangi",
+     "slug": "somawangi",
+     "luas_ha": 618.05,
+     "centroid": [
+      109.517141,
+      -7.482841
+     ],
+     "bbox": [
+      109.508905,
+      -7.510859,
+      109.52719,
+      -7.462554
+     ],
+     "poligon": 140,
+     "layers": [
+      "batas_desa",
+      "pola_ruang",
+      "transportasi",
+      "sungai"
+     ]
+    }
+   ]
+  },
+  "purwareja-klampok": {
+   "nama": "Purwareja Klampok",
+   "desa": [
+    {
+     "nama": "Kalilandak",
+     "slug": "kalilandak",
+     "luas_ha": 192.97,
+     "centroid": [
+      109.445503,
+      -7.468461
+     ],
+     "bbox": [
+      109.43689,
+      -7.474569,
+      109.453675,
+      -7.461631
+     ],
+     "poligon": 55,
+     "layers": [
+      "batas_desa",
+      "pola_ruang",
+      "transportasi",
+      "sungai"
+     ]
+    },
+    {
+     "nama": "Kalimandi",
+     "slug": "kalimandi",
+     "luas_ha": 304.02,
+     "centroid": [
+      109.456748,
+      -7.46144
+     ],
+     "bbox": [
+      109.446861,
+      -7.473533,
+      109.46701,
+      -7.446498
+     ],
+     "poligon": 86,
+     "layers": [
+      "batas_desa",
+      "pola_ruang",
+      "transportasi",
+      "sungai"
+     ]
+    },
+    {
+     "nama": "Kaliwinasuh",
+     "slug": "kaliwinasuh",
+     "luas_ha": 225.56,
+     "centroid": [
+      109.466454,
+      -7.454862
+     ],
+     "bbox": [
+      109.45837,
+      -7.462662,
+      109.47368,
+      -7.44606
+     ],
+     "poligon": 41,
+     "layers": [
+      "batas_desa",
+      "pola_ruang",
+      "transportasi",
+      "sungai"
+     ]
+    },
+    {
+     "nama": "Kecitran",
+     "slug": "kecitran",
+     "luas_ha": 209.31,
+     "centroid": [
+      109.444532,
+      -7.477408
+     ],
+     "bbox": [
+      109.434039,
+      -7.484147,
+      109.455499,
+      -7.469514
+     ],
+     "poligon": 73,
+     "layers": [
+      "batas_desa",
+      "pola_ruang",
+      "transportasi",
+      "sungai"
+     ]
+    },
+    {
+     "nama": "Klampok",
+     "slug": "klampok",
+     "luas_ha": 265.84,
+     "centroid": [
+      109.438737,
+      -7.458481
+     ],
+     "bbox": [
+      109.422561,
+      -7.466591,
+      109.451604,
+      -7.448544
+     ],
+     "poligon": 41,
+     "layers": [
+      "batas_desa",
+      "pola_ruang",
+      "transportasi",
+      "sungai"
+     ]
+    },
+    {
+     "nama": "Pagak",
+     "slug": "pagak",
+     "luas_ha": 157.01,
+     "centroid": [
+      109.461074,
+      -7.476398
+     ],
+     "bbox": [
+      109.45181,
+      -7.481815,
+      109.467611,
+      -7.470054
+     ],
+     "poligon": 36,
+     "layers": [
+      "batas_desa",
+      "pola_ruang",
+      "transportasi",
+      "sungai"
+     ]
+    },
+    {
+     "nama": "Purwareja",
+     "slug": "purwareja",
+     "luas_ha": 262.05,
+     "centroid": [
+      109.428989,
+      -7.470656
+     ],
+     "bbox": [
+      109.417988,
+      -7.479842,
+      109.437751,
+      -7.46165
+     ],
+     "poligon": 23,
+     "layers": [
+      "batas_desa",
+      "pola_ruang",
+      "transportasi",
+      "sungai"
+     ]
+    },
+    {
+     "nama": "Sirkandi",
+     "slug": "sirkandi",
+     "luas_ha": 752.22,
+     "centroid": [
+      109.454737,
+      -7.501898
+     ],
+     "bbox": [
+      109.441763,
+      -7.525016,
+      109.472688,
+      -7.479769
+     ],
+     "poligon": 118,
+     "layers": [
+      "batas_desa",
+      "pola_ruang",
+      "transportasi",
+      "sungai"
+     ]
+    }
+   ]
+  },
+  "purwanegara": {
+   "nama": "Purwanegara",
+   "desa": [
+    {
+     "nama": "Danaraja",
+     "slug": "danaraja",
+     "luas_ha": 357.01,
+     "centroid": [
+      109.542095,
+      -7.445241
+     ],
+     "bbox": [
+      109.532611,
+      -7.454276,
+      109.552856,
+      -7.435114
+     ],
+     "poligon": 54,
+     "layers": [
+      "batas_desa",
+      "pola_ruang",
+      "transportasi",
+      "sungai"
+     ]
+    },
+    {
+     "nama": "Gumiwang",
+     "slug": "gumiwang",
+     "luas_ha": 461.7,
+     "centroid": [
+      109.589676,
+      -7.419692
+     ],
+     "bbox": [
+      109.57696,
+      -7.433987,
+      109.604967,
+      -7.40601
+     ],
+     "poligon": 69,
+     "layers": [
+      "batas_desa",
+      "pola_ruang",
+      "transportasi",
+      "sungai"
+     ]
+    },
+    {
+     "nama": "Kaliajir",
+     "slug": "kaliajir",
+     "luas_ha": 750.21,
+     "centroid": [
+      109.57431,
+      -7.480221
+     ],
+     "bbox": [
+      109.562363,
+      -7.506417,
+      109.584142,
+      -7.457664
+     ],
+     "poligon": 78,
+     "layers": [
+      "batas_desa",
+      "pola_ruang",
+      "transportasi",
+      "sungai"
+     ]
+    },
+    {
+     "nama": "Kalipelus",
+     "slug": "kalipelus",
+     "luas_ha": 237.13,
+     "centroid": [
+      109.572476,
+      -7.424849
+     ],
+     "bbox": [
+      109.562069,
+      -7.436245,
+      109.581546,
+      -7.415061
+     ],
+     "poligon": 61,
+     "layers": [
+      "batas_desa",
+      "pola_ruang",
+      "transportasi",
+      "sungai"
+     ]
+    },
+    {
+     "nama": "Kalitengah",
+     "slug": "kalitengah",
+     "luas_ha": 1098.41,
+     "centroid": [
+      109.546098,
+      -7.504607
+     ],
+     "bbox": [
+      109.521466,
+      -7.522672,
+      109.569669,
+      -7.488995
+     ],
+     "poligon": 132,
+     "layers": [
+      "batas_desa",
+      "pola_ruang",
+      "transportasi",
+      "sungai"
+     ]
+    },
+    {
+     "nama": "Karanganyar",
+     "slug": "karanganyar",
+     "luas_ha": 787.45,
+     "centroid": [
+      109.561119,
+      -7.470565
+     ],
+     "bbox": [
+      109.547001,
+      -7.492964,
+      109.577262,
+      -7.450338
+     ],
+     "poligon": 155,
+     "layers": [
+      "batas_desa",
+      "pola_ruang",
+      "transportasi",
+      "sungai"
+     ]
+    },
+    {
+     "nama": "Kutawuluh",
+     "slug": "kutawuluh",
+     "luas_ha": 325.39,
+     "centroid": [
+      109.597941,
+      -7.430106
+     ],
+     "bbox": [
+      109.588116,
+      -7.442122,
+      109.605116,
+      -7.417192
+     ],
+     "poligon": 55,
+     "layers": [
+      "batas_desa",
+      "pola_ruang",
+      "transportasi",
+      "sungai"
+     ]
+    },
+    {
+     "nama": "Merden",
+     "slug": "merden",
+     "luas_ha": 764.76,
+     "centroid": [
+      109.540325,
+      -7.469636
+     ],
+     "bbox": [
+      109.523619,
+      -7.489535,
+      109.553802,
+      -7.452846
+     ],
+     "poligon": 135,
+     "layers": [
+      "batas_desa",
+      "pola_ruang",
+      "transportasi",
+      "sungai"
+     ]
+    },
+    {
+     "nama": "Mertasari",
+     "slug": "mertasari",
+     "luas_ha": 316.6,
+     "centroid": [
+      109.558809,
+      -7.450245
+     ],
+     "bbox": [
+      109.547137,
+      -7.463777,
+      109.570872,
+      -7.439682
+     ],
+     "poligon": 60,
+     "layers": [
+      "batas_desa",
+      "pola_ruang",
+      "transportasi",
+      "sungai"
+     ]
+    },
+    {
+     "nama": "Parakan",
+     "slug": "parakan",
+     "luas_ha": 639.19,
+     "centroid": [
+      109.581355,
+      -7.443664
+     ],
+     "bbox": [
+      109.567646,
+      -7.458391,
+      109.597553,
+      -7.430481
+     ],
+     "poligon": 60,
+     "layers": [
+      "batas_desa",
+      "pola_ruang",
+      "transportasi",
+      "sungai"
+     ]
+    },
+    {
+     "nama": "Petir",
+     "slug": "petir",
+     "luas_ha": 1374.89,
+     "centroid": [
+      109.590945,
+      -7.495058
+     ],
+     "bbox": [
+      109.569044,
+      -7.515575,
+      109.615285,
+      -7.467338
+     ],
+     "poligon": 133,
+     "layers": [
+      "batas_desa",
+      "pola_ruang",
+      "transportasi",
+      "sungai"
+     ]
+    },
+    {
+     "nama": "Pucungbeduk",
+     "slug": "pucungbeduk",
+     "luas_ha": 609.53,
+     "centroid": [
+      109.593918,
+      -7.459222
+     ],
+     "bbox": [
+      109.580494,
+      -7.47577,
+      109.604263,
+      -7.440537
+     ],
+     "poligon": 49,
+     "layers": [
+      "batas_desa",
+      "pola_ruang",
+      "transportasi",
+      "sungai"
+     ]
+    },
+    {
+     "nama": "Purwonegoro",
+     "slug": "purwonegoro",
+     "luas_ha": 363.18,
+     "centroid": [
+      109.557507,
+      -7.435605
+     ],
+     "bbox": [
+      109.543801,
+      -7.446228,
+      109.569719,
+      -7.426967
+     ],
+     "poligon": 72,
+     "layers": [
+      "batas_desa",
+      "pola_ruang",
+      "transportasi",
+      "sungai"
+     ]
+    }
+   ]
+  },
+  "bawang": {
+   "nama": "Bawang",
+   "desa": [
+    {
+     "nama": "Bandingan",
+     "slug": "bandingan",
+     "luas_ha": 338.47,
+     "centroid": [
+      109.623951,
+      -7.39001
+     ],
+     "bbox": [
+      109.606709,
+      -7.399527,
+      109.635681,
+      -7.382344
+     ],
+     "poligon": 55,
+     "layers": [
+      "batas_desa",
+      "pola_ruang",
+      "transportasi",
+      "sungai"
+     ]
+    },
+    {
+     "nama": "Bawang",
+     "slug": "bawang",
+     "luas_ha": 209.35,
+     "centroid": [
+      109.614145,
+      -7.39785
+     ],
+     "bbox": [
+      109.604291,
+      -7.405875,
+      109.623556,
+      -7.392225
+     ],
+     "poligon": 20,
+     "layers": [
+      "batas_desa",
+      "pola_ruang",
+      "transportasi",
+      "sungai"
+     ]
+    },
+    {
+     "nama": "Binorong",
+     "slug": "binorong",
+     "luas_ha": 154.99,
+     "centroid": [
+      109.608651,
+      -7.412031
+     ],
+     "bbox": [
+      109.603749,
+      -7.420789,
+      109.613854,
+      -7.401887
+     ],
+     "poligon": 24,
+     "layers": [
+      "batas_desa",
+      "pola_ruang",
+      "transportasi",
+      "sungai"
+     ]
+    },
+    {
+     "nama": "Blambangan",
+     "slug": "blambangan",
+     "luas_ha": 325.6,
+     "centroid": [
+      109.642534,
+      -7.389628
+     ],
+     "bbox": [
+      109.633023,
+      -7.400801,
+      109.652284,
+      -7.380444
+     ],
+     "poligon": 89,
+     "layers": [
+      "batas_desa",
+      "pola_ruang",
+      "transportasi",
+      "sungai"
+     ]
+    },
+    {
+     "nama": "Depok",
+     "slug": "depok",
+     "luas_ha": 252.57,
+     "centroid": [
+      109.623501,
+      -7.431888
+     ],
+     "bbox": [
+      109.613983,
+      -7.444583,
+      109.631301,
+      -7.422132
+     ],
+     "poligon": 61,
+     "layers": [
+      "batas_desa",
+      "pola_ruang",
+      "transportasi",
+      "sungai"
+     ]
+    },
+    {
+     "nama": "Gemuruh",
+     "slug": "gemuruh",
+     "luas_ha": 312.17,
+     "centroid": [
+      109.650034,
+      -7.404117
+     ],
+     "bbox": [
+      109.636092,
+      -7.414075,
+      109.66494,
+      -7.393295
+     ],
+     "poligon": 62,
+     "layers": [
+      "batas_desa",
+      "pola_ruang",
+      "transportasi",
+      "sungai"
+     ]
+    },
+    {
+     "nama": "Joho",
+     "slug": "joho",
+     "luas_ha": 199.11,
+     "centroid": [
+      109.59992,
+      -7.404226
+     ],
+     "bbox": [
+      109.59103,
+      -7.411621,
+      109.606765,
+      -7.394628
+     ],
+     "poligon": 34,
+     "layers": [
+      "batas_desa",
+      "pola_ruang",
+      "transportasi",
+      "sungai"
+     ]
+    },
+    {
+     "nama": "Kebondalem",
+     "slug": "kebondalem",
+     "luas_ha": 496.58,
+     "centroid": [
+      109.62299,
+      -7.473867
+     ],
+     "bbox": [
+      109.605251,
+      -7.491631,
+      109.639948,
+      -7.457794
+     ],
+     "poligon": 40,
+     "layers": [
+      "batas_desa",
+      "pola_ruang",
+      "transportasi",
+      "sungai"
+     ]
+    },
+    {
+     "nama": "Kutayasa",
+     "slug": "kutayasa",
+     "luas_ha": 363.72,
+     "centroid": [
+      109.609524,
+      -7.432905
+     ],
+     "bbox": [
+      109.6032,
+      -7.44962,
+      109.618308,
+      -7.417928
+     ],
+     "poligon": 49,
+     "layers": [
+      "batas_desa",
+      "pola_ruang",
+      "transportasi",
+      "sungai"
+     ]
+    },
+    {
+     "nama": "Majalengka",
+     "slug": "majalengka",
+     "luas_ha": 552.06,
+     "centroid": [
+      109.632336,
+      -7.44724
+     ],
+     "bbox": [
+      109.611985,
+      -7.459476,
+      109.653556,
+      -7.433848
+     ],
+     "poligon": 41,
+     "layers": [
+      "batas_desa",
+      "pola_ruang",
+      "transportasi",
+      "sungai"
+     ]
+    },
+    {
+     "nama": "Mantrianom",
+     "slug": "mantrianom",
+     "luas_ha": 344.04,
+     "centroid": [
+      109.628221,
+      -7.405198
+     ],
+     "bbox": [
+      109.61413,
+      -7.412854,
+      109.644471,
+      -7.396948
+     ],
+     "poligon": 61,
+     "layers": [
+      "batas_desa",
+      "pola_ruang",
+      "transportasi",
+      "sungai"
+     ]
+    },
+    {
+     "nama": "Masaran",
+     "slug": "masaran",
+     "luas_ha": 394.24,
+     "centroid": [
+      109.647915,
+      -7.417265
+     ],
+     "bbox": [
+      109.633564,
+      -7.428171,
+      109.659603,
+      -7.408189
+     ],
+     "poligon": 68,
+     "layers": [
+      "batas_desa",
+      "pola_ruang",
+      "transportasi",
+      "sungai"
+     ]
+    },
+    {
+     "nama": "Pucang",
+     "slug": "pucang",
+     "luas_ha": 352.09,
+     "centroid": [
+      109.659644,
+      -7.394463
+     ],
+     "bbox": [
+      109.6507,
+      -7.408207,
+      109.670274,
+      -7.382314
+     ],
+     "poligon": 78,
+     "layers": [
+      "batas_desa",
+      "pola_ruang",
+      "transportasi",
+      "sungai"
+     ]
+    },
+    {
+     "nama": "Serang",
+     "slug": "serang",
+     "luas_ha": 134.53,
+     "centroid": [
+      109.634794,
+      -7.421412
+     ],
+     "bbox": [
+      109.626542,
+      -7.428129,
+      109.642293,
+      -7.415441
+     ],
+     "poligon": 67,
+     "layers": [
+      "batas_desa",
+      "pola_ruang",
+      "transportasi",
+      "sungai"
+     ]
+    },
+    {
+     "nama": "Wanadri",
+     "slug": "wanadri",
+     "luas_ha": 612.51,
+     "centroid": [
+      109.611326,
+      -7.480583
+     ],
+     "bbox": [
+      109.601809,
+      -7.499055,
+      109.6236,
+      -7.458869
+     ],
+     "poligon": 60,
+     "layers": [
+      "batas_desa",
+      "pola_ruang",
+      "transportasi",
+      "sungai"
+     ]
+    },
+    {
+     "nama": "Watuurip",
+     "slug": "watuurip",
+     "luas_ha": 341.83,
+     "centroid": [
+      109.636463,
+      -7.434014
+     ],
+     "bbox": [
+      109.626967,
+      -7.445905,
+      109.647151,
+      -7.424236
+     ],
+     "poligon": 55,
+     "layers": [
+      "batas_desa",
+      "pola_ruang",
+      "transportasi",
+      "sungai"
+     ]
+    },
+    {
+     "nama": "Winong",
+     "slug": "winong",
+     "luas_ha": 282.84,
+     "centroid": [
+      109.621972,
+      -7.415661
+     ],
+     "bbox": [
+      109.611203,
+      -7.424716,
+      109.635209,
+      -7.405635
+     ],
+     "poligon": 88,
+     "layers": [
+      "batas_desa",
+      "pola_ruang",
+      "transportasi",
+      "sungai"
+     ]
+    },
+    {
+     "nama": "Wiramastra",
+     "slug": "wiramastra",
+     "luas_ha": 382.72,
+     "centroid": [
+      109.616039,
+      -7.454924
+     ],
+     "bbox": [
+      109.602013,
+      -7.46934,
+      109.630983,
+      -7.442789
+     ],
+     "poligon": 24,
+     "layers": [
+      "batas_desa",
+      "pola_ruang",
+      "transportasi",
+      "sungai"
+     ]
+    }
+   ]
+  },
+  "pagedongan": {
+   "nama": "Pagedongan",
+   "desa": [
+    {
+     "nama": "Duren",
+     "slug": "duren",
+     "luas_ha": 720.19,
+     "centroid": [
+      109.654802,
+      -7.484676
+     ],
+     "bbox": [
+      109.634627,
+      -7.49862,
+      109.673818,
+      -7.46826
+     ],
+     "poligon": 41,
+     "layers": [
+      "batas_desa",
+      "pola_ruang",
+      "transportasi",
+      "sungai"
+     ]
+    },
+    {
+     "nama": "Gentansari",
+     "slug": "gentansari",
+     "luas_ha": 661.42,
+     "centroid": [
+      109.659452,
+      -7.428922
+     ],
+     "bbox": [
+      109.642709,
+      -7.444002,
+      109.672721,
+      -7.410828
+     ],
+     "poligon": 86,
+     "layers": [
+      "batas_desa",
+      "pola_ruang",
+      "transportasi",
+      "sungai"
+     ]
+    },
+    {
+     "nama": "Gunungjati",
+     "slug": "gunungjati",
+     "luas_ha": 584.44,
+     "centroid": [
+      109.670816,
+      -7.453209
+     ],
+     "bbox": [
+      109.659761,
+      -7.473439,
+      109.686068,
+      -7.436636
+     ],
+     "poligon": 30,
+     "layers": [
+      "batas_desa",
+      "pola_ruang",
+      "transportasi"
+     ]
+    },
+    {
+     "nama": "Kebutuhduwur",
+     "slug": "kebutuhduwur",
+     "luas_ha": 1270.75,
+     "centroid": [
+      109.69688,
+      -7.466437
+     ],
+     "bbox": [
+      109.667093,
+      -7.485566,
+      109.721179,
+      -7.449911
+     ],
+     "poligon": 47,
+     "layers": [
+      "batas_desa",
+      "pola_ruang",
+      "transportasi",
+      "sungai"
+     ]
+    },
+    {
+     "nama": "Kebutuhjurang",
+     "slug": "kebutuhjurang",
+     "luas_ha": 987.34,
+     "centroid": [
+      109.686408,
+      -7.487018
+     ],
+     "bbox": [
+      109.666939,
+      -7.503461,
+      109.708567,
+      -7.471827
+     ],
+     "poligon": 24,
+     "layers": [
+      "batas_desa",
+      "pola_ruang",
+      "transportasi"
+     ]
+    },
+    {
+     "nama": "Lebakwangi",
+     "slug": "lebakwangi",
+     "luas_ha": 1018.08,
+     "centroid": [
+      109.650472,
+      -7.462669
+     ],
+     "bbox": [
+      109.627848,
+      -7.480561,
+      109.668281,
+      -7.442511
+     ],
+     "poligon": 69,
+     "layers": [
+      "batas_desa",
+      "pola_ruang",
+      "transportasi",
+      "sungai"
+     ]
+    },
+    {
+     "nama": "Pagedongan",
+     "slug": "pagedongan",
+     "luas_ha": 890.27,
+     "centroid": [
+      109.691506,
+      -7.440295
+     ],
+     "bbox": [
+      109.665671,
+      -7.455186,
+      109.711518,
+      -7.42922
+     ],
+     "poligon": 45,
+     "layers": [
+      "batas_desa",
+      "pola_ruang",
+      "transportasi",
+      "sungai"
+     ]
+    },
+    {
+     "nama": "Pesangkalan",
+     "slug": "pesangkalan",
+     "luas_ha": 1483.17,
+     "centroid": [
+      109.728404,
+      -7.448776
+     ],
+     "bbox": [
+      109.706678,
+      -7.476438,
+      109.753861,
+      -7.430787
+     ],
+     "poligon": 39,
+     "layers": [
+      "batas_desa",
+      "pola_ruang",
+      "transportasi",
+      "sungai"
+     ]
+    },
+    {
+     "nama": "Twelagiri",
+     "slug": "twelagiri",
+     "luas_ha": 531.3,
+     "centroid": [
+      109.684608,
+      -7.42324
+     ],
+     "bbox": [
+      109.669437,
+      -7.435426,
+      109.706719,
+      -7.412245
+     ],
+     "poligon": 34,
+     "layers": [
+      "batas_desa",
+      "pola_ruang",
+      "transportasi",
+      "sungai"
+     ]
+    }
+   ]
+  },
+  "rakit": {
+   "nama": "Rakit",
+   "desa": [
+    {
+     "nama": "Adipasir",
+     "slug": "adipasir",
+     "luas_ha": 326.65,
+     "centroid": [
+      109.540621,
+      -7.427201
+     ],
+     "bbox": [
+      109.529658,
+      -7.439848,
+      109.551457,
+      -7.416288
+     ],
+     "poligon": 41,
+     "layers": [
+      "batas_desa",
+      "pola_ruang",
+      "transportasi",
+      "sungai"
+     ]
+    },
+    {
+     "nama": "Badamita",
+     "slug": "badamita",
+     "luas_ha": 349.85,
+     "centroid": [
+      109.559762,
+      -7.400909
+     ],
+     "bbox": [
+      109.551146,
+      -7.415693,
+      109.569803,
+      -7.387049
+     ],
+     "poligon": 59,
+     "layers": [
+      "batas_desa",
+      "pola_ruang",
+      "transportasi",
+      "sungai"
+     ]
+    },
+    {
+     "nama": "Bandingan",
+     "slug": "bandingan",
+     "luas_ha": 462.23,
+     "centroid": [
+      109.539835,
+      -7.412732
+     ],
+     "bbox": [
+      109.525005,
+      -7.42546,
+      109.554008,
+      -7.397733
+     ],
+     "poligon": 33,
+     "layers": [
+      "batas_desa",
+      "pola_ruang",
+      "transportasi",
+      "sungai"
+     ]
+    },
+    {
+     "nama": "Gelang",
+     "slug": "gelang",
+     "luas_ha": 203.08,
+     "centroid": [
+      109.520016,
+      -7.438424
+     ],
+     "bbox": [
+      109.513698,
+      -7.450165,
+      109.524721,
+      -7.425478
+     ],
+     "poligon": 24,
+     "layers": [
+      "batas_desa",
+      "pola_ruang",
+      "transportasi",
+      "sungai"
+     ]
+    },
+    {
+     "nama": "Kincang",
+     "slug": "kincang",
+     "luas_ha": 254.4,
+     "centroid": [
+      109.556563,
+      -7.420897
+     ],
+     "bbox": [
+      109.547357,
+      -7.430746,
+      109.564467,
+      -7.409813
+     ],
+     "poligon": 48,
+     "layers": [
+      "batas_desa",
+      "pola_ruang",
+      "transportasi",
+      "sungai"
+     ]
+    },
+    {
+     "nama": "Lengkong",
+     "slug": "lengkong",
+     "luas_ha": 386.43,
+     "centroid": [
+      109.576504,
+      -7.397334
+     ],
+     "bbox": [
+      109.565334,
+      -7.409513,
+      109.591602,
+      -7.386062
+     ],
+     "poligon": 90,
+     "layers": [
+      "batas_desa",
+      "pola_ruang",
+      "transportasi",
+      "sungai"
+     ]
+    },
+    {
+     "nama": "Luwung",
+     "slug": "luwung",
+     "luas_ha": 206.44,
+     "centroid": [
+      109.587684,
+      -7.402471
+     ],
+     "bbox": [
+      109.580208,
+      -7.413916,
+      109.595632,
+      -7.392755
+     ],
+     "poligon": 57,
+     "layers": [
+      "batas_desa",
+      "pola_ruang",
+      "transportasi",
+      "sungai"
+     ]
+    },
+    {
+     "nama": "Pingit",
+     "slug": "pingit",
+     "luas_ha": 369.58,
+     "centroid": [
+      109.514923,
+      -7.418034
+     ],
+     "bbox": [
+      109.5015,
+      -7.427017,
+      109.527122,
+      -7.409614
+     ],
+     "poligon": 20,
+     "layers": [
+      "batas_desa",
+      "pola_ruang",
+      "transportasi",
+      "sungai"
+     ]
+    },
+    {
+     "nama": "Rakit",
+     "slug": "rakit",
+     "luas_ha": 200.9,
+     "centroid": [
+      109.527747,
+      -7.431987
+     ],
+     "bbox": [
+      109.519882,
+      -7.441967,
+      109.535444,
+      -7.421616
+     ],
+     "poligon": 31,
+     "layers": [
+      "batas_desa",
+      "pola_ruang",
+      "transportasi",
+      "sungai"
+     ]
+    },
+    {
+     "nama": "Situwangi",
+     "slug": "situwangi",
+     "luas_ha": 230.89,
+     "centroid": [
+      109.512094,
+      -7.436397
+     ],
+     "bbox": [
+      109.506763,
+      -7.45056,
+      109.518748,
+      -7.426323
+     ],
+     "poligon": 23,
+     "layers": [
+      "batas_desa",
+      "pola_ruang",
+      "transportasi",
+      "sungai"
+     ]
+    },
+    {
+     "nama": "Tanjunganom",
+     "slug": "tanjunganom",
+     "luas_ha": 277.34,
+     "centroid": [
+      109.571619,
+      -7.412885
+     ],
+     "bbox": [
+      109.560045,
+      -7.42292,
+      109.583439,
+      -7.404723
+     ],
+     "poligon": 57,
+     "layers": [
+      "batas_desa",
+      "pola_ruang",
+      "transportasi",
+      "sungai"
+     ]
+    }
+   ]
+  },
+  "wanadadi": {
+   "nama": "Wanadadi",
+   "desa": [
+    {
+     "nama": "Gumingsir.",
+     "slug": "gumingsir",
+     "luas_ha": 139.5,
+     "centroid": [
+      109.663872,
+      -7.382227
+     ],
+     "bbox": [
+      109.653312,
+      -7.390723,
+      109.674028,
+      -7.378103
+     ],
+     "poligon": 43,
+     "layers": [
+      "batas_desa",
+      "pola_ruang",
+      "transportasi",
+      "sungai"
+     ]
+    },
+    {
+     "nama": "Kandangwangi",
+     "slug": "kandangwangi",
+     "luas_ha": 281.66,
+     "centroid": [
+      109.650863,
+      -7.362302
+     ],
+     "bbox": [
+      109.63922,
+      -7.373275,
+      109.659563,
+      -7.351811
+     ],
+     "poligon": 93,
+     "layers": [
+      "batas_desa",
+      "pola_ruang",
+      "transportasi",
+      "sungai"
+     ]
+    },
+    {
+     "nama": "Karangjambe",
+     "slug": "karangjambe",
+     "luas_ha": 304.8,
+     "centroid": [
+      109.613854,
+      -7.377528
+     ],
+     "bbox": [
+      109.604526,
+      -7.387562,
+      109.624316,
+      -7.366785
+     ],
+     "poligon": 46,
+     "layers": [
+      "batas_desa",
+      "pola_ruang",
+      "transportasi",
+      "sungai"
+     ]
+    },
+    {
+     "nama": "Karangkemiri",
+     "slug": "karangkemiri",
+     "luas_ha": 165.54,
+     "centroid": [
+      109.644208,
+      -7.374246
+     ],
+     "bbox": [
+      109.638594,
+      -7.381382,
+      109.652583,
+      -7.366757
+     ],
+     "poligon": 90,
+     "layers": [
+      "batas_desa",
+      "pola_ruang",
+      "transportasi",
+      "sungai"
+     ]
+    },
+    {
+     "nama": "Kasilib",
+     "slug": "kasilib",
+     "luas_ha": 242.5,
+     "centroid": [
+      109.596666,
+      -7.381509
+     ],
+     "bbox": [
+      109.584096,
+      -7.391705,
+      109.606193,
+      -7.371422
+     ],
+     "poligon": 59,
+     "layers": [
+      "batas_desa",
+      "pola_ruang",
+      "transportasi",
+      "sungai"
+     ]
+    },
+    {
+     "nama": "Lemahjaya",
+     "slug": "lemahjaya",
+     "luas_ha": 563.98,
+     "centroid": [
+      109.647031,
+      -7.347196
+     ],
+     "bbox": [
+      109.629925,
+      -7.3643,
+      109.658715,
+      -7.32764
+     ],
+     "poligon": 53,
+     "layers": [
+      "batas_desa",
+      "pola_ruang",
+      "transportasi",
+      "sungai"
+     ]
+    },
+    {
+     "nama": "Linggasari",
+     "slug": "linggasari",
+     "luas_ha": 332.89,
+     "centroid": [
+      109.661631,
+      -7.374217
+     ],
+     "bbox": [
+      109.645562,
+      -7.382804,
+      109.677858,
+      -7.365033
+     ],
+     "poligon": 66,
+     "layers": [
+      "batas_desa",
+      "pola_ruang",
+      "transportasi",
+      "sungai"
+     ]
+    },
+    {
+     "nama": "Medayu",
+     "slug": "medayu",
+     "luas_ha": 282.22,
+     "centroid": [
+      109.664228,
+      -7.35877
+     ],
+     "bbox": [
+      109.655523,
+      -7.36887,
+      109.67407,
+      -7.345351
+     ],
+     "poligon": 71,
+     "layers": [
+      "batas_desa",
+      "pola_ruang",
+      "transportasi",
+      "sungai"
+     ]
+    },
+    {
+     "nama": "Tapen",
+     "slug": "tapen",
+     "luas_ha": 233.81,
+     "centroid": [
+      109.600433,
+      -7.390789
+     ],
+     "bbox": [
+      109.589789,
+      -7.401479,
+      109.611235,
+      -7.381285
+     ],
+     "poligon": 36,
+     "layers": [
+      "batas_desa",
+      "pola_ruang",
+      "transportasi",
+      "sungai"
+     ]
+    },
+    {
+     "nama": "Wanadadi",
+     "slug": "wanadadi",
+     "luas_ha": 159.39,
+     "centroid": [
+      109.624178,
+      -7.371645
+     ],
+     "bbox": [
+      109.614926,
+      -7.383366,
+      109.631525,
+      -7.364492
+     ],
+     "poligon": 29,
+     "layers": [
+      "batas_desa",
+      "pola_ruang",
+      "transportasi",
+      "sungai"
+     ]
+    },
+    {
+     "nama": "Wanakarsa",
+     "slug": "wanakarsa",
+     "luas_ha": 243.4,
+     "centroid": [
+      109.633599,
+      -7.374154
+     ],
+     "bbox": [
+      109.62502,
+      -7.383694,
+      109.639405,
+      -7.363179
+     ],
+     "poligon": 46,
+     "layers": [
+      "batas_desa",
+      "pola_ruang",
+      "transportasi",
+      "sungai"
+     ]
+    }
+   ]
+  },
+  "punggelan": {
+   "nama": "Punggelan",
+   "desa": [
+    {
+     "nama": "Badakarya",
+     "slug": "badakarya",
+     "luas_ha": 426.46,
+     "centroid": [
+      109.610188,
+      -7.358924
+     ],
+     "bbox": [
+      109.600833,
+      -7.373764,
+      109.620765,
+      -7.346561
+     ],
+     "poligon": 34,
+     "layers": [
+      "batas_desa",
+      "pola_ruang",
+      "transportasi",
+      "sungai"
+     ]
+    },
+    {
+     "nama": "Bondolharjo",
+     "slug": "bondolharjo",
+     "luas_ha": 548.54,
+     "centroid": [
+      109.623151,
+      -7.351337
+     ],
+     "bbox": [
+      109.606331,
+      -7.368806,
+      109.641761,
+      -7.336572
+     ],
+     "poligon": 48,
+     "layers": [
+      "batas_desa",
+      "pola_ruang",
+      "transportasi",
+      "sungai"
+     ]
+    },
+    {
+     "nama": "Danakerta",
+     "slug": "danakerta",
+     "luas_ha": 543.15,
+     "centroid": [
+      109.537053,
+      -7.357145
+     ],
+     "bbox": [
+      109.518437,
+      -7.373634,
+      109.54784,
+      -7.342816
+     ],
+     "poligon": 65,
+     "layers": [
+      "batas_desa",
+      "pola_ruang",
+      "transportasi",
+      "sungai"
+     ]
+    },
+    {
+     "nama": "Jembangan",
+     "slug": "jembangan",
+     "luas_ha": 577.09,
+     "centroid": [
+      109.581467,
+      -7.304355
+     ],
+     "bbox": [
+      109.56649,
+      -7.316159,
+      109.595424,
+      -7.292372
+     ],
+     "poligon": 131,
+     "layers": [
+      "batas_desa",
+      "pola_ruang",
+      "transportasi",
+      "sungai"
+     ]
+    },
+    {
+     "nama": "Karangsari",
+     "slug": "karangsari",
+     "luas_ha": 481.82,
+     "centroid": [
+      109.568128,
+      -7.341263
+     ],
+     "bbox": [
+      109.550267,
+      -7.358942,
+      109.579387,
+      -7.32751
+     ],
+     "poligon": 62,
+     "layers": [
+      "batas_desa",
+      "pola_ruang",
+      "transportasi",
+      "sungai"
+     ]
+    },
+    {
+     "nama": "Kecepit",
+     "slug": "kecepit",
+     "luas_ha": 761.08,
+     "centroid": [
+      109.557305,
+      -7.354573
+     ],
+     "bbox": [
+      109.546136,
+      -7.370707,
+      109.570576,
+      -7.332326
+     ],
+     "poligon": 46,
+     "layers": [
+      "batas_desa",
+      "pola_ruang",
+      "transportasi",
+      "sungai"
+     ]
+    },
+    {
+     "nama": "Klapa",
+     "slug": "klapa",
+     "luas_ha": 668.55,
+     "centroid": [
+      109.536094,
+      -7.336627
+     ],
+     "bbox": [
+      109.518521,
+      -7.350973,
+      109.550971,
+      -7.323421
+     ],
+     "poligon": 69,
+     "layers": [
+      "batas_desa",
+      "pola_ruang",
+      "transportasi",
+      "sungai"
+     ]
+    },
+    {
+     "nama": "Mlaya",
+     "slug": "mlaya",
+     "luas_ha": 779.2,
+     "centroid": [
+      109.631317,
+      -7.284048
+     ],
+     "bbox": [
+      109.616878,
+      -7.309203,
+      109.648325,
+      -7.263249
+     ],
+     "poligon": 71,
+     "layers": [
+      "batas_desa",
+      "pola_ruang",
+      "transportasi",
+      "sungai"
+     ]
+    },
+    {
+     "nama": "Petuguran",
+     "slug": "petuguran",
+     "luas_ha": 1043.73,
+     "centroid": [
+      109.615493,
+      -7.320633
+     ],
+     "bbox": [
+      109.598941,
+      -7.340751,
+      109.631801,
+      -7.299107
+     ],
+     "poligon": 50,
+     "layers": [
+      "batas_desa",
+      "pola_ruang",
+      "transportasi",
+      "sungai"
+     ]
+    },
+    {
+     "nama": "Punggelan",
+     "slug": "punggelan",
+     "luas_ha": 1172.87,
+     "centroid": [
+      109.584754,
+      -7.335486
+     ],
+     "bbox": [
+      109.562297,
+      -7.357538,
+      109.608849,
+      -7.312328
+     ],
+     "poligon": 112,
+     "layers": [
+      "batas_desa",
+      "pola_ruang",
+      "transportasi",
+      "sungai"
+     ]
+    },
+    {
+     "nama": "Purwasana",
+     "slug": "purwasana",
+     "luas_ha": 660.26,
+     "centroid": [
+      109.597456,
+      -7.319689
+     ],
+     "bbox": [
+      109.585808,
+      -7.337568,
+      109.60878,
+      -7.294965
+     ],
+     "poligon": 89,
+     "layers": [
+      "batas_desa",
+      "pola_ruang",
+      "transportasi",
+      "sungai"
+     ]
+    },
+    {
+     "nama": "Sambong",
+     "slug": "sambong",
+     "luas_ha": 671.02,
+     "centroid": [
+      109.550931,
+      -7.382316
+     ],
+     "bbox": [
+      109.534387,
+      -7.398688,
+      109.565124,
+      -7.370069
+     ],
+     "poligon": 72,
+     "layers": [
+      "batas_desa",
+      "pola_ruang",
+      "transportasi",
+      "sungai"
+     ]
+    },
+    {
+     "nama": "Sawangan",
+     "slug": "sawangan",
+     "luas_ha": 537.12,
+     "centroid": [
+      109.579074,
+      -7.371206
+     ],
+     "bbox": [
+      109.564497,
+      -7.391788,
+      109.591688,
+      -7.35633
+     ],
+     "poligon": 40,
+     "layers": [
+      "batas_desa",
+      "pola_ruang",
+      "transportasi",
+      "sungai"
+     ]
+    },
+    {
+     "nama": "Sidarata",
+     "slug": "sidarata",
+     "luas_ha": 437.13,
+     "centroid": [
+      109.593729,
+      -7.363964
+     ],
+     "bbox": [
+      109.581227,
+      -7.381491,
+      109.603503,
+      -7.350314
+     ],
+     "poligon": 36,
+     "layers": [
+      "batas_desa",
+      "pola_ruang",
+      "transportasi",
+      "sungai"
+     ]
+    },
+    {
+     "nama": "Tanjungtirta",
+     "slug": "tanjungtirta",
+     "luas_ha": 758.56,
+     "centroid": [
+      109.636406,
+      -7.330777
+     ],
+     "bbox": [
+      109.623319,
+      -7.349266,
+      109.64888,
+      -7.311546
+     ],
+     "poligon": 94,
+     "layers": [
+      "batas_desa",
+      "pola_ruang",
+      "transportasi",
+      "sungai"
+     ]
+    },
+    {
+     "nama": "Tlaga",
+     "slug": "tlaga",
+     "luas_ha": 978.27,
+     "centroid": [
+      109.637742,
+      -7.297382
+     ],
+     "bbox": [
+      109.615234,
+      -7.313845,
+      109.658877,
+      -7.274117
+     ],
+     "poligon": 113,
+     "layers": [
+      "batas_desa",
+      "pola_ruang",
+      "transportasi",
+      "sungai"
+     ]
+    },
+    {
+     "nama": "Tribuana",
+     "slug": "tribuana",
+     "luas_ha": 329.73,
+     "centroid": [
+      109.569998,
+      -7.379699
+     ],
+     "bbox": [
+      109.559425,
+      -7.391788,
+      109.582332,
+      -7.367426
+     ],
+     "poligon": 34,
+     "layers": [
+      "batas_desa",
+      "pola_ruang",
+      "transportasi",
+      "sungai"
+     ]
+    }
+   ]
+  },
+  "pagentan": {
+   "nama": "Pagentan",
+   "desa": [
+    {
+     "nama": "Aribaya",
+     "slug": "aribaya",
+     "luas_ha": 255.86,
+     "centroid": [
+      109.764349,
+      -7.337297
+     ],
+     "bbox": [
+      109.748572,
+      -7.354735,
+      109.775402,
+      -7.329448
+     ],
+     "poligon": 26,
+     "layers": [
+      "batas_desa",
+      "pola_ruang",
+      "transportasi",
+      "sungai"
+     ]
+    },
+    {
+     "nama": "Babadan",
+     "slug": "babadan",
+     "luas_ha": 420.61,
+     "centroid": [
+      109.830648,
+      -7.288174
+     ],
+     "bbox": [
+      109.814912,
+      -7.306704,
+      109.843606,
+      -7.266526
+     ],
+     "poligon": 23,
+     "layers": [
+      "batas_desa",
+      "pola_ruang",
+      "transportasi",
+      "sungai"
+     ]
+    },
+    {
+     "nama": "Gumingsir",
+     "slug": "gumingsir",
+     "luas_ha": 558.34,
+     "centroid": [
+      109.769351,
+      -7.324402
+     ],
+     "bbox": [
+      109.751106,
+      -7.334666,
+      109.784736,
+      -7.311306
+     ],
+     "poligon": 127,
+     "layers": [
+      "batas_desa",
+      "pola_ruang",
+      "transportasi",
+      "sungai"
+     ]
+    },
+    {
+     "nama": "Kalitlaga",
+     "slug": "kalitlaga",
+     "luas_ha": 245.16,
+     "centroid": [
+      109.78677,
+      -7.306772
+     ],
+     "bbox": [
+      109.775848,
+      -7.312876,
+      109.79709,
+      -7.298867
+     ],
+     "poligon": 27,
+     "layers": [
+      "batas_desa",
+      "pola_ruang",
+      "transportasi",
+      "sungai"
+     ]
+    },
+    {
+     "nama": "Karangnangka",
+     "slug": "karangnangka",
+     "luas_ha": 259.11,
+     "centroid": [
+      109.778578,
+      -7.340885
+     ],
+     "bbox": [
+      109.768991,
+      -7.348954,
+      109.787003,
+      -7.331527
+     ],
+     "poligon": 36,
+     "layers": [
+      "batas_desa",
+      "pola_ruang",
+      "transportasi",
+      "sungai"
+     ]
+    },
+    {
+     "nama": "Karekan",
+     "slug": "karekan",
+     "luas_ha": 352.86,
+     "centroid": [
+      109.784982,
+      -7.283193
+     ],
+     "bbox": [
+      109.772557,
+      -7.291276,
+      109.800333,
+      -7.272774
+     ],
+     "poligon": 65,
+     "layers": [
+      "batas_desa",
+      "pola_ruang",
+      "transportasi",
+      "sungai"
+     ]
+    },
+    {
+     "nama": "Kasmaran",
+     "slug": "kasmaran",
+     "luas_ha": 383.46,
+     "centroid": [
+      109.810112,
+      -7.285327
+     ],
+     "bbox": [
+      109.798657,
+      -7.299892,
+      109.820626,
+      -7.271365
+     ],
+     "poligon": 15,
+     "layers": [
+      "batas_desa",
+      "pola_ruang",
+      "transportasi",
+      "sungai"
+     ]
+    },
+    {
+     "nama": "Kayuares",
+     "slug": "kayuares",
+     "luas_ha": 169.79,
+     "centroid": [
+      109.784124,
+      -7.316707
+     ],
+     "bbox": [
+      109.775133,
+      -7.324251,
+      109.79213,
+      -7.308195
+     ],
+     "poligon": 22,
+     "layers": [
+      "batas_desa",
+      "pola_ruang",
+      "transportasi",
+      "sungai"
+     ]
+    },
+    {
+     "nama": "Larangan",
+     "slug": "larangan",
+     "luas_ha": 216.02,
+     "centroid": [
+      109.779703,
+      -7.35438
+     ],
+     "bbox": [
+      109.769423,
+      -7.365037,
+      109.78692,
+      -7.344026
+     ],
+     "poligon": 36,
+     "layers": [
+      "batas_desa",
+      "pola_ruang",
+      "transportasi",
+      "sungai"
+     ]
+    },
+    {
+     "nama": "Majasari",
+     "slug": "majasari",
+     "luas_ha": 337.36,
+     "centroid": [
+      109.819693,
+      -7.278969
+     ],
+     "bbox": [
+      109.808266,
+      -7.299649,
+      109.829259,
+      -7.264643
+     ],
+     "poligon": 18,
+     "layers": [
+      "batas_desa",
+      "pola_ruang",
+      "transportasi",
+      "sungai"
+     ]
+    },
+    {
+     "nama": "Metawana",
+     "slug": "metawana",
+     "luas_ha": 239.2,
+     "centroid": [
+      109.799055,
+      -7.316876
+     ],
+     "bbox": [
+      109.789576,
+      -7.32482,
+      109.810396,
+      -7.309199
+     ],
+     "poligon": 12,
+     "layers": [
+      "batas_desa",
+      "pola_ruang",
+      "transportasi",
+      "sungai"
+     ]
+    },
+    {
+     "nama": "Nagasari",
+     "slug": "nagasari",
+     "luas_ha": 368.55,
+     "centroid": [
+      109.741744,
+      -7.32896
+     ],
+     "bbox": [
+      109.725886,
+      -7.33965,
+      109.753701,
+      -7.319572
+     ],
+     "poligon": 129,
+     "layers": [
+      "batas_desa",
+      "pola_ruang",
+      "transportasi",
+      "sungai"
+     ]
+    },
+    {
+     "nama": "Pagentan",
+     "slug": "pagentan",
+     "luas_ha": 288.45,
+     "centroid": [
+      109.808794,
+      -7.305652
+     ],
+     "bbox": [
+      109.796643,
+      -7.315501,
+      109.818498,
+      -7.293157
+     ],
+     "poligon": 31,
+     "layers": [
+      "batas_desa",
+      "pola_ruang",
+      "transportasi",
+      "sungai"
+     ]
+    },
+    {
+     "nama": "Plumbungan",
+     "slug": "plumbungan",
+     "luas_ha": 403.39,
+     "centroid": [
+      109.794816,
+      -7.295976
+     ],
+     "bbox": [
+      109.780338,
+      -7.308345,
+      109.809299,
+      -7.287553
+     ],
+     "poligon": 52,
+     "layers": [
+      "batas_desa",
+      "pola_ruang",
+      "transportasi",
+      "sungai"
+     ]
+    },
+    {
+     "nama": "Sokaraja",
+     "slug": "sokaraja",
+     "luas_ha": 242.65,
+     "centroid": [
+      109.792421,
+      -7.328947
+     ],
+     "bbox": [
+      109.78318,
+      -7.343621,
+      109.808663,
+      -7.319281
+     ],
+     "poligon": 34,
+     "layers": [
+      "batas_desa",
+      "pola_ruang",
+      "transportasi",
+      "sungai"
+     ]
+    },
+    {
+     "nama": "Tegaljeruk",
+     "slug": "tegaljeruk",
+     "luas_ha": 259.76,
+     "centroid": [
+      109.832345,
+      -7.270455
+     ],
+     "bbox": [
+      109.824558,
+      -7.282667,
+      109.840828,
+      -7.260676
+     ],
+     "poligon": 10,
+     "layers": [
+      "batas_desa",
+      "pola_ruang",
+      "transportasi",
+      "sungai"
+     ]
+    }
+   ]
+  },
+  "wanayasa": {
+   "nama": "Wanayasa",
+   "desa": [
+    {
+     "nama": "Balun",
+     "slug": "balun",
+     "luas_ha": 689.69,
+     "centroid": [
+      109.712675,
+      -7.224069
+     ],
+     "bbox": [
+      109.704437,
+      -7.248897,
+      109.722019,
+      -7.198234
+     ],
+     "poligon": 25,
+     "layers": [
+      "batas_desa",
+      "pola_ruang",
+      "transportasi",
+      "sungai"
+     ]
+    },
+    {
+     "nama": "Bantar",
+     "slug": "bantar",
+     "luas_ha": 329.36,
+     "centroid": [
+      109.743287,
+      -7.298778
+     ],
+     "bbox": [
+      109.73308,
+      -7.309726,
+      109.750956,
+      -7.285678
+     ],
+     "poligon": 54,
+     "layers": [
+      "batas_desa",
+      "pola_ruang",
+      "transportasi",
+      "sungai"
+     ]
+    },
+    {
+     "nama": "Dawuhan",
+     "slug": "dawuhan",
+     "luas_ha": 182.35,
+     "centroid": [
+      109.761943,
+      -7.272222
+     ],
+     "bbox": [
+      109.753786,
+      -7.278537,
+      109.77037,
+      -7.26567
+     ],
+     "poligon": 56,
+     "layers": [
+      "batas_desa",
+      "pola_ruang",
+      "transportasi",
+      "sungai"
+     ]
+    },
+    {
+     "nama": "Jatilawang",
+     "slug": "jatilawang",
+     "luas_ha": 1175.07,
+     "centroid": [
+      109.755868,
+      -7.1976
+     ],
+     "bbox": [
+      109.729588,
+      -7.221316,
+      109.770878,
+      -7.176575
+     ],
+     "poligon": 18,
+     "layers": [
+      "batas_desa",
+      "pola_ruang",
+      "transportasi",
+      "sungai"
+     ]
+    },
+    {
+     "nama": "Karangtengah",
+     "slug": "karangtengah",
+     "luas_ha": 324.53,
+     "centroid": [
+      109.763543,
+      -7.312232
+     ],
+     "bbox": [
+      109.751237,
+      -7.324689,
+      109.777352,
+      -7.302043
+     ],
+     "poligon": 115,
+     "layers": [
+      "batas_desa",
+      "pola_ruang",
+      "transportasi",
+      "sungai"
+     ]
+    },
+    {
+     "nama": "Kasimpar",
+     "slug": "kasimpar",
+     "luas_ha": 413.63,
+     "centroid": [
+      109.774357,
+      -7.194684
+     ],
+     "bbox": [
+      109.767393,
+      -7.215381,
+      109.782632,
+      -7.17882
+     ],
+     "poligon": 6,
+     "layers": [
+      "batas_desa",
+      "pola_ruang",
+      "transportasi",
+      "sungai"
+     ]
+    },
+    {
+     "nama": "Kubang",
+     "slug": "kubang",
+     "luas_ha": 324.16,
+     "centroid": [
+      109.749622,
+      -7.275715
+     ],
+     "bbox": [
+      109.74227,
+      -7.291139,
+      109.756719,
+      -7.258502
+     ],
+     "poligon": 16,
+     "layers": [
+      "batas_desa",
+      "pola_ruang",
+      "transportasi",
+      "sungai"
+     ]
+    },
+    {
+     "nama": "Legoksayem",
+     "slug": "legoksayem",
+     "luas_ha": 148.71,
+     "centroid": [
+      109.776258,
+      -7.21873
+     ],
+     "bbox": [
+      109.769105,
+      -7.23068,
+      109.783707,
+      -7.208124
+     ],
+     "poligon": 24,
+     "layers": [
+      "batas_desa",
+      "pola_ruang",
+      "transportasi",
+      "sungai"
+     ]
+    },
+    {
+     "nama": "Pandansari",
+     "slug": "pandansari",
+     "luas_ha": 513.31,
+     "centroid": [
+      109.764769,
+      -7.298287
+     ],
+     "bbox": [
+      109.748812,
+      -7.313556,
+      109.782784,
+      -7.286871
+     ],
+     "poligon": 97,
+     "layers": [
+      "batas_desa",
+      "pola_ruang",
+      "transportasi",
+      "sungai"
+     ]
+    },
+    {
+     "nama": "Pegergunung",
+     "slug": "pegergunung",
+     "luas_ha": 377.85,
+     "centroid": [
+      109.765516,
+      -7.284538
+     ],
+     "bbox": [
+      109.753311,
+      -7.295269,
+      109.777688,
+      -7.273502
+     ],
+     "poligon": 60,
+     "layers": [
+      "batas_desa",
+      "pola_ruang",
+      "transportasi",
+      "sungai"
+     ]
+    },
+    {
+     "nama": "Penanggungan",
+     "slug": "penanggungan",
+     "luas_ha": 1045.19,
+     "centroid": [
+      109.794936,
+      -7.188257
+     ],
+     "bbox": [
+      109.776774,
+      -7.209128,
+      109.81975,
+      -7.170981
+     ],
+     "poligon": 40,
+     "layers": [
+      "batas_desa",
+      "pola_ruang",
+      "transportasi",
+      "sungai"
+     ]
+    },
+    {
+     "nama": "Pesantren",
+     "slug": "pesantren",
+     "luas_ha": 275.22,
+     "centroid": [
+      109.727803,
+      -7.241999
+     ],
+     "bbox": [
+      109.717253,
+      -7.249581,
+      109.738424,
+      -7.233794
+     ],
+     "poligon": 19,
+     "layers": [
+      "batas_desa",
+      "pola_ruang",
+      "transportasi",
+      "sungai"
+     ]
+    },
+    {
+     "nama": "Susukan",
+     "slug": "susukan",
+     "luas_ha": 333.97,
+     "centroid": [
+      109.757148,
+      -7.259399
+     ],
+     "bbox": [
+      109.742568,
+      -7.268349,
+      109.768577,
+      -7.251923
+     ],
+     "poligon": 40,
+     "layers": [
+      "batas_desa",
+      "pola_ruang",
+      "transportasi",
+      "sungai"
+     ]
+    },
+    {
+     "nama": "Suwidak",
+     "slug": "suwidak",
+     "luas_ha": 462.3,
+     "centroid": [
+      109.741332,
+      -7.314499
+     ],
+     "bbox": [
+      109.727023,
+      -7.324397,
+      109.75445,
+      -7.301976
+     ],
+     "poligon": 171,
+     "layers": [
+      "batas_desa",
+      "pola_ruang",
+      "transportasi",
+      "sungai"
+     ]
+    },
+    {
+     "nama": "Tempuran",
+     "slug": "tempuran",
+     "luas_ha": 862.02,
+     "centroid": [
+      109.730505,
+      -7.224188
+     ],
+     "bbox": [
+      109.716347,
+      -7.245443,
+      109.747588,
+      -7.199535
+     ],
+     "poligon": 22,
+     "layers": [
+      "batas_desa",
+      "pola_ruang",
+      "transportasi",
+      "sungai"
+     ]
+    },
+    {
+     "nama": "Wanaraja",
+     "slug": "wanaraja",
+     "luas_ha": 944.43,
+     "centroid": [
+      109.749385,
+      -7.217859
+     ],
+     "bbox": [
+      109.727145,
+      -7.235582,
+      109.77446,
+      -7.200381
+     ],
+     "poligon": 16,
+     "layers": [
+      "batas_desa",
+      "pola_ruang",
+      "transportasi",
+      "sungai"
+     ]
+    },
+    {
+     "nama": "Wanayasa",
+     "slug": "wanayasa",
+     "luas_ha": 649.99,
+     "centroid": [
+      109.752746,
+      -7.243642
+     ],
+     "bbox": [
+      109.736431,
+      -7.259272,
+      109.767666,
+      -7.226095
+     ],
+     "poligon": 27,
+     "layers": [
+      "batas_desa",
+      "pola_ruang",
+      "transportasi",
+      "sungai"
+     ]
+    }
+   ]
+  },
+  "karangkobar": {
+   "nama": "Karangkobar",
+   "desa": [
+    {
+     "nama": "Ambal",
+     "slug": "ambal",
+     "luas_ha": 273.87,
+     "centroid": [
+      109.716287,
+      -7.270645
+     ],
+     "bbox": [
+      109.706683,
+      -7.278817,
+      109.727168,
+      -7.263045
+     ],
+     "poligon": 44,
+     "layers": [
+      "batas_desa",
+      "pola_ruang",
+      "transportasi",
+      "sungai"
+     ]
+    },
+    {
+     "nama": "Binangun",
+     "slug": "binangun",
+     "luas_ha": 353.31,
+     "centroid": [
+      109.71527,
+      -7.256084
+     ],
+     "bbox": [
+      109.703019,
+      -7.264894,
+      109.726864,
+      -7.24813
+     ],
+     "poligon": 27,
+     "layers": [
+      "batas_desa",
+      "pola_ruang",
+      "transportasi",
+      "sungai"
+     ]
+    },
+    {
+     "nama": "Gumelar",
+     "slug": "gumelar",
+     "luas_ha": 317.48,
+     "centroid": [
+      109.730381,
+      -7.29662
+     ],
+     "bbox": [
+      109.721066,
+      -7.307621,
+      109.739428,
+      -7.285731
+     ],
+     "poligon": 39,
+     "layers": [
+      "batas_desa",
+      "pola_ruang",
+      "transportasi",
+      "sungai"
+     ]
+    },
+    {
+     "nama": "Jlegong",
+     "slug": "jlegong",
+     "luas_ha": 149.67,
+     "centroid": [
+      109.704097,
+      -7.267973
+     ],
+     "bbox": [
+      109.699077,
+      -7.278836,
+      109.709225,
+      -7.258357
+     ],
+     "poligon": 63,
+     "layers": [
+      "batas_desa",
+      "pola_ruang",
+      "transportasi",
+      "sungai"
+     ]
+    },
+    {
+     "nama": "Karanggondang",
+     "slug": "karanggondang",
+     "luas_ha": 251.63,
+     "centroid": [
+      109.696462,
+      -7.260484
+     ],
+     "bbox": [
+      109.688141,
+      -7.270723,
+      109.705688,
+      -7.250962
+     ],
+     "poligon": 14,
+     "layers": [
+      "batas_desa",
+      "pola_ruang",
+      "transportasi",
+      "sungai"
+     ]
+    },
+    {
+     "nama": "Karangkobar",
+     "slug": "karangkobar",
+     "luas_ha": 259.57,
+     "centroid": [
+      109.730469,
+      -7.265375
+     ],
+     "bbox": [
+      109.72207,
+      -7.275494,
+      109.744599,
+      -7.252189
+     ],
+     "poligon": 10,
+     "layers": [
+      "batas_desa",
+      "pola_ruang",
+      "transportasi",
+      "sungai"
+     ]
+    },
+    {
+     "nama": "Leksana",
+     "slug": "leksana",
+     "luas_ha": 276.58,
+     "centroid": [
+      109.737229,
+      -7.260708
+     ],
+     "bbox": [
+      109.726507,
+      -7.271764,
+      109.745669,
+      -7.249042
+     ],
+     "poligon": 12,
+     "layers": [
+      "batas_desa",
+      "pola_ruang",
+      "transportasi",
+      "sungai"
+     ]
+    },
+    {
+     "nama": "Pagerpelah",
+     "slug": "pagerpelah",
+     "luas_ha": 470.45,
+     "centroid": [
+      109.695549,
+      -7.282214
+     ],
+     "bbox": [
+      109.684877,
+      -7.29726,
+      109.706548,
+      -7.270174
+     ],
+     "poligon": 110,
+     "layers": [
+      "batas_desa",
+      "pola_ruang",
+      "transportasi",
+      "sungai"
+     ]
+    },
+    {
+     "nama": "Pasuruhan",
+     "slug": "pasuruhan",
+     "luas_ha": 371.12,
+     "centroid": [
+      109.678611,
+      -7.276675
+     ],
+     "bbox": [
+      109.668358,
+      -7.293284,
+      109.689803,
+      -7.263161
+     ],
+     "poligon": 93,
+     "layers": [
+      "batas_desa",
+      "pola_ruang",
+      "transportasi",
+      "sungai"
+     ]
+    },
+    {
+     "nama": "Paweden",
+     "slug": "paweden",
+     "luas_ha": 473.92,
+     "centroid": [
+      109.717414,
+      -7.306416
+     ],
+     "bbox": [
+      109.702942,
+      -7.320778,
+      109.729518,
+      -7.292183
+     ],
+     "poligon": 90,
+     "layers": [
+      "batas_desa",
+      "pola_ruang",
+      "transportasi",
+      "sungai"
+     ]
+    },
+    {
+     "nama": "Purwadadi",
+     "slug": "purwadadi",
+     "luas_ha": 204.41,
+     "centroid": [
+      109.738474,
+      -7.280766
+     ],
+     "bbox": [
+      109.730611,
+      -7.290333,
+      109.746154,
+      -7.273887
+     ],
+     "poligon": 17,
+     "layers": [
+      "batas_desa",
+      "pola_ruang",
+      "transportasi",
+      "sungai"
+     ]
+    },
+    {
+     "nama": "Sampang",
+     "slug": "sampang",
+     "luas_ha": 296.05,
+     "centroid": [
+      109.723511,
+      -7.282853
+     ],
+     "bbox": [
+      109.713832,
+      -7.293381,
+      109.733752,
+      -7.273872
+     ],
+     "poligon": 28,
+     "layers": [
+      "batas_desa",
+      "pola_ruang",
+      "transportasi",
+      "sungai"
+     ]
+    },
+    {
+     "nama": "Slatri",
+     "slug": "slatri",
+     "luas_ha": 376.84,
+     "centroid": [
+      109.708223,
+      -7.291075
+     ],
+     "bbox": [
+      109.698802,
+      -7.306442,
+      109.716822,
+      -7.276591
+     ],
+     "poligon": 82,
+     "layers": [
+      "batas_desa",
+      "pola_ruang",
+      "transportasi",
+      "sungai"
+     ]
+    }
+   ]
+  },
+  "pandanarum": {
+   "nama": "Pandanarum",
+   "desa": [
+    {
+     "nama": "Beji",
+     "slug": "beji",
+     "luas_ha": 569.93,
+     "centroid": [
+      109.610328,
+      -7.253906
+     ],
+     "bbox": [
+      109.594953,
+      -7.270052,
+      109.624603,
+      -7.236736
+     ],
+     "poligon": 123,
+     "layers": [
+      "batas_desa",
+      "pola_ruang",
+      "transportasi",
+      "sungai"
+     ]
+    },
+    {
+     "nama": "Lawen",
+     "slug": "lawen",
+     "luas_ha": 743.95,
+     "centroid": [
+      109.571474,
+      -7.23336
+     ],
+     "bbox": [
+      109.544776,
+      -7.245105,
+      109.590932,
+      -7.220895
+     ],
+     "poligon": 253,
+     "layers": [
+      "batas_desa",
+      "pola_ruang",
+      "transportasi",
+      "sungai"
+     ]
+    },
+    {
+     "nama": "Pandanarum",
+     "slug": "pandanarum",
+     "luas_ha": 1019.48,
+     "centroid": [
+      109.606559,
+      -7.280768
+     ],
+     "bbox": [
+      109.592072,
+      -7.300575,
+      109.620222,
+      -7.261423
+     ],
+     "poligon": 160,
+     "layers": [
+      "batas_desa",
+      "pola_ruang",
+      "transportasi",
+      "sungai"
+     ]
+    },
+    {
+     "nama": "Pasegeran",
+     "slug": "pasegeran",
+     "luas_ha": 849.82,
+     "centroid": [
+      109.579939,
+      -7.257844
+     ],
+     "bbox": [
+      109.558333,
+      -7.273053,
+      109.596141,
+      -7.242714
+     ],
+     "poligon": 115,
+     "layers": [
+      "batas_desa",
+      "pola_ruang",
+      "transportasi",
+      "sungai"
+     ]
+    },
+    {
+     "nama": "Pingitlor",
+     "slug": "pingitlor",
+     "luas_ha": 592.01,
+     "centroid": [
+      109.559374,
+      -7.246649
+     ],
+     "bbox": [
+      109.538612,
+      -7.259611,
+      109.581922,
+      -7.237792
+     ],
+     "poligon": 136,
+     "layers": [
+      "batas_desa",
+      "pola_ruang",
+      "transportasi",
+      "sungai"
+     ]
+    },
+    {
+     "nama": "Pringamba",
+     "slug": "pringamba",
+     "luas_ha": 705.12,
+     "centroid": [
+      109.609877,
+      -7.235926
+     ],
+     "bbox": [
+      109.588872,
+      -7.249465,
+      109.62927,
+      -7.219754
+     ],
+     "poligon": 167,
+     "layers": [
+      "batas_desa",
+      "pola_ruang",
+      "transportasi",
+      "sungai"
+     ]
+    },
+    {
+     "nama": "Sinduaji",
+     "slug": "sinduaji",
+     "luas_ha": 477.55,
+     "centroid": [
+      109.586925,
+      -7.279488
+     ],
+     "bbox": [
+      109.574953,
+      -7.293084,
+      109.597475,
+      -7.26725
+     ],
+     "poligon": 82,
+     "layers": [
+      "batas_desa",
+      "pola_ruang",
+      "transportasi",
+      "sungai"
+     ]
+    },
+    {
+     "nama": "Sirongge",
+     "slug": "sirongge",
+     "luas_ha": 849.25,
+     "centroid": [
+      109.598966,
+      -7.22099
+     ],
+     "bbox": [
+      109.57956,
+      -7.235667,
+      109.61723,
+      -7.205857
+     ],
+     "poligon": 66,
+     "layers": [
+      "batas_desa",
+      "pola_ruang",
+      "transportasi",
+      "sungai"
+     ]
+    }
+   ]
+  },
+  "kalibening": {
+   "nama": "Kalibening",
+   "desa": [
+    {
+     "nama": "Asinan",
+     "slug": "asinan",
+     "luas_ha": 603.61,
+     "centroid": [
+      109.651449,
+      -7.271878
+     ],
+     "bbox": [
+      109.636774,
+      -7.290026,
+      109.662291,
+      -7.257069
+     ],
+     "poligon": 100,
+     "layers": [
+      "batas_desa",
+      "pola_ruang",
+      "transportasi",
+      "sungai"
+     ]
+    },
+    {
+     "nama": "Bedana",
+     "slug": "bedana",
+     "luas_ha": 397.27,
+     "centroid": [
+      109.641552,
+      -7.187571
+     ],
+     "bbox": [
+      109.634314,
+      -7.207171,
+      109.651872,
+      -7.172391
+     ],
+     "poligon": 16,
+     "layers": [
+      "batas_desa",
+      "pola_ruang",
+      "transportasi",
+      "sungai"
+     ]
+    },
+    {
+     "nama": "Gununglangit",
+     "slug": "gununglangit",
+     "luas_ha": 375.21,
+     "centroid": [
+      109.629252,
+      -7.198239
+     ],
+     "bbox": [
+      109.614849,
+      -7.211333,
+      109.636888,
+      -7.179893
+     ],
+     "poligon": 17,
+     "layers": [
+      "batas_desa",
+      "pola_ruang",
+      "transportasi",
+      "sungai"
+     ]
+    },
+    {
+     "nama": "Kalibening",
+     "slug": "kalibening",
+     "luas_ha": 1069.36,
+     "centroid": [
+      109.633035,
+      -7.245333
+     ],
+     "bbox": [
+      109.61708,
+      -7.273566,
+      109.646136,
+      -7.212537
+     ],
+     "poligon": 51,
+     "layers": [
+      "batas_desa",
+      "pola_ruang",
+      "transportasi",
+      "sungai"
+     ]
+    },
+    {
+     "nama": "Kalibombong",
+     "slug": "kalibombong",
+     "luas_ha": 977.93,
+     "centroid": [
+      109.666816,
+      -7.254566
+     ],
+     "bbox": [
+      109.640701,
+      -7.267046,
+      109.69239,
+      -7.240543
+     ],
+     "poligon": 189,
+     "layers": [
+      "batas_desa",
+      "pola_ruang",
+      "transportasi",
+      "sungai"
+     ]
+    },
+    {
+     "nama": "Kalisatkidul",
+     "slug": "kalisatkidul",
+     "luas_ha": 724.63,
+     "centroid": [
+      109.687016,
+      -7.243078
+     ],
+     "bbox": [
+      109.664142,
+      -7.254472,
+      109.71305,
+      -7.230909
+     ],
+     "poligon": 23,
+     "layers": [
+      "batas_desa",
+      "pola_ruang",
+      "transportasi",
+      "sungai"
+     ]
+    },
+    {
+     "nama": "Karanganyar.",
+     "slug": "karanganyar",
+     "luas_ha": 309.86,
+     "centroid": [
+      109.656132,
+      -7.198387
+     ],
+     "bbox": [
+      109.641851,
+      -7.210911,
+      109.665421,
+      -7.177635
+     ],
+     "poligon": 22,
+     "layers": [
+      "batas_desa",
+      "pola_ruang",
+      "transportasi",
+      "sungai"
+     ]
+    },
+    {
+     "nama": "Kasinoman",
+     "slug": "kasinoman",
+     "luas_ha": 1038.99,
+     "centroid": [
+      109.690657,
+      -7.210354
+     ],
+     "bbox": [
+      109.669298,
+      -7.228528,
+      109.707397,
+      -7.195027
+     ],
+     "poligon": 11,
+     "layers": [
+      "batas_desa",
+      "pola_ruang",
+      "transportasi",
+      "sungai"
+     ]
+    },
+    {
+     "nama": "Kertosari",
+     "slug": "kertosari",
+     "luas_ha": 402.84,
+     "centroid": [
+      109.678304,
+      -7.223992
+     ],
+     "bbox": [
+      109.664483,
+      -7.233692,
+      109.69341,
+      -7.211634
+     ],
+     "poligon": 14,
+     "layers": [
+      "batas_desa",
+      "pola_ruang",
+      "transportasi",
+      "sungai"
+     ]
+    },
+    {
+     "nama": "Majatengah",
+     "slug": "majatengah",
+     "luas_ha": 653.03,
+     "centroid": [
+      109.651828,
+      -7.231554
+     ],
+     "bbox": [
+      109.63502,
+      -7.245129,
+      109.670077,
+      -7.213708
+     ],
+     "poligon": 32,
+     "layers": [
+      "batas_desa",
+      "pola_ruang",
+      "transportasi",
+      "sungai"
+     ]
+    },
+    {
+     "nama": "Plorengan",
+     "slug": "plorengan",
+     "luas_ha": 846.19,
+     "centroid": [
+      109.673996,
+      -7.191851
+     ],
+     "bbox": [
+      109.660906,
+      -7.2137,
+      109.690558,
+      -7.172821
+     ],
+     "poligon": 25,
+     "layers": [
+      "batas_desa",
+      "pola_ruang",
+      "transportasi",
+      "sungai"
+     ]
+    },
+    {
+     "nama": "Sembawa",
+     "slug": "sembawa",
+     "luas_ha": 351.14,
+     "centroid": [
+      109.667173,
+      -7.275978
+     ],
+     "bbox": [
+      109.658043,
+      -7.291586,
+      109.676727,
+      -7.263865
+     ],
+     "poligon": 145,
+     "layers": [
+      "batas_desa",
+      "pola_ruang",
+      "transportasi",
+      "sungai"
+     ]
+    },
+    {
+     "nama": "Sidakangen",
+     "slug": "sidakangen",
+     "luas_ha": 434.01,
+     "centroid": [
+      109.65742,
+      -7.218193
+     ],
+     "bbox": [
+      109.640518,
+      -7.231701,
+      109.670693,
+      -7.201188
+     ],
+     "poligon": 40,
+     "layers": [
+      "batas_desa",
+      "pola_ruang",
+      "transportasi",
+      "sungai"
+     ]
+    },
+    {
+     "nama": "Sikumpul",
+     "slug": "sikumpul",
+     "luas_ha": 412.77,
+     "centroid": [
+      109.625255,
+      -7.21329
+     ],
+     "bbox": [
+      109.610299,
+      -7.226571,
+      109.642473,
+      -7.204158
+     ],
+     "poligon": 16,
+     "layers": [
+      "batas_desa",
+      "pola_ruang",
+      "transportasi",
+      "sungai"
+     ]
+    },
+    {
+     "nama": "Sirukem",
+     "slug": "sirukem",
+     "luas_ha": 303.81,
+     "centroid": [
+      109.697597,
+      -7.23416
+     ],
+     "bbox": [
+      109.684332,
+      -7.241204,
+      109.708117,
+      -7.224845
+     ],
+     "poligon": 8,
+     "layers": [
+      "batas_desa",
+      "pola_ruang",
+      "transportasi",
+      "sungai"
+     ]
+    },
+    {
+     "nama": "Sirukun",
+     "slug": "sirukun",
+     "luas_ha": 397.29,
+     "centroid": [
+      109.651778,
+      -7.189293
+     ],
+     "bbox": [
+      109.640401,
+      -7.208842,
+      109.662077,
+      -7.174871
+     ],
+     "poligon": 13,
+     "layers": [
+      "batas_desa",
+      "pola_ruang",
+      "transportasi",
+      "sungai"
+     ]
+    }
+   ]
+  },
+  "pejawaran": {
+   "nama": "Pejawaran",
+   "desa": [
+    {
+     "nama": "Beji",
+     "slug": "beji",
+     "luas_ha": 334.35,
+     "centroid": [
+      109.840032,
+      -7.252545
+     ],
+     "bbox": [
+      109.832179,
+      -7.271276,
+      109.84705,
+      -7.235936
+     ],
+     "poligon": 19,
+     "layers": [
+      "batas_desa",
+      "pola_ruang",
+      "transportasi",
+      "sungai"
+     ]
+    },
+    {
+     "nama": "Biting",
+     "slug": "biting",
+     "luas_ha": 221.98,
+     "centroid": [
+      109.782182,
+      -7.262126
+     ],
+     "bbox": [
+      109.770954,
+      -7.278584,
+      109.790325,
+      -7.244951
+     ],
+     "poligon": 38,
+     "layers": [
+      "batas_desa",
+      "pola_ruang",
+      "transportasi",
+      "sungai"
+     ]
+    },
+    {
+     "nama": "Condongcampur",
+     "slug": "condongcampur",
+     "luas_ha": 279.1,
+     "centroid": [
+      109.859202,
+      -7.228678
+     ],
+     "bbox": [
+      109.847447,
+      -7.238115,
+      109.870195,
+      -7.217976
+     ],
+     "poligon": 16,
+     "layers": [
+      "batas_desa",
+      "pola_ruang",
+      "transportasi",
+      "sungai"
+     ]
+    },
+    {
+     "nama": "Darmayasa",
+     "slug": "darmayasa",
+     "luas_ha": 487.29,
+     "centroid": [
+      109.798234,
+      -7.270605
+     ],
+     "bbox": [
+      109.785898,
+      -7.282647,
+      109.81001,
+      -7.254682
+     ],
+     "poligon": 37,
+     "layers": [
+      "batas_desa",
+      "pola_ruang",
+      "transportasi",
+      "sungai"
+     ]
+    },
+    {
+     "nama": "Gembol",
+     "slug": "gembol",
+     "luas_ha": 206.46,
+     "centroid": [
+      109.860108,
+      -7.216547
+     ],
+     "bbox": [
+      109.851222,
+      -7.225643,
+      109.869095,
+      -7.206612
+     ],
+     "poligon": 23,
+     "layers": [
+      "batas_desa",
+      "pola_ruang",
+      "transportasi",
+      "sungai"
+     ]
+    },
+    {
+     "nama": "Giritirta",
+     "slug": "giritirta",
+     "luas_ha": 316.42,
+     "centroid": [
+      109.785579,
+      -7.238803
+     ],
+     "bbox": [
+      109.775869,
+      -7.255216,
+      109.79343,
+      -7.226931
+     ],
+     "poligon": 12,
+     "layers": [
+      "batas_desa",
+      "pola_ruang",
+      "transportasi",
+      "sungai"
+     ]
+    },
+    {
+     "nama": "Grogol",
+     "slug": "grogol",
+     "luas_ha": 631.32,
+     "centroid": [
+      109.792592,
+      -7.215367
+     ],
+     "bbox": [
+      109.777421,
+      -7.230238,
+      109.80858,
+      -7.198847
+     ],
+     "poligon": 19,
+     "layers": [
+      "batas_desa",
+      "pola_ruang",
+      "transportasi",
+      "sungai"
+     ]
+    },
+    {
+     "nama": "Kalilunjar",
+     "slug": "kalilunjar",
+     "luas_ha": 95.67,
+     "centroid": [
+      109.774042,
+      -7.267076
+     ],
+     "bbox": [
+      109.768119,
+      -7.273759,
+      109.781153,
+      -7.260211
+     ],
+     "poligon": 42,
+     "layers": [
+      "batas_desa",
+      "pola_ruang",
+      "transportasi",
+      "sungai"
+     ]
+    },
+    {
+     "nama": "Karangsari",
+     "slug": "karangsari",
+     "luas_ha": 247.33,
+     "centroid": [
+      109.775418,
+      -7.256252
+     ],
+     "bbox": [
+      109.765815,
+      -7.267111,
+      109.783868,
+      -7.244909
+     ],
+     "poligon": 49,
+     "layers": [
+      "batas_desa",
+      "pola_ruang",
+      "transportasi",
+      "sungai"
+     ]
+    },
+    {
+     "nama": "Pagundungan",
+     "slug": "pagundungan",
+     "luas_ha": 367.41,
+     "centroid": [
+      109.8263,
+      -7.256062
+     ],
+     "bbox": [
+      109.817759,
+      -7.271692,
+      109.834716,
+      -7.242623
+     ],
+     "poligon": 12,
+     "layers": [
+      "batas_desa",
+      "pola_ruang",
+      "transportasi",
+      "sungai"
+     ]
+    },
+    {
+     "nama": "Pejawaran",
+     "slug": "pejawaran",
+     "luas_ha": 546.36,
+     "centroid": [
+      109.810573,
+      -7.253479
+     ],
+     "bbox": [
+      109.795584,
+      -7.269914,
+      109.822625,
+      -7.24062
+     ],
+     "poligon": 13,
+     "layers": [
+      "batas_desa",
+      "pola_ruang",
+      "transportasi",
+      "sungai"
+     ]
+    },
+    {
+     "nama": "Penusupan",
+     "slug": "penusupan",
+     "luas_ha": 283.06,
+     "centroid": [
+      109.798639,
+      -7.241758
+     ],
+     "bbox": [
+      109.790361,
+      -7.254854,
+      109.808949,
+      -7.232358
+     ],
+     "poligon": 8,
+     "layers": [
+      "batas_desa",
+      "pola_ruang",
+      "transportasi",
+      "sungai"
+     ]
+    },
+    {
+     "nama": "Ratamba",
+     "slug": "ratamba",
+     "luas_ha": 301.46,
+     "centroid": [
+      109.816847,
+      -7.230112
+     ],
+     "bbox": [
+      109.807153,
+      -7.242435,
+      109.83005,
+      -7.21586
+     ],
+     "poligon": 11,
+     "layers": [
+      "batas_desa",
+      "pola_ruang",
+      "transportasi",
+      "sungai"
+     ]
+    },
+    {
+     "nama": "Sarwadadi",
+     "slug": "sarwadadi",
+     "luas_ha": 348.74,
+     "centroid": [
+      109.77267,
+      -7.24027
+     ],
+     "bbox": [
+      109.764684,
+      -7.25812,
+      109.785919,
+      -7.225867
+     ],
+     "poligon": 26,
+     "layers": [
+      "batas_desa",
+      "pola_ruang",
+      "transportasi",
+      "sungai"
+     ]
+    },
+    {
+     "nama": "Semangkung",
+     "slug": "semangkung",
+     "luas_ha": 268.99,
+     "centroid": [
+      109.848718,
+      -7.246428
+     ],
+     "bbox": [
+      109.841166,
+      -7.262739,
+      109.857875,
+      -7.234513
+     ],
+     "poligon": 16,
+     "layers": [
+      "batas_desa",
+      "pola_ruang",
+      "transportasi",
+      "sungai"
+     ]
+    },
+    {
+     "nama": "Sidengok",
+     "slug": "sidengok",
+     "luas_ha": 469.41,
+     "centroid": [
+      109.829258,
+      -7.234343
+     ],
+     "bbox": [
+      109.816193,
+      -7.24918,
+      109.841591,
+      -7.220504
+     ],
+     "poligon": 28,
+     "layers": [
+      "batas_desa",
+      "pola_ruang",
+      "transportasi",
+      "sungai"
+     ]
+    },
+    {
+     "nama": "Tlahab",
+     "slug": "tlahab",
+     "luas_ha": 165.24,
+     "centroid": [
+      109.789874,
+      -7.262391
+     ],
+     "bbox": [
+      109.780968,
+      -7.273706,
+      109.797694,
+      -7.251534
+     ],
+     "poligon": 14,
+     "layers": [
+      "batas_desa",
+      "pola_ruang",
+      "transportasi",
+      "sungai"
+     ]
+    }
+   ]
+  },
+  "batur": {
+   "nama": "Batur",
+   "desa": [
+    {
+     "nama": "Bakal",
+     "slug": "bakal",
+     "luas_ha": 618.46,
+     "centroid": [
+      109.885617,
+      -7.217405
+     ],
+     "bbox": [
+      109.865288,
+      -7.227164,
+      109.906641,
+      -7.207841
+     ],
+     "poligon": 19,
+     "layers": [
+      "batas_desa",
+      "pola_ruang",
+      "transportasi",
+      "sungai"
+     ]
+    },
+    {
+     "nama": "Batur",
+     "slug": "batur",
+     "luas_ha": 1442.98,
+     "centroid": [
+      109.814244,
+      -7.206981
+     ],
+     "bbox": [
+      109.79086,
+      -7.235685,
+      109.833132,
+      -7.177827
+     ],
+     "poligon": 25,
+     "layers": [
+      "batas_desa",
+      "pola_ruang",
+      "transportasi",
+      "sungai"
+     ]
+    },
+    {
+     "nama": "Diengkulon",
+     "slug": "diengkulon",
+     "luas_ha": 293.56,
+     "centroid": [
+      109.907704,
+      -7.20434
+     ],
+     "bbox": [
+      109.898935,
+      -7.221849,
+      109.917709,
+      -7.18985
+     ],
+     "poligon": 18,
+     "layers": [
+      "batas_desa",
+      "pola_ruang",
+      "transportasi",
+      "sungai"
+     ]
+    },
+    {
+     "nama": "Karangtengah",
+     "slug": "karangtengah",
+     "luas_ha": 585.32,
+     "centroid": [
+      109.891566,
+      -7.197354
+     ],
+     "bbox": [
+      109.880481,
+      -7.21175,
+      109.903303,
+      -7.178578
+     ],
+     "poligon": 24,
+     "layers": [
+      "batas_desa",
+      "pola_ruang",
+      "transportasi",
+      "sungai"
+     ]
+    },
+    {
+     "nama": "Kepakisan",
+     "slug": "kepakisan",
+     "luas_ha": 426.47,
+     "centroid": [
+      109.874781,
+      -7.199252
+     ],
+     "bbox": [
+      109.864539,
+      -7.21541,
+      109.884551,
+      -7.185855
+     ],
+     "poligon": 23,
+     "layers": [
+      "batas_desa",
+      "pola_ruang",
+      "transportasi",
+      "sungai"
+     ]
+    },
+    {
+     "nama": "Pekasiran",
+     "slug": "pekasiran",
+     "luas_ha": 702.97,
+     "centroid": [
+      109.855921,
+      -7.195313
+     ],
+     "bbox": [
+      109.844427,
+      -7.215194,
+      109.870247,
+      -7.1777
+     ],
+     "poligon": 30,
+     "layers": [
+      "batas_desa",
+      "pola_ruang",
+      "transportasi",
+      "sungai"
+     ]
+    },
+    {
+     "nama": "Pesurenan",
+     "slug": "pesurenan",
+     "luas_ha": 312.35,
+     "centroid": [
+      109.848636,
+      -7.221301
+     ],
+     "bbox": [
+      109.838137,
+      -7.239572,
+      109.858742,
+      -7.205184
+     ],
+     "poligon": 28,
+     "layers": [
+      "batas_desa",
+      "pola_ruang",
+      "transportasi",
+      "sungai"
+     ]
+    },
+    {
+     "nama": "Sumberejo",
+     "slug": "sumberejo",
+     "luas_ha": 697.04,
+     "centroid": [
+      109.838385,
+      -7.206727
+     ],
+     "bbox": [
+      109.827385,
+      -7.228188,
+      109.848272,
+      -7.183645
+     ],
+     "poligon": 30,
+     "layers": [
+      "batas_desa",
+      "pola_ruang",
+      "transportasi",
+      "sungai"
+     ]
+    }
+   ]
+  },
+  "sigaluh": {
+   "nama": "Sigaluh",
+   "desa": [
+    {
+     "nama": "Bandingan",
+     "slug": "bandingan",
+     "luas_ha": 139.77,
+     "centroid": [
+      109.797367,
+      -7.416545
+     ],
+     "bbox": [
+      109.78983,
+      -7.423218,
+      109.804175,
+      -7.410488
+     ],
+     "poligon": 25,
+     "layers": [
+      "batas_desa",
+      "pola_ruang",
+      "transportasi",
+      "sungai"
+     ]
+    },
+    {
+     "nama": "Bojanegara",
+     "slug": "bojanegara",
+     "luas_ha": 231.41,
+     "centroid": [
+      109.809078,
+      -7.420815
+     ],
+     "bbox": [
+      109.801013,
+      -7.429074,
+      109.81659,
+      -7.412018
+     ],
+     "poligon": 43,
+     "layers": [
+      "batas_desa",
+      "pola_ruang",
+      "transportasi",
+      "sungai"
+     ]
+    },
+    {
+     "nama": "Gembongan",
+     "slug": "gembongan",
+     "luas_ha": 304.51,
+     "centroid": [
+      109.765154,
+      -7.400536
+     ],
+     "bbox": [
+      109.753626,
+      -7.411437,
+      109.775391,
+      -7.391104
+     ],
+     "poligon": 19,
+     "layers": [
+      "batas_desa",
+      "pola_ruang",
+      "transportasi",
+      "sungai"
+     ]
+    },
+    {
+     "nama": "Karangmangu",
+     "slug": "karangmangu",
+     "luas_ha": 176.15,
+     "centroid": [
+      109.749474,
+      -7.40743
+     ],
+     "bbox": [
+      109.742422,
+      -7.417679,
+      109.75528,
+      -7.398415
+     ],
+     "poligon": 11,
+     "layers": [
+      "batas_desa",
+      "pola_ruang",
+      "sungai"
+     ]
+    },
+    {
+     "nama": "Kel.Kalibenda",
+     "slug": "kel-kalibenda",
+     "luas_ha": 119.08,
+     "centroid": [
+      109.731575,
+      -7.39279
+     ],
+     "bbox": [
+      109.72587,
+      -7.401842,
+      109.735653,
+      -7.385544
+     ],
+     "poligon": 19,
+     "layers": [
+      "batas_desa",
+      "pola_ruang",
+      "transportasi",
+      "sungai"
+     ]
+    },
+    {
+     "nama": "Kemiri",
+     "slug": "kemiri",
+     "luas_ha": 210.02,
+     "centroid": [
+      109.758217,
+      -7.411611
+     ],
+     "bbox": [
+      109.75215,
+      -7.423377,
+      109.766694,
+      -7.400615
+     ],
+     "poligon": 10,
+     "layers": [
+      "batas_desa",
+      "pola_ruang",
+      "transportasi",
+      "sungai"
+     ]
+    },
+    {
+     "nama": "Panawaren",
+     "slug": "panawaren",
+     "luas_ha": 819.85,
+     "centroid": [
+      109.808491,
+      -7.439513
+     ],
+     "bbox": [
+      109.78218,
+      -7.448504,
+      109.832779,
+      -7.424926
+     ],
+     "poligon": 29,
+     "layers": [
+      "batas_desa",
+      "pola_ruang",
+      "transportasi",
+      "sungai"
+     ]
+    },
+    {
+     "nama": "Prigi",
+     "slug": "prigi",
+     "luas_ha": 426.94,
+     "centroid": [
+      109.779852,
+      -7.413406
+     ],
+     "bbox": [
+      109.766577,
+      -7.426928,
+      109.79196,
+      -7.399314
+     ],
+     "poligon": 40,
+     "layers": [
+      "batas_desa",
+      "pola_ruang",
+      "transportasi",
+      "sungai"
+     ]
+    },
+    {
+     "nama": "Pringamba",
+     "slug": "pringamba",
+     "luas_ha": 662.04,
+     "centroid": [
+      109.765636,
+      -7.428997
+     ],
+     "bbox": [
+      109.750573,
+      -7.445766,
+      109.781158,
+      -7.411302
+     ],
+     "poligon": 17,
+     "layers": [
+      "batas_desa",
+      "pola_ruang",
+      "transportasi",
+      "sungai"
+     ]
+    },
+    {
+     "nama": "Randegan",
+     "slug": "randegan",
+     "luas_ha": 122.15,
+     "centroid": [
+      109.820061,
+      -7.424012
+     ],
+     "bbox": [
+      109.814828,
+      -7.429916,
+      109.827024,
+      -7.41508
+     ],
+     "poligon": 10,
+     "layers": [
+      "batas_desa",
+      "pola_ruang",
+      "transportasi",
+      "sungai"
+     ]
+    },
+    {
+     "nama": "Sawal",
+     "slug": "sawal",
+     "luas_ha": 507.89,
+     "centroid": [
+      109.788391,
+      -7.431405
+     ],
+     "bbox": [
+      109.775527,
+      -7.444629,
+      109.802563,
+      -7.41802
+     ],
+     "poligon": 33,
+     "layers": [
+      "batas_desa",
+      "pola_ruang",
+      "transportasi",
+      "sungai"
+     ]
+    },
+    {
+     "nama": "Sigaluh",
+     "slug": "sigaluh",
+     "luas_ha": 107.78,
+     "centroid": [
+      109.750063,
+      -7.394992
+     ],
+     "bbox": [
+      109.743735,
+      -7.403047,
+      109.760424,
+      -7.388685
+     ],
+     "poligon": 15,
+     "layers": [
+      "batas_desa",
+      "pola_ruang",
+      "transportasi",
+      "sungai"
+     ]
+    },
+    {
+     "nama": "Singomerto",
+     "slug": "singomerto",
+     "luas_ha": 195.57,
+     "centroid": [
+      109.740514,
+      -7.396134
+     ],
+     "bbox": [
+      109.73491,
+      -7.406459,
+      109.746799,
+      -7.386603
+     ],
+     "poligon": 17,
+     "layers": [
+      "batas_desa",
+      "pola_ruang",
+      "transportasi",
+      "sungai"
+     ]
+    },
+    {
+     "nama": "Tunggoro",
+     "slug": "tunggoro",
+     "luas_ha": 206.85,
+     "centroid": [
+      109.828627,
+      -7.432896
+     ],
+     "bbox": [
+      109.822574,
+      -7.446541,
+      109.832994,
+      -7.419619
+     ],
+     "poligon": 24,
+     "layers": [
+      "batas_desa",
+      "pola_ruang",
+      "transportasi",
+      "sungai"
+     ]
+    },
+    {
+     "nama": "Wanacipta",
+     "slug": "wanacipta",
+     "luas_ha": 28.39,
+     "centroid": [
+      109.75421,
+      -7.396674
+     ],
+     "bbox": [
+      109.751528,
+      -7.400922,
+      109.757148,
+      -7.391784
+     ],
+     "poligon": 14,
+     "layers": [
+      "batas_desa",
+      "pola_ruang",
+      "transportasi",
+      "sungai"
+     ]
+    }
+   ]
+  },
+  "banjarnegara": {
+   "nama": "Banjarnegara",
+   "desa": [
+    {
+     "nama": "Ampelsari",
+     "slug": "ampelsari",
+     "luas_ha": 385.71,
+     "centroid": [
+      109.710437,
+      -7.415357
+     ],
+     "bbox": [
+      109.702949,
+      -7.434993,
+      109.719902,
+      -7.395723
+     ],
+     "poligon": 31,
+     "layers": [
+      "batas_desa",
+      "pola_ruang",
+      "transportasi",
+      "sungai"
+     ]
+    },
+    {
+     "nama": "Argasoka",
+     "slug": "argasoka",
+     "luas_ha": 398.61,
+     "centroid": [
+      109.698354,
+      -7.41454
+     ],
+     "bbox": [
+      109.687161,
+      -7.430788,
+      109.708831,
+      -7.400733
+     ],
+     "poligon": 31,
+     "layers": [
+      "batas_desa",
+      "pola_ruang",
+      "transportasi",
+      "sungai"
+     ]
+    },
+    {
+     "nama": "Cendana",
+     "slug": "cendana",
+     "luas_ha": 595.76,
+     "centroid": [
+      109.742208,
+      -7.418691
+     ],
+     "bbox": [
+      109.728032,
+      -7.439426,
+      109.756045,
+      -7.401556
+     ],
+     "poligon": 23,
+     "layers": [
+      "batas_desa",
+      "pola_ruang",
+      "transportasi",
+      "sungai"
+     ]
+    },
+    {
+     "nama": "Kel.Karangtengah",
+     "slug": "kel-karangtengah",
+     "luas_ha": 148.07,
+     "centroid": [
+      109.683746,
+      -7.408714
+     ],
+     "bbox": [
+      109.675791,
+      -7.415282,
+      109.690149,
+      -7.401803
+     ],
+     "poligon": 11,
+     "layers": [
+      "batas_desa",
+      "pola_ruang",
+      "transportasi",
+      "sungai"
+     ]
+    },
+    {
+     "nama": "Kel.Krandegan",
+     "slug": "kel-krandegan",
+     "luas_ha": 87.55,
+     "centroid": [
+      109.698299,
+      -7.395571
+     ],
+     "bbox": [
+      109.693186,
+      -7.404384,
+      109.703439,
+      -7.388216
+     ],
+     "poligon": 5,
+     "layers": [
+      "batas_desa",
+      "pola_ruang",
+      "transportasi",
+      "sungai"
+     ]
+    },
+    {
+     "nama": "Kel.Kutabanjarnegara",
+     "slug": "kel-kutabanjarnegara",
+     "luas_ha": 187.05,
+     "centroid": [
+      109.689469,
+      -7.395342
+     ],
+     "bbox": [
+      109.680952,
+      -7.403519,
+      109.697758,
+      -7.387911
+     ],
+     "poligon": 6,
+     "layers": [
+      "batas_desa",
+      "pola_ruang",
+      "transportasi",
+      "sungai"
+     ]
+    },
+    {
+     "nama": "Kel.Parakancanggah",
+     "slug": "kel-parakancanggah",
+     "luas_ha": 204.73,
+     "centroid": [
+      109.709564,
+      -7.392431
+     ],
+     "bbox": [
+      109.696041,
+      -7.406975,
+      109.718168,
+      -7.384691
+     ],
+     "poligon": 33,
+     "layers": [
+      "batas_desa",
+      "pola_ruang",
+      "transportasi",
+      "sungai"
+     ]
+    },
+    {
+     "nama": "Kel.Semampir",
+     "slug": "kel-semampir",
+     "luas_ha": 193.4,
+     "centroid": [
+      109.670569,
+      -7.403271
+     ],
+     "bbox": [
+      109.663259,
+      -7.413313,
+      109.676114,
+      -7.391329
+     ],
+     "poligon": 30,
+     "layers": [
+      "batas_desa",
+      "pola_ruang",
+      "transportasi",
+      "sungai"
+     ]
+    },
+    {
+     "nama": "Kel.Semarang",
+     "slug": "kel-semarang",
+     "luas_ha": 88.96,
+     "centroid": [
+      109.703495,
+      -7.399406
+     ],
+     "bbox": [
+      109.697568,
+      -7.405219,
+      109.710677,
+      -7.394284
+     ],
+     "poligon": 1,
+     "layers": [
+      "batas_desa",
+      "pola_ruang",
+      "transportasi",
+      "sungai"
+     ]
+    },
+    {
+     "nama": "Kel.Sokanandi",
+     "slug": "kel-sokanandi",
+     "luas_ha": 209.39,
+     "centroid": [
+      109.721352,
+      -7.3931
+     ],
+     "bbox": [
+      109.714568,
+      -7.403126,
+      109.729199,
+      -7.384107
+     ],
+     "poligon": 64,
+     "layers": [
+      "batas_desa",
+      "pola_ruang",
+      "transportasi",
+      "sungai"
+     ]
+    },
+    {
+     "nama": "Kel.Wangon",
+     "slug": "kel-wangon",
+     "luas_ha": 132.33,
+     "centroid": [
+      109.678299,
+      -7.403726
+     ],
+     "bbox": [
+      109.672176,
+      -7.414777,
+      109.684901,
+      -7.395027
+     ],
+     "poligon": 14,
+     "layers": [
+      "batas_desa",
+      "pola_ruang",
+      "transportasi",
+      "sungai"
+     ]
+    },
+    {
+     "nama": "Sokayasa",
+     "slug": "sokayasa",
+     "luas_ha": 194.39,
+     "centroid": [
+      109.723701,
+      -7.405067
+     ],
+     "bbox": [
+      109.713804,
+      -7.413213,
+      109.733565,
+      -7.397062
+     ],
+     "poligon": 51,
+     "layers": [
+      "batas_desa",
+      "pola_ruang",
+      "transportasi",
+      "sungai"
+     ]
+    },
+    {
+     "nama": "Tlagawera",
+     "slug": "tlagawera",
+     "luas_ha": 548.89,
+     "centroid": [
+      109.725355,
+      -7.42271
+     ],
+     "bbox": [
+      109.711996,
+      -7.43641,
+      109.74311,
+      -7.407886
+     ],
+     "poligon": 49,
+     "layers": [
+      "batas_desa",
+      "pola_ruang",
+      "transportasi",
+      "sungai"
+     ]
+    }
+   ]
+  },
+  "madukara": {
+   "nama": "Madukara",
+   "desa": [
+    {
+     "nama": "Bantarwaru",
+     "slug": "bantarwaru",
+     "luas_ha": 205.41,
+     "centroid": [
+      109.715156,
+      -7.377515
+     ],
+     "bbox": [
+      109.708211,
+      -7.386676,
+      109.721251,
+      -7.365599
+     ],
+     "poligon": 51,
+     "layers": [
+      "batas_desa",
+      "pola_ruang",
+      "transportasi",
+      "sungai"
+     ]
+    },
+    {
+     "nama": "Blitar",
+     "slug": "blitar",
+     "luas_ha": 169.13,
+     "centroid": [
+      109.703037,
+      -7.370184
+     ],
+     "bbox": [
+      109.696894,
+      -7.382634,
+      109.712182,
+      -7.362681
+     ],
+     "poligon": 29,
+     "layers": [
+      "batas_desa",
+      "pola_ruang",
+      "transportasi",
+      "sungai"
+     ]
+    },
+    {
+     "nama": "Clapar",
+     "slug": "clapar",
+     "luas_ha": 408.61,
+     "centroid": [
+      109.762341,
+      -7.349252
+     ],
+     "bbox": [
+      109.743368,
+      -7.364221,
+      109.777758,
+      -7.338061
+     ],
+     "poligon": 22,
+     "layers": [
+      "batas_desa",
+      "pola_ruang",
+      "transportasi",
+      "sungai"
+     ]
+    },
+    {
+     "nama": "Dawuhan",
+     "slug": "dawuhan",
+     "luas_ha": 274.98,
+     "centroid": [
+      109.725056,
+      -7.374211
+     ],
+     "bbox": [
+      109.716355,
+      -7.387406,
+      109.73303,
+      -7.363909
+     ],
+     "poligon": 26,
+     "layers": [
+      "batas_desa",
+      "pola_ruang",
+      "transportasi",
+      "sungai"
+     ]
+    },
+    {
+     "nama": "Gununggiana",
+     "slug": "gununggiana",
+     "luas_ha": 373.05,
+     "centroid": [
+      109.743275,
+      -7.353673
+     ],
+     "bbox": [
+      109.72758,
+      -7.365868,
+      109.757447,
+      -7.339626
+     ],
+     "poligon": 13,
+     "layers": [
+      "batas_desa",
+      "pola_ruang",
+      "transportasi",
+      "sungai"
+     ]
+    },
+    {
+     "nama": "Kaliurip",
+     "slug": "kaliurip",
+     "luas_ha": 459.16,
+     "centroid": [
+      109.720679,
+      -7.349364
+     ],
+     "bbox": [
+      109.705952,
+      -7.361486,
+      109.735654,
+      -7.339521
+     ],
+     "poligon": 15,
+     "layers": [
+      "batas_desa",
+      "pola_ruang",
+      "transportasi",
+      "sungai"
+     ]
+    },
+    {
+     "nama": "Karanganyar",
+     "slug": "karanganyar",
+     "luas_ha": 149.12,
+     "centroid": [
+      109.730133,
+      -7.360922
+     ],
+     "bbox": [
+      109.721117,
+      -7.366643,
+      109.738639,
+      -7.354829
+     ],
+     "poligon": 2,
+     "layers": [
+      "batas_desa",
+      "pola_ruang",
+      "sungai"
+     ]
+    },
+    {
+     "nama": "Kel.Kenteng",
+     "slug": "kel-kenteng",
+     "luas_ha": 116.29,
+     "centroid": [
+      109.70378,
+      -7.38203
+     ],
+     "bbox": [
+      109.697655,
+      -7.387652,
+      109.710046,
+      -7.376426
+     ],
+     "poligon": 44,
+     "layers": [
+      "batas_desa",
+      "pola_ruang",
+      "transportasi",
+      "sungai"
+     ]
+    },
+    {
+     "nama": "Kel.Rejasa",
+     "slug": "kel-rejasa",
+     "luas_ha": 128.0,
+     "centroid": [
+      109.688141,
+      -7.386804
+     ],
+     "bbox": [
+      109.680046,
+      -7.392562,
+      109.697817,
+      -7.382146
+     ],
+     "poligon": 38,
+     "layers": [
+      "batas_desa",
+      "pola_ruang",
+      "transportasi",
+      "sungai"
+     ]
+    },
+    {
+     "nama": "Kutayasa",
+     "slug": "kutayasa",
+     "luas_ha": 136.02,
+     "centroid": [
+      109.743039,
+      -7.385667
+     ],
+     "bbox": [
+      109.73394,
+      -7.391039,
+      109.752075,
+      -7.379707
+     ],
+     "poligon": 45,
+     "layers": [
+      "batas_desa",
+      "pola_ruang",
+      "transportasi",
+      "sungai"
+     ]
+    },
+    {
+     "nama": "Limbangan",
+     "slug": "limbangan",
+     "luas_ha": 188.37,
+     "centroid": [
+      109.764878,
+      -7.374183
+     ],
+     "bbox": [
+      109.754033,
+      -7.386171,
+      109.775976,
+      -7.362583
+     ],
+     "poligon": 38,
+     "layers": [
+      "batas_desa",
+      "pola_ruang",
+      "transportasi",
+      "sungai"
+     ]
+    },
+    {
+     "nama": "Madukara",
+     "slug": "madukara",
+     "luas_ha": 244.13,
+     "centroid": [
+      109.746683,
+      -7.369408
+     ],
+     "bbox": [
+      109.738308,
+      -7.381855,
+      109.75415,
+      -7.354026
+     ],
+     "poligon": 17,
+     "layers": [
+      "batas_desa",
+      "pola_ruang",
+      "transportasi",
+      "sungai"
+     ]
+    },
+    {
+     "nama": "Pagelak",
+     "slug": "pagelak",
+     "luas_ha": 122.3,
+     "centroid": [
+      109.732563,
+      -7.37915
+     ],
+     "bbox": [
+      109.725745,
+      -7.388367,
+      109.737665,
+      -7.368888
+     ],
+     "poligon": 28,
+     "layers": [
+      "batas_desa",
+      "pola_ruang",
+      "transportasi",
+      "sungai"
+     ]
+    },
+    {
+     "nama": "Pakelen",
+     "slug": "pakelen",
+     "luas_ha": 415.53,
+     "centroid": [
+      109.731465,
+      -7.336799
+     ],
+     "bbox": [
+      109.717826,
+      -7.348628,
+      109.745095,
+      -7.320758
+     ],
+     "poligon": 19,
+     "layers": [
+      "batas_desa",
+      "pola_ruang",
+      "transportasi",
+      "sungai"
+     ]
+    },
+    {
+     "nama": "Panawagan",
+     "slug": "panawagan",
+     "luas_ha": 175.5,
+     "centroid": [
+      109.761367,
+      -7.368973
+     ],
+     "bbox": [
+      109.752952,
+      -7.38136,
+      109.769766,
+      -7.356367
+     ],
+     "poligon": 8,
+     "layers": [
+      "batas_desa",
+      "pola_ruang",
+      "transportasi",
+      "sungai"
+     ]
+    },
+    {
+     "nama": "Pekauman",
+     "slug": "pekauman",
+     "luas_ha": 143.82,
+     "centroid": [
+      109.738062,
+      -7.372702
+     ],
+     "bbox": [
+      109.731509,
+      -7.38368,
+      109.746717,
+      -7.363263
+     ],
+     "poligon": 12,
+     "layers": [
+      "batas_desa",
+      "pola_ruang",
+      "transportasi",
+      "sungai"
+     ]
+    },
+    {
+     "nama": "Petambakan",
+     "slug": "petambakan",
+     "luas_ha": 191.48,
+     "centroid": [
+      109.692304,
+      -7.376987
+     ],
+     "bbox": [
+      109.682835,
+      -7.38657,
+      109.698621,
+      -7.362868
+     ],
+     "poligon": 63,
+     "layers": [
+      "batas_desa",
+      "pola_ruang",
+      "transportasi",
+      "sungai"
+     ]
+    },
+    {
+     "nama": "Rakitan",
+     "slug": "rakitan",
+     "luas_ha": 250.39,
+     "centroid": [
+      109.702708,
+      -7.36057
+     ],
+     "bbox": [
+      109.691876,
+      -7.37154,
+      109.713709,
+      -7.352052
+     ],
+     "poligon": 26,
+     "layers": [
+      "batas_desa",
+      "pola_ruang",
+      "transportasi",
+      "sungai"
+     ]
+    },
+    {
+     "nama": "Sered",
+     "slug": "sered",
+     "luas_ha": 151.31,
+     "centroid": [
+      109.712857,
+      -7.367504
+     ],
+     "bbox": [
+      109.703891,
+      -7.377564,
+      109.722047,
+      -7.357513
+     ],
+     "poligon": 31,
+     "layers": [
+      "batas_desa",
+      "pola_ruang",
+      "transportasi",
+      "sungai"
+     ]
+    },
+    {
+     "nama": "Talunamba",
+     "slug": "talunamba",
+     "luas_ha": 295.42,
+     "centroid": [
+      109.755162,
+      -7.366943
+     ],
+     "bbox": [
+      109.747651,
+      -7.387408,
+      109.763238,
+      -7.349004
+     ],
+     "poligon": 23,
+     "layers": [
+      "batas_desa",
+      "pola_ruang",
+      "transportasi",
+      "sungai"
+     ]
+    }
+   ]
+  },
+  "banjarmangu": {
+   "nama": "Banjarmangu",
+   "desa": [
+    {
+     "nama": "Banjarkulon",
+     "slug": "banjarkulon",
+     "luas_ha": 216.66,
+     "centroid": [
+      109.680954,
+      -7.376051
+     ],
+     "bbox": [
+      109.671628,
+      -7.388591,
+      109.688379,
+      -7.366168
+     ],
+     "poligon": 49,
+     "layers": [
+      "batas_desa",
+      "pola_ruang",
+      "transportasi",
+      "sungai"
+     ]
+    },
+    {
+     "nama": "Banjarmangu",
+     "slug": "banjarmangu",
+     "luas_ha": 235.4,
+     "centroid": [
+      109.681635,
+      -7.364649
+     ],
+     "bbox": [
+      109.669368,
+      -7.372955,
+      109.692369,
+      -7.357479
+     ],
+     "poligon": 40,
+     "layers": [
+      "batas_desa",
+      "pola_ruang",
+      "transportasi",
+      "sungai"
+     ]
+    },
+    {
+     "nama": "Beji",
+     "slug": "beji",
+     "luas_ha": 383.83,
+     "centroid": [
+      109.675078,
+      -7.306875
+     ],
+     "bbox": [
+      109.662723,
+      -7.316429,
+      109.686716,
+      -7.291863
+     ],
+     "poligon": 91,
+     "layers": [
+      "batas_desa",
+      "pola_ruang",
+      "transportasi",
+      "sungai"
+     ]
+    },
+    {
+     "nama": "Gripit",
+     "slug": "gripit",
+     "luas_ha": 109.15,
+     "centroid": [
+      109.686962,
+      -7.342902
+     ],
+     "bbox": [
+      109.681608,
+      -7.348217,
+      109.693056,
+      -7.337674
+     ],
+     "poligon": 5,
+     "layers": [
+      "batas_desa",
+      "pola_ruang",
+      "transportasi",
+      "sungai"
+     ]
+    },
+    {
+     "nama": "Jenggawur",
+     "slug": "jenggawur",
+     "luas_ha": 206.22,
+     "centroid": [
+      109.673952,
+      -7.388453
+     ],
+     "bbox": [
+      109.664587,
+      -7.397313,
+      109.682209,
+      -7.378243
+     ],
+     "poligon": 57,
+     "layers": [
+      "batas_desa",
+      "pola_ruang",
+      "transportasi",
+      "sungai"
+     ]
+    },
+    {
+     "nama": "Kalilunjar",
+     "slug": "kalilunjar",
+     "luas_ha": 326.25,
+     "centroid": [
+      109.714966,
+      -7.331217
+     ],
+     "bbox": [
+      109.706693,
+      -7.34542,
+      109.726146,
+      -7.31976
+     ],
+     "poligon": 26,
+     "layers": [
+      "batas_desa",
+      "pola_ruang",
+      "transportasi",
+      "sungai"
+     ]
+    },
+    {
+     "nama": "Kendaga",
+     "slug": "kendaga",
+     "luas_ha": 454.15,
+     "centroid": [
+      109.698136,
+      -7.33204
+     ],
+     "bbox": [
+      109.683118,
+      -7.343527,
+      109.710006,
+      -7.320788
+     ],
+     "poligon": 18,
+     "layers": [
+      "batas_desa",
+      "pola_ruang",
+      "transportasi",
+      "sungai"
+     ]
+    },
+    {
+     "nama": "Kesenet",
+     "slug": "kesenet",
+     "luas_ha": 384.79,
+     "centroid": [
+      109.696235,
+      -7.349922
+     ],
+     "bbox": [
+      109.680079,
+      -7.362656,
+      109.708798,
+      -7.339101
+     ],
+     "poligon": 26,
+     "layers": [
+      "batas_desa",
+      "pola_ruang",
+      "transportasi",
+      "sungai"
+     ]
+    },
+    {
+     "nama": "Majatengah",
+     "slug": "majatengah",
+     "luas_ha": 283.54,
+     "centroid": [
+      109.683631,
+      -7.292225
+     ],
+     "bbox": [
+      109.675027,
+      -7.302799,
+      109.693726,
+      -7.280753
+     ],
+     "poligon": 67,
+     "layers": [
+      "batas_desa",
+      "pola_ruang",
+      "transportasi",
+      "sungai"
+     ]
+    },
+    {
+     "nama": "Paseh",
+     "slug": "paseh",
+     "luas_ha": 328.37,
+     "centroid": [
+      109.665653,
+      -7.343335
+     ],
+     "bbox": [
+      109.656419,
+      -7.357495,
+      109.67492,
+      -7.330432
+     ],
+     "poligon": 34,
+     "layers": [
+      "batas_desa",
+      "pola_ruang",
+      "transportasi",
+      "sungai"
+     ]
+    },
+    {
+     "nama": "Pekandangan",
+     "slug": "pekandangan",
+     "luas_ha": 347.53,
+     "centroid": [
+      109.683802,
+      -7.322916
+     ],
+     "bbox": [
+      109.673801,
+      -7.338093,
+      109.692778,
+      -7.312842
+     ],
+     "poligon": 19,
+     "layers": [
+      "batas_desa",
+      "pola_ruang",
+      "transportasi",
+      "sungai"
+     ]
+    },
+    {
+     "nama": "Prendengan",
+     "slug": "prendengan",
+     "luas_ha": 377.02,
+     "centroid": [
+      109.694215,
+      -7.306547
+     ],
+     "bbox": [
+      109.681186,
+      -7.316673,
+      109.706721,
+      -7.295242
+     ],
+     "poligon": 76,
+     "layers": [
+      "batas_desa",
+      "pola_ruang",
+      "transportasi",
+      "sungai"
+     ]
+    },
+    {
+     "nama": "Rejasari",
+     "slug": "rejasari",
+     "luas_ha": 184.42,
+     "centroid": [
+      109.679178,
+      -7.354059
+     ],
+     "bbox": [
+      109.670738,
+      -7.361302,
+      109.691507,
+      -7.344039
+     ],
+     "poligon": 40,
+     "layers": [
+      "batas_desa",
+      "pola_ruang",
+      "transportasi",
+      "sungai"
+     ]
+    },
+    {
+     "nama": "Sigeblog",
+     "slug": "sigeblog",
+     "luas_ha": 460.02,
+     "centroid": [
+      109.672832,
+      -7.332167
+     ],
+     "bbox": [
+      109.660894,
+      -7.351706,
+      109.683635,
+      -7.315545
+     ],
+     "poligon": 20,
+     "layers": [
+      "batas_desa",
+      "pola_ruang",
+      "transportasi",
+      "sungai"
+     ]
+    },
+    {
+     "nama": "Sijenggung",
+     "slug": "sijenggung",
+     "luas_ha": 294.08,
+     "centroid": [
+      109.663073,
+      -7.297049
+     ],
+     "bbox": [
+      109.654007,
+      -7.309059,
+      109.672365,
+      -7.287429
+     ],
+     "poligon": 173,
+     "layers": [
+      "batas_desa",
+      "pola_ruang",
+      "transportasi",
+      "sungai"
+     ]
+    },
+    {
+     "nama": "Sijeruk",
+     "slug": "sijeruk",
+     "luas_ha": 281.43,
+     "centroid": [
+      109.708033,
+      -7.31853
+     ],
+     "bbox": [
+      109.691848,
+      -7.330338,
+      109.7254,
+      -7.311667
+     ],
+     "poligon": 60,
+     "layers": [
+      "batas_desa",
+      "pola_ruang",
+      "transportasi",
+      "sungai"
+     ]
+    },
+    {
+     "nama": "Sipedang",
+     "slug": "sipedang",
+     "luas_ha": 501.66,
+     "centroid": [
+      109.656122,
+      -7.318189
+     ],
+     "bbox": [
+      109.643211,
+      -7.331379,
+      109.668502,
+      -7.306624
+     ],
+     "poligon": 114,
+     "layers": [
+      "batas_desa",
+      "pola_ruang",
+      "transportasi",
+      "sungai"
+     ]
+    }
+   ]
+  }
+ }
+}

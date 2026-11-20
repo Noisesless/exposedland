@@ -1,0 +1,1406 @@
+{
+ "total_ha": 114484.74,
+ "total_fitur": 10816,
+ "kabupaten": [
+  {
+   "kode": "32042000",
+   "nama": "Kawasan Hortikultura",
+   "ha": 44381.69,
+   "n": 1436
+  },
+  {
+   "kode": "32043000",
+   "nama": "Kawasan Perkebunan",
+   "ha": 17984.34,
+   "n": 619
+  },
+  {
+   "kode": "32022000",
+   "nama": "Kawasan Hutan Produksi Terbatas",
+   "ha": 15235.87,
+   "n": 94
+  },
+  {
+   "kode": "32041000",
+   "nama": "Kawasan Tanaman Pangan",
+   "ha": 14557.41,
+   "n": 6138
+  },
+  {
+   "kode": "32102000",
+   "nama": "Kawasan Permukiman Perdesaan",
+   "ha": 10516.23,
+   "n": 2158
+  },
+  {
+   "kode": "32101000",
+   "nama": "Kawasan Permukiman Perkotaan",
+   "ha": 6566.77,
+   "n": 144
+  },
+  {
+   "kode": "31021000",
+   "nama": "Kawasan Hutan Lindung",
+   "ha": 2739.98,
+   "n": 39
+  },
+  {
+   "kode": "31010000",
+   "nama": "Badan Air",
+   "ha": 1516.34,
+   "n": 137
+  },
+  {
+   "kode": "32080000",
+   "nama": "Kawasan Peruntukan Industri",
+   "ha": 402.36,
+   "n": 25
+  },
+  {
+   "kode": "32021000",
+   "nama": "Kawasan Hutan Produksi Tetap",
+   "ha": 384.54,
+   "n": 14
+  },
+  {
+   "kode": "31041100",
+   "nama": "Cagar Alam",
+   "ha": 113.19,
+   "n": 4
+  },
+  {
+   "kode": "31071100",
+   "nama": "Kawasan Keunikan Batuan dan Fosil",
+   "ha": 50.55,
+   "n": 3
+  },
+  {
+   "kode": "31080000",
+   "nama": "Kawasan Cagar Budaya",
+   "ha": 35.47,
+   "n": 5
+  }
+ ],
+ "kecamatan": {
+  "sigaluh": [
+   {
+    "kode": "32042000",
+    "nama": "Kawasan Hortikultura",
+    "ha": 1461.38,
+    "n": 20
+   },
+   {
+    "kode": "32022000",
+    "nama": "Kawasan Hutan Produksi Terbatas",
+    "ha": 915.4,
+    "n": 2
+   },
+   {
+    "kode": "32043000",
+    "nama": "Kawasan Perkebunan",
+    "ha": 843.79,
+    "n": 17
+   },
+   {
+    "kode": "32102000",
+    "nama": "Kawasan Permukiman Perdesaan",
+    "ha": 453.29,
+    "n": 38
+   },
+   {
+    "kode": "32101000",
+    "nama": "Kawasan Permukiman Perkotaan",
+    "ha": 293.97,
+    "n": 7
+   },
+   {
+    "kode": "32021000",
+    "nama": "Kawasan Hutan Produksi Tetap",
+    "ha": 98.2,
+    "n": 6
+   },
+   {
+    "kode": "32041000",
+    "nama": "Kawasan Tanaman Pangan",
+    "ha": 96.83,
+    "n": 126
+   },
+   {
+    "kode": "31041100",
+    "nama": "Cagar Alam",
+    "ha": 53.94,
+    "n": 1
+   },
+   {
+    "kode": "31010000",
+    "nama": "Badan Air",
+    "ha": 29.94,
+    "n": 8
+   },
+   {
+    "kode": "32080000",
+    "nama": "Kawasan Peruntukan Industri",
+    "ha": 11.57,
+    "n": 1
+   }
+  ],
+  "batur": [
+   {
+    "kode": "32042000",
+    "nama": "Kawasan Hortikultura",
+    "ha": 2391.96,
+    "n": 20
+   },
+   {
+    "kode": "32043000",
+    "nama": "Kawasan Perkebunan",
+    "ha": 1064.03,
+    "n": 19
+   },
+   {
+    "kode": "32022000",
+    "nama": "Kawasan Hutan Produksi Terbatas",
+    "ha": 567.87,
+    "n": 2
+   },
+   {
+    "kode": "31021000",
+    "nama": "Kawasan Hutan Lindung",
+    "ha": 419.77,
+    "n": 12
+   },
+   {
+    "kode": "32101000",
+    "nama": "Kawasan Permukiman Perkotaan",
+    "ha": 267.29,
+    "n": 8
+   },
+   {
+    "kode": "32102000",
+    "nama": "Kawasan Permukiman Perdesaan",
+    "ha": 238.8,
+    "n": 39
+   },
+   {
+    "kode": "31041100",
+    "nama": "Cagar Alam",
+    "ha": 48.6,
+    "n": 2
+   },
+   {
+    "kode": "31080000",
+    "nama": "Kawasan Cagar Budaya",
+    "ha": 35.47,
+    "n": 5
+   },
+   {
+    "kode": "32021000",
+    "nama": "Kawasan Hutan Produksi Tetap",
+    "ha": 25.03,
+    "n": 1
+   },
+   {
+    "kode": "31010000",
+    "nama": "Badan Air",
+    "ha": 20.31,
+    "n": 1
+   }
+  ],
+  "pagedongan": [
+   {
+    "kode": "32042000",
+    "nama": "Kawasan Hortikultura",
+    "ha": 3654.52,
+    "n": 34
+   },
+   {
+    "kode": "32022000",
+    "nama": "Kawasan Hutan Produksi Terbatas",
+    "ha": 2396.72,
+    "n": 6
+   },
+   {
+    "kode": "32043000",
+    "nama": "Kawasan Perkebunan",
+    "ha": 1324.16,
+    "n": 36
+   },
+   {
+    "kode": "32102000",
+    "nama": "Kawasan Permukiman Perdesaan",
+    "ha": 511.83,
+    "n": 147
+   },
+   {
+    "kode": "32041000",
+    "nama": "Kawasan Tanaman Pangan",
+    "ha": 110.99,
+    "n": 111
+   },
+   {
+    "kode": "32101000",
+    "nama": "Kawasan Permukiman Perkotaan",
+    "ha": 62.34,
+    "n": 2
+   },
+   {
+    "kode": "31071100",
+    "nama": "Kawasan Keunikan Batuan dan Fosil",
+    "ha": 50.55,
+    "n": 3
+   },
+   {
+    "kode": "31010000",
+    "nama": "Badan Air",
+    "ha": 25.13,
+    "n": 3
+   },
+   {
+    "kode": "31041100",
+    "nama": "Cagar Alam",
+    "ha": 10.65,
+    "n": 1
+   }
+  ],
+  "susukan": [
+   {
+    "kode": "32042000",
+    "nama": "Kawasan Hortikultura",
+    "ha": 1995.26,
+    "n": 118
+   },
+   {
+    "kode": "32041000",
+    "nama": "Kawasan Tanaman Pangan",
+    "ha": 1038.94,
+    "n": 196
+   },
+   {
+    "kode": "32102000",
+    "nama": "Kawasan Permukiman Perdesaan",
+    "ha": 905.3,
+    "n": 216
+   },
+   {
+    "kode": "32022000",
+    "nama": "Kawasan Hutan Produksi Terbatas",
+    "ha": 535.59,
+    "n": 15
+   },
+   {
+    "kode": "32101000",
+    "nama": "Kawasan Permukiman Perkotaan",
+    "ha": 442.54,
+    "n": 25
+   },
+   {
+    "kode": "32043000",
+    "nama": "Kawasan Perkebunan",
+    "ha": 174.27,
+    "n": 5
+   },
+   {
+    "kode": "32080000",
+    "nama": "Kawasan Peruntukan Industri",
+    "ha": 161.72,
+    "n": 4
+   },
+   {
+    "kode": "31010000",
+    "nama": "Badan Air",
+    "ha": 63.73,
+    "n": 9
+   }
+  ],
+  "purwareja-klampok": [
+   {
+    "kode": "32101000",
+    "nama": "Kawasan Permukiman Perkotaan",
+    "ha": 836.63,
+    "n": 15
+   },
+   {
+    "kode": "32041000",
+    "nama": "Kawasan Tanaman Pangan",
+    "ha": 538.11,
+    "n": 235
+   },
+   {
+    "kode": "32102000",
+    "nama": "Kawasan Permukiman Perdesaan",
+    "ha": 344.52,
+    "n": 43
+   },
+   {
+    "kode": "32042000",
+    "nama": "Kawasan Hortikultura",
+    "ha": 290.05,
+    "n": 46
+   },
+   {
+    "kode": "32022000",
+    "nama": "Kawasan Hutan Produksi Terbatas",
+    "ha": 269.52,
+    "n": 4
+   },
+   {
+    "kode": "31010000",
+    "nama": "Badan Air",
+    "ha": 54.38,
+    "n": 9
+   },
+   {
+    "kode": "32043000",
+    "nama": "Kawasan Perkebunan",
+    "ha": 27.49,
+    "n": 2
+   },
+   {
+    "kode": "32080000",
+    "nama": "Kawasan Peruntukan Industri",
+    "ha": 8.05,
+    "n": 2
+   }
+  ],
+  "mandiraja": [
+   {
+    "kode": "32041000",
+    "nama": "Kawasan Tanaman Pangan",
+    "ha": 1664.47,
+    "n": 551
+   },
+   {
+    "kode": "32042000",
+    "nama": "Kawasan Hortikultura",
+    "ha": 1330.35,
+    "n": 92
+   },
+   {
+    "kode": "32102000",
+    "nama": "Kawasan Permukiman Perdesaan",
+    "ha": 1025.24,
+    "n": 141
+   },
+   {
+    "kode": "32101000",
+    "nama": "Kawasan Permukiman Perkotaan",
+    "ha": 491.54,
+    "n": 16
+   },
+   {
+    "kode": "32022000",
+    "nama": "Kawasan Hutan Produksi Terbatas",
+    "ha": 462.5,
+    "n": 6
+   },
+   {
+    "kode": "31021000",
+    "nama": "Kawasan Hutan Lindung",
+    "ha": 189.33,
+    "n": 2
+   },
+   {
+    "kode": "32021000",
+    "nama": "Kawasan Hutan Produksi Tetap",
+    "ha": 98.26,
+    "n": 1
+   },
+   {
+    "kode": "31010000",
+    "nama": "Badan Air",
+    "ha": 85.89,
+    "n": 7
+   },
+   {
+    "kode": "32043000",
+    "nama": "Kawasan Perkebunan",
+    "ha": 62.06,
+    "n": 9
+   },
+   {
+    "kode": "32080000",
+    "nama": "Kawasan Peruntukan Industri",
+    "ha": 31.25,
+    "n": 1
+   }
+  ],
+  "bawang": [
+   {
+    "kode": "32042000",
+    "nama": "Kawasan Hortikultura",
+    "ha": 2254.24,
+    "n": 65
+   },
+   {
+    "kode": "32041000",
+    "nama": "Kawasan Tanaman Pangan",
+    "ha": 1812.33,
+    "n": 510
+   },
+   {
+    "kode": "32102000",
+    "nama": "Kawasan Permukiman Perdesaan",
+    "ha": 841.36,
+    "n": 181
+   },
+   {
+    "kode": "32101000",
+    "nama": "Kawasan Permukiman Perkotaan",
+    "ha": 452.78,
+    "n": 2
+   },
+   {
+    "kode": "32022000",
+    "nama": "Kawasan Hutan Produksi Terbatas",
+    "ha": 300.91,
+    "n": 4
+   },
+   {
+    "kode": "31010000",
+    "nama": "Badan Air",
+    "ha": 231.88,
+    "n": 2
+   },
+   {
+    "kode": "32080000",
+    "nama": "Kawasan Peruntukan Industri",
+    "ha": 96.03,
+    "n": 7
+   },
+   {
+    "kode": "32043000",
+    "nama": "Kawasan Perkebunan",
+    "ha": 59.51,
+    "n": 3
+   }
+  ],
+  "purwanegara": [
+   {
+    "kode": "32041000",
+    "nama": "Kawasan Tanaman Pangan",
+    "ha": 3586.27,
+    "n": 364
+   },
+   {
+    "kode": "32042000",
+    "nama": "Kawasan Hortikultura",
+    "ha": 1955.53,
+    "n": 232
+   },
+   {
+    "kode": "32102000",
+    "nama": "Kawasan Permukiman Perdesaan",
+    "ha": 1148.31,
+    "n": 273
+   },
+   {
+    "kode": "32101000",
+    "nama": "Kawasan Permukiman Perkotaan",
+    "ha": 469.84,
+    "n": 10
+   },
+   {
+    "kode": "32043000",
+    "nama": "Kawasan Perkebunan",
+    "ha": 328.24,
+    "n": 7
+   },
+   {
+    "kode": "31021000",
+    "nama": "Kawasan Hutan Lindung",
+    "ha": 219.98,
+    "n": 3
+   },
+   {
+    "kode": "32022000",
+    "nama": "Kawasan Hutan Produksi Terbatas",
+    "ha": 199.87,
+    "n": 13
+   },
+   {
+    "kode": "31010000",
+    "nama": "Badan Air",
+    "ha": 93.03,
+    "n": 5
+   },
+   {
+    "kode": "32080000",
+    "nama": "Kawasan Peruntukan Industri",
+    "ha": 76.67,
+    "n": 5
+   },
+   {
+    "kode": "32021000",
+    "nama": "Kawasan Hutan Produksi Tetap",
+    "ha": 7.4,
+    "n": 2
+   }
+  ],
+  "banjarmangu": [
+   {
+    "kode": "32042000",
+    "nama": "Kawasan Hortikultura",
+    "ha": 2800.17,
+    "n": 71
+   },
+   {
+    "kode": "32102000",
+    "nama": "Kawasan Permukiman Perdesaan",
+    "ha": 657.71,
+    "n": 122
+   },
+   {
+    "kode": "32043000",
+    "nama": "Kawasan Perkebunan",
+    "ha": 578.23,
+    "n": 33
+   },
+   {
+    "kode": "32041000",
+    "nama": "Kawasan Tanaman Pangan",
+    "ha": 569.58,
+    "n": 479
+   },
+   {
+    "kode": "31021000",
+    "nama": "Kawasan Hutan Lindung",
+    "ha": 453.48,
+    "n": 2
+   },
+   {
+    "kode": "32101000",
+    "nama": "Kawasan Permukiman Perkotaan",
+    "ha": 141.03,
+    "n": 3
+   },
+   {
+    "kode": "32022000",
+    "nama": "Kawasan Hutan Produksi Terbatas",
+    "ha": 87.17,
+    "n": 7
+   },
+   {
+    "kode": "31010000",
+    "nama": "Badan Air",
+    "ha": 87.11,
+    "n": 4
+   }
+  ],
+  "madukara": [
+   {
+    "kode": "32042000",
+    "nama": "Kawasan Hortikultura",
+    "ha": 2418.78,
+    "n": 52
+   },
+   {
+    "kode": "32101000",
+    "nama": "Kawasan Permukiman Perkotaan",
+    "ha": 711.76,
+    "n": 27
+   },
+   {
+    "kode": "32022000",
+    "nama": "Kawasan Hutan Produksi Terbatas",
+    "ha": 509.74,
+    "n": 1
+   },
+   {
+    "kode": "32043000",
+    "nama": "Kawasan Perkebunan",
+    "ha": 348.66,
+    "n": 12
+   },
+   {
+    "kode": "32102000",
+    "nama": "Kawasan Permukiman Perdesaan",
+    "ha": 294.85,
+    "n": 43
+   },
+   {
+    "kode": "32041000",
+    "nama": "Kawasan Tanaman Pangan",
+    "ha": 245.16,
+    "n": 246
+   },
+   {
+    "kode": "31010000",
+    "nama": "Badan Air",
+    "ha": 68.97,
+    "n": 5
+   }
+  ],
+  "wanadadi": [
+   {
+    "kode": "32042000",
+    "nama": "Kawasan Hortikultura",
+    "ha": 1294.86,
+    "n": 58
+   },
+   {
+    "kode": "32041000",
+    "nama": "Kawasan Tanaman Pangan",
+    "ha": 659.05,
+    "n": 340
+   },
+   {
+    "kode": "31010000",
+    "nama": "Badan Air",
+    "ha": 417.12,
+    "n": 3
+   },
+   {
+    "kode": "32102000",
+    "nama": "Kawasan Permukiman Perdesaan",
+    "ha": 392.24,
+    "n": 67
+   },
+   {
+    "kode": "32043000",
+    "nama": "Kawasan Perkebunan",
+    "ha": 107.04,
+    "n": 8
+   },
+   {
+    "kode": "32101000",
+    "nama": "Kawasan Permukiman Perkotaan",
+    "ha": 70.35,
+    "n": 5
+   },
+   {
+    "kode": "32080000",
+    "nama": "Kawasan Peruntukan Industri",
+    "ha": 8.36,
+    "n": 4
+   }
+  ],
+  "pagentan": [
+   {
+    "kode": "32042000",
+    "nama": "Kawasan Hortikultura",
+    "ha": 2580.42,
+    "n": 55
+   },
+   {
+    "kode": "32043000",
+    "nama": "Kawasan Perkebunan",
+    "ha": 1655.02,
+    "n": 38
+   },
+   {
+    "kode": "32102000",
+    "nama": "Kawasan Permukiman Perdesaan",
+    "ha": 328.45,
+    "n": 84
+   },
+   {
+    "kode": "32041000",
+    "nama": "Kawasan Tanaman Pangan",
+    "ha": 285.4,
+    "n": 334
+   },
+   {
+    "kode": "32101000",
+    "nama": "Kawasan Permukiman Perkotaan",
+    "ha": 84.03,
+    "n": 1
+   },
+   {
+    "kode": "31010000",
+    "nama": "Badan Air",
+    "ha": 56.11,
+    "n": 22
+   },
+   {
+    "kode": "32022000",
+    "nama": "Kawasan Hutan Produksi Terbatas",
+    "ha": 10.96,
+    "n": 1
+   }
+  ],
+  "banjarnegara": [
+   {
+    "kode": "32101000",
+    "nama": "Kawasan Permukiman Perkotaan",
+    "ha": 1198.66,
+    "n": 6
+   },
+   {
+    "kode": "32042000",
+    "nama": "Kawasan Hortikultura",
+    "ha": 917.9,
+    "n": 16
+   },
+   {
+    "kode": "32022000",
+    "nama": "Kawasan Hutan Produksi Terbatas",
+    "ha": 618.67,
+    "n": 2
+   },
+   {
+    "kode": "32041000",
+    "nama": "Kawasan Tanaman Pangan",
+    "ha": 228.53,
+    "n": 215
+   },
+   {
+    "kode": "32043000",
+    "nama": "Kawasan Perkebunan",
+    "ha": 196.49,
+    "n": 7
+   },
+   {
+    "kode": "32102000",
+    "nama": "Kawasan Permukiman Perdesaan",
+    "ha": 181.4,
+    "n": 30
+   },
+   {
+    "kode": "31010000",
+    "nama": "Badan Air",
+    "ha": 33.03,
+    "n": 1
+   }
+  ],
+  "rakit": [
+   {
+    "kode": "32042000",
+    "nama": "Kawasan Hortikultura",
+    "ha": 1422.05,
+    "n": 32
+   },
+   {
+    "kode": "32041000",
+    "nama": "Kawasan Tanaman Pangan",
+    "ha": 858.79,
+    "n": 255
+   },
+   {
+    "kode": "32102000",
+    "nama": "Kawasan Permukiman Perdesaan",
+    "ha": 712.99,
+    "n": 66
+   },
+   {
+    "kode": "32101000",
+    "nama": "Kawasan Permukiman Perkotaan",
+    "ha": 191.44,
+    "n": 4
+   },
+   {
+    "kode": "31010000",
+    "nama": "Badan Air",
+    "ha": 73.69,
+    "n": 4
+   },
+   {
+    "kode": "32080000",
+    "nama": "Kawasan Peruntukan Industri",
+    "ha": 8.72,
+    "n": 1
+   }
+  ],
+  "punggelan": [
+   {
+    "kode": "32042000",
+    "nama": "Kawasan Hortikultura",
+    "ha": 7469.24,
+    "n": 48
+   },
+   {
+    "kode": "32043000",
+    "nama": "Kawasan Perkebunan",
+    "ha": 1152.37,
+    "n": 57
+   },
+   {
+    "kode": "32022000",
+    "nama": "Kawasan Hutan Produksi Terbatas",
+    "ha": 1081.87,
+    "n": 2
+   },
+   {
+    "kode": "32102000",
+    "nama": "Kawasan Permukiman Perdesaan",
+    "ha": 793.96,
+    "n": 197
+   },
+   {
+    "kode": "32041000",
+    "nama": "Kawasan Tanaman Pangan",
+    "ha": 748.07,
+    "n": 635
+   },
+   {
+    "kode": "31010000",
+    "nama": "Badan Air",
+    "ha": 74.62,
+    "n": 7
+   },
+   {
+    "kode": "32101000",
+    "nama": "Kawasan Permukiman Perkotaan",
+    "ha": 54.07,
+    "n": 1
+   }
+  ],
+  "karangkobar": [
+   {
+    "kode": "32042000",
+    "nama": "Kawasan Hortikultura",
+    "ha": 1687.06,
+    "n": 116
+   },
+   {
+    "kode": "32043000",
+    "nama": "Kawasan Perkebunan",
+    "ha": 970.62,
+    "n": 30
+   },
+   {
+    "kode": "32022000",
+    "nama": "Kawasan Hutan Produksi Terbatas",
+    "ha": 441.54,
+    "n": 5
+   },
+   {
+    "kode": "32102000",
+    "nama": "Kawasan Permukiman Perdesaan",
+    "ha": 283.72,
+    "n": 85
+   },
+   {
+    "kode": "32101000",
+    "nama": "Kawasan Permukiman Perkotaan",
+    "ha": 270.65,
+    "n": 1
+   },
+   {
+    "kode": "32041000",
+    "nama": "Kawasan Tanaman Pangan",
+    "ha": 240.41,
+    "n": 256
+   },
+   {
+    "kode": "31021000",
+    "nama": "Kawasan Hutan Lindung",
+    "ha": 161.05,
+    "n": 2
+   },
+   {
+    "kode": "31010000",
+    "nama": "Badan Air",
+    "ha": 19.53,
+    "n": 21
+   }
+  ],
+  "wanayasa": [
+   {
+    "kode": "32042000",
+    "nama": "Kawasan Hortikultura",
+    "ha": 3899.26,
+    "n": 205
+   },
+   {
+    "kode": "32022000",
+    "nama": "Kawasan Hutan Produksi Terbatas",
+    "ha": 2609.83,
+    "n": 3
+   },
+   {
+    "kode": "32043000",
+    "nama": "Kawasan Perkebunan",
+    "ha": 1482.96,
+    "n": 34
+   },
+   {
+    "kode": "32102000",
+    "nama": "Kawasan Permukiman Perdesaan",
+    "ha": 414.0,
+    "n": 99
+   },
+   {
+    "kode": "32041000",
+    "nama": "Kawasan Tanaman Pangan",
+    "ha": 250.09,
+    "n": 298
+   },
+   {
+    "kode": "32101000",
+    "nama": "Kawasan Permukiman Perkotaan",
+    "ha": 223.7,
+    "n": 2
+   },
+   {
+    "kode": "32021000",
+    "nama": "Kawasan Hutan Produksi Tetap",
+    "ha": 145.18,
+    "n": 3
+   },
+   {
+    "kode": "31010000",
+    "nama": "Badan Air",
+    "ha": 26.39,
+    "n": 11
+   }
+  ],
+  "pandanarum": [
+   {
+    "kode": "32022000",
+    "nama": "Kawasan Hutan Produksi Terbatas",
+    "ha": 1741.76,
+    "n": 10
+   },
+   {
+    "kode": "32043000",
+    "nama": "Kawasan Perkebunan",
+    "ha": 1622.32,
+    "n": 213
+   },
+   {
+    "kode": "32042000",
+    "nama": "Kawasan Hortikultura",
+    "ha": 926.07,
+    "n": 72
+   },
+   {
+    "kode": "32041000",
+    "nama": "Kawasan Tanaman Pangan",
+    "ha": 693.69,
+    "n": 565
+   },
+   {
+    "kode": "31021000",
+    "nama": "Kawasan Hutan Lindung",
+    "ha": 571.41,
+    "n": 14
+   },
+   {
+    "kode": "32102000",
+    "nama": "Kawasan Permukiman Perdesaan",
+    "ha": 213.27,
+    "n": 84
+   },
+   {
+    "kode": "31010000",
+    "nama": "Badan Air",
+    "ha": 23.14,
+    "n": 8
+   },
+   {
+    "kode": "32101000",
+    "nama": "Kawasan Permukiman Perkotaan",
+    "ha": 14.96,
+    "n": 4
+   }
+  ],
+  "kalibening": [
+   {
+    "kode": "32043000",
+    "nama": "Kawasan Perkebunan",
+    "ha": 2627.57,
+    "n": 58
+   },
+   {
+    "kode": "32022000",
+    "nama": "Kawasan Hutan Produksi Terbatas",
+    "ha": 2485.37,
+    "n": 7
+   },
+   {
+    "kode": "32042000",
+    "nama": "Kawasan Hortikultura",
+    "ha": 2067.89,
+    "n": 64
+   },
+   {
+    "kode": "32041000",
+    "nama": "Kawasan Tanaman Pangan",
+    "ha": 795.38,
+    "n": 290
+   },
+   {
+    "kode": "31021000",
+    "nama": "Kawasan Hutan Lindung",
+    "ha": 723.8,
+    "n": 3
+   },
+   {
+    "kode": "32102000",
+    "nama": "Kawasan Permukiman Perdesaan",
+    "ha": 423.43,
+    "n": 122
+   },
+   {
+    "kode": "32101000",
+    "nama": "Kawasan Permukiman Perkotaan",
+    "ha": 141.35,
+    "n": 3
+   },
+   {
+    "kode": "31010000",
+    "nama": "Badan Air",
+    "ha": 22.48,
+    "n": 6
+   },
+   {
+    "kode": "32021000",
+    "nama": "Kawasan Hutan Produksi Tetap",
+    "ha": 10.45,
+    "n": 1
+   }
+  ],
+  "pejawaran": [
+   {
+    "kode": "32043000",
+    "nama": "Kawasan Perkebunan",
+    "ha": 3359.5,
+    "n": 31
+   },
+   {
+    "kode": "32042000",
+    "nama": "Kawasan Hortikultura",
+    "ha": 1564.71,
+    "n": 20
+   },
+   {
+    "kode": "32102000",
+    "nama": "Kawasan Permukiman Perdesaan",
+    "ha": 351.55,
+    "n": 81
+   },
+   {
+    "kode": "32101000",
+    "nama": "Kawasan Permukiman Perkotaan",
+    "ha": 147.83,
+    "n": 2
+   },
+   {
+    "kode": "32041000",
+    "nama": "Kawasan Tanaman Pangan",
+    "ha": 135.32,
+    "n": 132
+   },
+   {
+    "kode": "31010000",
+    "nama": "Badan Air",
+    "ha": 9.87,
+    "n": 1
+   },
+   {
+    "kode": "31021000",
+    "nama": "Kawasan Hutan Lindung",
+    "ha": 1.16,
+    "n": 1
+   },
+   {
+    "kode": "32022000",
+    "nama": "Kawasan Hutan Produksi Terbatas",
+    "ha": 0.6,
+    "n": 4
+   }
+  ]
+ },
+ "krb_kabupaten": {
+  "letusan": {
+   "ha": 1811.69,
+   "n": 74
+  },
+  "gerakan_tanah": {
+   "ha": 10094.4,
+   "n": 1613
+  },
+  "banjir": {
+   "ha": 7127.41,
+   "n": 2549
+  }
+ },
+ "krb_kecamatan": {
+  "batur": {
+   "letusan": {
+    "ha": 1623.66,
+    "n": 53
+   },
+   "banjir": {
+    "ha": 145.84,
+    "n": 19
+   },
+   "gerakan_tanah": {
+    "ha": 492.03,
+    "n": 20
+   }
+  },
+  "pagedongan": {
+   "gerakan_tanah": {
+    "ha": 193.93,
+    "n": 35
+   },
+   "banjir": {
+    "ha": 37.09,
+    "n": 16
+   }
+  },
+  "karangkobar": {
+   "banjir": {
+    "ha": 169.82,
+    "n": 119
+   },
+   "gerakan_tanah": {
+    "ha": 897.0,
+    "n": 219
+   }
+  },
+  "wanayasa": {
+   "gerakan_tanah": {
+    "ha": 790.8,
+    "n": 174
+   },
+   "banjir": {
+    "ha": 203.06,
+    "n": 109
+   }
+  },
+  "kalibening": {
+   "banjir": {
+    "ha": 580.16,
+    "n": 155
+   },
+   "gerakan_tanah": {
+    "ha": 1241.73,
+    "n": 214
+   }
+  },
+  "pandanarum": {
+   "gerakan_tanah": {
+    "ha": 1456.12,
+    "n": 300
+   },
+   "banjir": {
+    "ha": 136.68,
+    "n": 84
+   }
+  },
+  "purwareja-klampok": {
+   "gerakan_tanah": {
+    "ha": 6.68,
+    "n": 2
+   },
+   "banjir": {
+    "ha": 528.74,
+    "n": 142
+   }
+  },
+  "bawang": {
+   "gerakan_tanah": {
+    "ha": 284.18,
+    "n": 21
+   },
+   "banjir": {
+    "ha": 496.65,
+    "n": 179
+   }
+  },
+  "susukan": {
+   "banjir": {
+    "ha": 661.25,
+    "n": 159
+   },
+   "gerakan_tanah": {
+    "ha": 258.42,
+    "n": 30
+   }
+  },
+  "mandiraja": {
+   "gerakan_tanah": {
+    "ha": 133.55,
+    "n": 36
+   },
+   "banjir": {
+    "ha": 986.17,
+    "n": 329
+   }
+  },
+  "purwanegara": {
+   "gerakan_tanah": {
+    "ha": 1049.3,
+    "n": 124
+   },
+   "banjir": {
+    "ha": 832.8,
+    "n": 241
+   }
+  },
+  "rakit": {
+   "banjir": {
+    "ha": 275.29,
+    "n": 96
+   }
+  },
+  "sigaluh": {
+   "banjir": {
+    "ha": 40.34,
+    "n": 30
+   },
+   "gerakan_tanah": {
+    "ha": 29.95,
+    "n": 6
+   }
+  },
+  "banjarnegara": {
+   "banjir": {
+    "ha": 88.71,
+    "n": 40
+   },
+   "gerakan_tanah": {
+    "ha": 31.66,
+    "n": 4
+   }
+  },
+  "madukara": {
+   "banjir": {
+    "ha": 244.93,
+    "n": 115
+   },
+   "gerakan_tanah": {
+    "ha": 59.2,
+    "n": 12
+   }
+  },
+  "wanadadi": {
+   "banjir": {
+    "ha": 426.33,
+    "n": 169
+   },
+   "gerakan_tanah": {
+    "ha": 36.52,
+    "n": 14
+   }
+  },
+  "banjarmangu": {
+   "banjir": {
+    "ha": 526.47,
+    "n": 251
+   },
+   "gerakan_tanah": {
+    "ha": 1523.03,
+    "n": 247
+   }
+  },
+  "punggelan": {
+   "banjir": {
+    "ha": 510.6,
+    "n": 175
+   },
+   "gerakan_tanah": {
+    "ha": 320.42,
+    "n": 57
+   }
+  },
+  "pagentan": {
+   "banjir": {
+    "ha": 102.99,
+    "n": 108
+   },
+   "gerakan_tanah": {
+    "ha": 484.83,
+    "n": 67
+   }
+  },
+  "pejawaran": {
+   "gerakan_tanah": {
+    "ha": 805.04,
+    "n": 31
+   },
+   "banjir": {
+    "ha": 133.51,
+    "n": 13
+   },
+   "letusan": {
+    "ha": 188.03,
+    "n": 21
+   }
+  }
+ },
+ "panjang_kecamatan": {
+  "madukara": {
+   "transportasi_km": 32.98,
+   "sungai_km": 154.24
+  },
+  "purwareja-klampok": {
+   "transportasi_km": 30.57,
+   "sungai_km": 39.5
+  },
+  "batur": {
+   "transportasi_km": 61.33,
+   "sungai_km": 123.62
+  },
+  "sigaluh": {
+   "transportasi_km": 88.62,
+   "sungai_km": 106.58
+  },
+  "banjarnegara": {
+   "transportasi_km": 53.07,
+   "sungai_km": 125.34
+  },
+  "susukan": {
+   "transportasi_km": 45.34,
+   "sungai_km": 109.04
+  },
+  "pandanarum": {
+   "transportasi_km": 56.72,
+   "sungai_km": 126.79
+  },
+  "purwanegara": {
+   "transportasi_km": 69.31,
+   "sungai_km": 106.73
+  },
+  "banjarmangu": {
+   "transportasi_km": 33.45,
+   "sungai_km": 147.12
+  },
+  "rakit": {
+   "transportasi_km": 52.78,
+   "sungai_km": 37.14
+  },
+  "wanayasa": {
+   "transportasi_km": 67.24,
+   "sungai_km": 198.65
+  },
+  "pejawaran": {
+   "transportasi_km": 66.88,
+   "sungai_km": 189.93
+  },
+  "pagentan": {
+   "transportasi_km": 48.41,
+   "sungai_km": 120.85
+  },
+  "kalibening": {
+   "transportasi_km": 77.33,
+   "sungai_km": 275.5
+  },
+  "mandiraja": {
+   "transportasi_km": 55.0,
+   "sungai_km": 134.77
+  },
+  "punggelan": {
+   "transportasi_km": 92.53,
+   "sungai_km": 128.06
+  },
+  "karangkobar": {
+   "transportasi_km": 72.25,
+   "sungai_km": 125.57
+  },
+  "bawang": {
+   "transportasi_km": 43.92,
+   "sungai_km": 215.17
+  },
+  "pagedongan": {
+   "transportasi_km": 59.67,
+   "sungai_km": 137.24
+  },
+  "wanadadi": {
+   "transportasi_km": 16.06,
+   "sungai_km": 81.29
+  }
+ }
+}

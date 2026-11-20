@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Tata Ruang Kabupaten Banjarnegara</title>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Crect width='16' height='16' fill='%231f5b73'/%3E%3Cpath d='M2 11l3-5 3 3 2-2 4 4z' fill='%23ffffff'/%3E%3C/svg%3E">
+<link rel="stylesheet" href="vendor/leaflet.css">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="app">
+  <aside class="panel" id="panel">
+    <div class="panel__head">
+      <h1>Rencana Tata Ruang<span>Kabupaten Banjarnegara</span></h1>
+      <p class="panel__sub">Pola ruang RTRW &amp; kawasan rawan bencana. Sumber data SIMTARU Kabupaten Banjarnegara.</p>
+    </div>
+
+    <div class="panel__body">
+      <div class="field">
+        <label class="field__label" for="pilih-kec">Kecamatan</label>
+        <select id="pilih-kec">
+          <option value="">Seluruh kabupaten</option>
+        </select>
+      </div>
+
+      <div class="field">
+        <label class="field__label" for="pilih-desa">Desa / kelurahan</label>
+        <select id="pilih-desa" disabled>
+          <option value="">Seluruh kecamatan</option>
+        </select>
+      </div>
+
+      <div class="field">
+        <span class="field__label" id="label-mode">Tampilan</span>
+        <div class="segmented" role="group" aria-labelledby="label-mode">
+          <button type="button" data-mode="pola" class="is-active" aria-pressed="true">Pola Ruang</button>
+          <button type="button" data-mode="krb" aria-pressed="false">Rawan Bencana</button>
+        </div>
+      </div>
+
+      <div class="field">
+        <span class="field__label">Lapisan</span>
+        <div class="toggles">
+          <label class="toggle"><input type="checkbox" id="lyr-desa" checked> Batas desa</label>
+          <label class="toggle"><input type="checkbox" id="lyr-jalan" checked> Jaringan jalan</label>
+          <label class="toggle"><input type="checkbox" id="lyr-sungai" checked> Sungai</label>
+        </div>
+      </div>
+
+      <div class="legend">
+        <div class="legend__head">
+          <span class="field__label" style="margin:0" id="judul-legenda">Legenda</span>
+          <span class="legend__total" id="legenda-total"></span>
+        </div>
+        <p class="legend__hint" id="legenda-hint"></p>
+        <div class="legend__list" id="legenda"></div>
+      </div>
+    </div>
+
+    <div class="panel__foot" id="status">Memuat data…</div>
+  </aside>
+
+  <main class="map" id="peta">
+    <div class="peta-judul" id="peta-judul">Kabupaten Banjarnegara</div>
+    <button class="panel-toggle" id="panel-toggle" type="button" aria-expanded="false" aria-controls="panel">Panel</button>
+  </main>
+</div>
+
+<script src="vendor/leaflet.js"></script>
+<script src="app.js"></script>
+</body>
+</html>

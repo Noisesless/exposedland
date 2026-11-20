@@ -1,0 +1,160 @@
+==========================================================================================
+FILE: batas_administrasi.json   |   3.78 MB   |   278 records
+==========================================================================================
+
+FIELDS (11): ['OBJECTID', 'Nama_Desa_', 'Kecamatan', 'Kabupaten', 'Sumber', 'Tahun', 'WADMPR', 'LUASHA', 'Shape_Leng', 'Shape_Area', 'wkt_geometry']
+
+GEOMETRY TYPES: {'POLYGON Z': 275, 'MULTIPOLYGON Z': 3}
+
+FIELD PROFILE:
+  OBJECTID           non-null:   278/278   unique: 278   range: 2 .. 279
+  Nama_Desa_         non-null:   278/278   unique: 265  
+  Kecamatan          non-null:   278/278   unique: 20   
+      values: {'Kec.Madukara': 20, 'Kec.Bawang': 18, 'Kec.Punggelan': 17, 'Kec.Wanayasa': 17, 'Kec.Pejawaran': 17, 'Kec.Banjarmangu': 17, 'Kec.Mandiraja': 16, 'Kec.Pagentan': 16, 'Kec.Kalibening': 16, 'Kec.Susukan': 15, 'Kec.Sigaluh': 15, 'Kec.Purwanegara': 13, 'Kec.Karangkobar': 13, 'Kec.Banjarnegara': 13, 'Kec.Rakit': 11, 'Kec.Wanadadi': 11, 'Kec.Pagedongan': 9, 'Kec.Purwarejaklampok': 8, 'Kec.Pandanarum': 8, 'Kec.Batur': 8}
+  Kabupaten          non-null:   278/278   unique: 1    
+      value: Banjarnegara
+  Sumber             non-null:   278/278   unique: 2    
+      values: {'Peta RBI Yang Telah Diperbaharui Oleh ATR/BPN Kab. Banjarnegara': 188, 'Peta RBI diperbaharui Oleh Batas Wilayah Permendagri': 90}
+  Tahun              non-null:   278/278   unique: 2    
+      values: {'2001,2016': 188, '2017': 90}
+  WADMPR             non-null:   278/278   unique: 1    
+      value: Provinsi Jawa Tengah
+  LUASHA             non-null:   278/278   unique: 278   range: 28.39 .. 1483
+  Shape_Leng         non-null:   278/278   unique: 278   range: 3046 .. 2.473e+04
+  Shape_Area         non-null:   278/278   unique: 278   range: 2.838e+05 .. 1.483e+07
+  wkt_geometry       <WKT geometry string>   non-null: 278/278
+
+TOTAL LUASHA: 114,489.60 ha  (1,144.90 km2)
+
+
+==========================================================================================
+FILE: jaringan_transportasi.json   |   1.78 MB   |   262 records
+==========================================================================================
+
+FIELDS (14): ['OBJECTID', 'NAMOBJ', 'ORDE01', 'ORDE02', 'ORDE03', 'ORDE04', 'JNSRSR', 'STSJRN', 'WADMPR', 'WADMKK', 'REMARK', 'SBDATA', 'SHAPE_Leng', 'wkt_geometry']
+
+GEOMETRY TYPES: {'LINESTRING Z': 254, 'MULTILINESTRING Z': 8}
+
+FIELD PROFILE:
+  OBJECTID           non-null:   262/262   unique: 262   range: 1 .. 263
+  NAMOBJ             non-null:   262/262   unique: 6    
+      values: {'Jalan Lokal Sekunder': 157, 'Jalan Lokal Primer': 89, 'Jalan Kolektor Primer': 7, 'Jalan Arteri Primer': 7, 'Jaringan Jalur Kereta Api Antarkota': 1, 'Jalan Tol': 1}
+  ORDE01             non-null:   262/262   unique: 2     range: 4.201e+07 .. 4.202e+07
+      values: {'42010000': 261, '42020000': 1}
+  ORDE02             non-null:   262/262   unique: 3     range: 2.201e+07 .. 2.202e+07
+      values: {'22011000': 260, '22020000': 1, '22013000': 1}
+  ORDE03             non-null:   262/262   unique: 5     range: 2.201e+07 .. 2.202e+07
+      values: {'22011300': 246, '22011200': 7, '22011100': 7, '22021000': 1, '22013000': 1}
+  ORDE04             non-null:   262/262   unique: 6     range: 2.201e+07 .. 2.202e+07
+      values: {'22011302': 157, '22011301': 89, '22011201': 7, '22011101': 7, '22021100': 1, '22013000': 1}
+  JNSRSR             non-null:   262/262   unique: 1     range: 4.2e+07 .. 4.2e+07
+      value: 42000000
+  STSJRN             non-null:   262/262   unique: 3     range: 1 .. 3
+      values: {'2': 253, '3': 6, '1': 3}
+  WADMPR             non-null:   262/262   unique: 1    
+      value: Provinsi Jawa Tengah
+  WADMKK             non-null:   262/262   unique: 1    
+      value: Kabupaten Banjarnegara
+  REMARK             non-null:   262/262   unique: 262  
+  SBDATA             non-null:   262/262   unique: 5    
+      values: {'Surat Keputusan Bupati Banjarnegara No.620/228, 2021, Tentang Penetapan Nomor dan Ruas Jalan Di Wilayah Pemerintahan Kabupaten Banjarnegara': 246, 'Perda Provinsi  No.16 Tahun 2019 Tentang Perubahan RTRW Provinsi Jawa Tengah Tahun 2009-2029; Surat Keputusan Gubernur Jawa Tengah No.620/2 Tahun 2016 Tentang Penetapan Status Ruas Jalan sebagai Jalan Provinsi Jawa Tengah': 7, 'Keputusan Menteri Pekerjaan Umum Perumahan Rakyat No 430/KPTS/M/2022 Tentang Penetapan Ruas Jalan dalam Jaringan Jalan Primer menurut fungsinya sebagai Jalan Arteri Primer dan Jalan Kolektor Primer-1': 7, 'Studi Kelayakan Trase Reaktivasi Jalur Kereta Api Rute Purwokerto-Wonosobo, 2018; Kepmen Perhubungan No KP2128 Tahun 2018 Tentang Rencana Induk Perkeretaapian Nasional': 1, 'DJH Kementerian PUPR': 1}
+  SHAPE_Leng         non-null:   262/262   unique: 262   range: 0.0008297 .. 0.4418
+  wkt_geometry       <WKT geometry string>   non-null: 262/262
+
+
+==========================================================================================
+FILE: sungai_banjarnegara.json   |   3.30 MB   |   3332 records
+==========================================================================================
+
+FIELDS (6): ['OBJECTID', 'NAMOBJ', 'REMARK', 'Shape_Leng', 'NAMOBJ_1', 'wkt_geometry']
+
+GEOMETRY TYPES: {'MULTILINESTRING': 172, 'LINESTRING': 3160}
+
+FIELD PROFILE:
+  OBJECTID           non-null:  3332/3332  unique: 3332  range: 1 .. 3332
+  NAMOBJ             non-null:   272/3332  unique: 240  
+  REMARK             non-null:  3330/3332  unique: 4    
+      values: {'Sungai Satu Garis': 3155, 'Sungai Musiman': 165, 'Garis Tepi Perairan Alam Lainnya': 9, 'Kali Nggentu': 1}
+  Shape_Leng         non-null:  3332/3332  unique: 3323  range: 0.004639 .. 8.241e+04
+  NAMOBJ_1           non-null:  3332/3332  unique: 1    
+      value: Sungai
+  wkt_geometry       <WKT geometry string>   non-null: 3332/3332
+
+
+==========================================================================================
+FILE: rencana_pola_ruang.json   |   63.20 MB   |   12538 records
+==========================================================================================
+
+FIELDS (27): ['OBJECTID', 'NAMOBJ', 'ORDE01', 'ORDE02', 'ORDE03', 'ORDE04', 'KODKWS', 'JNSRPR', 'WADMPR', 'WADMKK', 'WADMKC', 'KKOP_1', 'KP2B_2', 'KRB_03', 'CAGBUD', 'RESAIR', 'KSMPDN', 'HANKAM', 'KKARST', 'PTBGMB', 'MGRSAT', 'RDBUMI', 'REMARK', 'LUASHA', 'SHAPE_Leng', 'SHAPE_Area', 'wkt_geometry']
+
+GEOMETRY TYPES: {'POLYGON Z': 8603, 'MULTIPOLYGON Z': 3935}
+
+FIELD PROFILE:
+  OBJECTID           non-null: 12538/12538 unique: 12538 range: 1 .. 1.262e+04
+  NAMOBJ             non-null: 12538/12538 unique: 13   
+      values: {'Kawasan Tanaman Pangan': 7476, 'Kawasan Permukiman Perdesaan': 2226, 'Kawasan Hortikultura': 1622, 'Kawasan Perkebunan': 710, 'Kawasan Permukiman Perkotaan': 160, 'Badan Air': 145, 'Kawasan Hutan Produksi Terbatas': 98, 'Kawasan Hutan Lindung': 45, 'Kawasan Peruntukan Industri': 26, 'Kawasan Hutan Produksi Tetap': 16, 'Kawasan Cagar Budaya': 5, 'Cagar Alam': 5, 'Kawasan Keunikan Batuan dan Fosil': 4}
+  ORDE01             non-null: 12538/12538 unique: 9     range: 3.101e+07 .. 3.21e+07
+      values: {'32040000': 9808, '32100000': 2386, '31010000': 145, '32020000': 114, '31020000': 45, '32080000': 26, '31080000': 5, '31040000': 5, '31070000': 4}
+  ORDE02             non-null: 12538/12538 unique: 13    range: 3.101e+07 .. 3.21e+07
+      values: {'32041000': 7476, '32102000': 2226, '32042000': 1622, '32043000': 710, '32101000': 160, '31010000': 145, '32022000': 98, '31021000': 45, '32080000': 26, '32021000': 16, '31080000': 5, '31041000': 5, '31071000': 4}
+  ORDE03             non-null: 12538/12538 unique: 13    range: 3.101e+07 .. 3.21e+07
+      values: {'32041000': 7476, '32102000': 2226, '32042000': 1622, '32043000': 710, '32101000': 160, '31010000': 145, '32022000': 98, '31021000': 45, '32080000': 26, '32021000': 16, '31080000': 5, '31041100': 5, '31071100': 4}
+  ORDE04             non-null: 12538/12538 unique: 13    range: 3.101e+07 .. 3.21e+07
+      values: {'32041000': 7476, '32102000': 2226, '32042000': 1622, '32043000': 710, '32101000': 160, '31010000': 145, '32022000': 98, '31021000': 45, '32080000': 26, '32021000': 16, '31080000': 5, '31041100': 5, '31071100': 4}
+  KODKWS             non-null: 12538/12538 unique: 13   
+      values: {'32041000': 7476, '32102000': 2226, '32042000': 1622, '32043000': 710, '32101000': 160, '31010000': 145, '32022000': 98, '31021000': 45, '32080000': 26, '32021000': 16, '31080000': 5, '31041100': 5, '31071100': 4}
+  JNSRPR             non-null: 12538/12538 unique: 2     range: 3.1e+07 .. 3.2e+07
+      values: {'32000000': 12334, '31000000': 204}
+  WADMPR             non-null: 12538/12538 unique: 1    
+      value: Provinsi Jawa Tengah
+  WADMKK             non-null: 12538/12538 unique: 1    
+      value: Kabupaten Banjarnegara
+  WADMKC             non-null: 12538/12538 unique: 20   
+      values: {'Kecamatan Pandanarum': 1135, 'Kecamatan Punggelan': 1074, 'Kecamatan Purwanegara': 1021, 'Kecamatan Mandiraja': 979, 'Kecamatan Bawang': 923, 'Kecamatan Banjarmangu': 883, 'Kecamatan Wanayasa': 771, 'Kecamatan Susukan': 650, 'Kecamatan Kalibening': 626, 'Kecamatan Karangkobar': 623, 'Kecamatan Pagentan': 608, 'Kecamatan Wanadadi': 588, 'Kecamatan Madukara': 436, 'Kecamatan Purwarejaklampok': 417, 'Kecamatan Rakit': 403, 'Kecamatan Pagedongan': 381, 'Kecamatan Banjarnegara': 343, 'Kecamatan Pejawaran': 292, 'Kecamatan Sigaluh': 268, 'Kecamatan Batur': 117}
+  KKOP_1             non-null: 12538/12538 unique: 7    
+      values: {'Tidak Ada': 10041, 'K01G': 1015, 'K01B': 622, 'K01F': 451, 'K01E': 350, 'K01C': 50, 'K01D': 9}
+  KP2B_2             non-null: 12538/12538 unique: 2    
+      values: {'Tidak Ada': 7510, 'K02A': 5028}
+  KRB_03             non-null: 12538/12538 unique: 15   
+      values: {'Tidak Ada': 7976, 'Kawasan Rawan Bencana Banjir Tingkat Tinggi': 2623, 'Kawasan Rawan Bencana Gerakan Tanah Tingkat Tinggi': 1591, 'Kawasan Rawan Bencana Gerakan Tanah Tingkat Tinggi; Kawasan Rawan Bencana  Banjir Tingkat Tinggi': 270, 'Kawasan Rawan Bencana Letusan Gunung Api KRB II': 29, 'Kawasan Rawan Bencana Letusan Gunung Api KRB III': 17, 'Kawasan Rawan Bencana Banjir Tingkat Tinggi; Kawasan Rawan Bencana Letusan Gunung Api KRB II': 7, 'Kawasan Rawan Bencana Gerakan Tanah Tingkat Tinggi;  Kawasan Rawan Bencana Letusan Gunung Api KRB II': 6, 'Kawasan Rawan Bencana Banjir Tingkat Tinggi; Kawasan Rawan Bencana Letusan Gunung Api KRB I': 4, 'Kawasan Rawan Bencana Letusan Gunung Api KRB I': 4, 'Kawasan Rawan Bencana Banjir Tingkat Tinggi; Kawasan Rawan Bencana Letusan Gunung Api KRB III': 3, 'Kawasan Rawan Bencana Gerakan Tanah Tingkat Tinggi;  Kawasan Rawan Bencana Letusan Gunung Api KRB I': 3, 'Kawasan Rawan Bencana Gerakan Tanah Tingkat Tinggi; Kawasan Rawan Bencana  Banjir Tingkat Tinggi; Kawasan Rawan Bencana Letusan Gunung Api KRB I': 3, 'Kawasan Rawan Bencana Gerakan Tanah Tingkat Tinggi; Kawasan Rawan Bencana  Banjir Tingkat Tinggi; Kawasan Rawan Bencana Letusan Gunung Api KRB II': 1, 'Kawasan Rawan Bencana Gerakan Tanah Tingkat Tinggi;  Kawasan Rawan Bencana Letusan Gunung Api KRB III': 1}
+  CAGBUD             non-null: 12538/12538 unique: 1    
+      value: Tidak Ada
+  RESAIR             non-null: 12538/12538 unique: 2    
+      values: {'Tidak Ada': 12500, 'K08A': 38}
+  KSMPDN             non-null: 12538/12538 unique: 3    
+      values: {'Tidak Ada': 10446, 'K09B': 2005, 'K09C': 87}
+  HANKAM             non-null: 12538/12538 unique: 1    
+      value: Tidak Ada
+  KKARST             non-null: 12538/12538 unique: 1    
+      value: Tidak Ada
+  PTBGMB             non-null: 12538/12538 unique: 2    
+      values: {'Tidak Ada': 12489, 'K12A': 49}
+  MGRSAT             non-null: 12538/12538 unique: 1    
+      value: Tidak Ada
+  RDBUMI             non-null: 12538/12538 unique: 1    
+      value: Tidak Ada
+  REMARK             non-null: 12538/12538 unique: 4    
+      values: {'Tidak Ada': 12365, 'SK.6605/MENLHK-PKTL/KUH/PLA.2/10/2021 Tentang Perkembangan Pengukuhan Kawasan Hutan Provinsi Jawa Tengah sampai dengan Tahun 2020': 164, 'Penetapan lokasi Kawasan Cagar Budaya bersumber pada Balai Pelestarian Cagar Budaya, 2019; Keputusan Menteri Pendidikan dan Kebudayaan Nomor 007/M/2017 Tentang Kawasan Cagar Budaya Percandian Dieng sebagai Kawasan Cagar Budaya Peringkat Nasional': 5, 'Keputusan Menteri Energi dan Sumber Daya Mineral Nomor: 2817 K/40/MEM/2006 Tentang Penetapan Kawasan Cagar Alam Geologi Karangsambung': 4}
+  LUASHA             non-null: 12538/12538 unique: 12500 range: 3.745e-09 .. 6830
+  SHAPE_Leng         non-null: 12538/12538 unique: 12479 range: 5.214e-07 .. 4.915
+  SHAPE_Area         non-null: 12538/12538 unique: 12504 range: 3.068e-15 .. 0.005593
+  wkt_geometry       <WKT geometry string>   non-null: 12538/12538
+
+TOTAL LUASHA: 116,217.04 ha  (1,162.17 km2)
+
+AREA BY NAMOBJ (pola ruang / objek):
+  Kawasan Hortikultura                                 n=1622     44,383.80 ha
+  Kawasan Perkebunan                                   n=710      17,984.59 ha
+  Kawasan Hutan Produksi Terbatas                      n=98       15,235.88 ha
+  Kawasan Tanaman Pangan                               n=7476     14,561.70 ha
+  Kawasan Permukiman Perdesaan                         n=2226     11,346.90 ha
+  Kawasan Permukiman Perkotaan                         n=160       7,167.05 ha
+  Kawasan Hutan Lindung                                n=45        2,740.02 ha
+  Badan Air                                            n=145       1,811.10 ha
+  Kawasan Peruntukan Industri                          n=26          402.24 ha
+  Kawasan Hutan Produksi Tetap                         n=16          384.54 ha
+  Cagar Alam                                           n=5           113.19 ha
+  Kawasan Keunikan Batuan dan Fosil                    n=4            50.56 ha
+  Kawasan Cagar Budaya                                 n=5            35.47 ha
+
+

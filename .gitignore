@@ -1,0 +1,14 @@
+# Lingkungan Python — dibuat ulang dengan `python -m venv .venv`
+.venv/
+__pycache__/
+*.pyc
+
+# Node — hanya untuk uji viewer, dipasang ulang dengan `npm install`
+tools/node_modules/
+tools/package-lock.json
+
+# Berkas besar: tidak diunggah.
+# Data mentah SIMTARU (72 MB) dan hasil antara (44 MB) bisa dibuat ulang
+# dengan scripts/convert.py dan scripts/kabupaten_layer.py dari sumber aslinya.
+data/*.json
+geojson/full/

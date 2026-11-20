@@ -1,0 +1,661 @@
+{
+  "sumber": "https://simtaru.banjarnegarakab.go.id/json/",
+  "crs_keluaran": "EPSG:4326 (WGS84)",
+  "crs_sumber": {
+    "pola_ruang": "EPSG:4326",
+    "batas_desa": "EPSG:32749",
+    "transportasi": "EPSG:4326",
+    "sungai": "EPSG:32749"
+  },
+  "dibuat": "2026-11-21 01:02:47",
+  "ambang_sliver_m2": 100.0,
+  "desimal_koordinat": 6,
+  "layers": {
+    "pola_ruang": {
+      "file": "full/pola_ruang.geojson",
+      "fitur": 10816,
+      "ukuran_mb": 37.32,
+      "total_ha": 114484.74
+    },
+    "batas_desa": {
+      "file": "full/batas_desa.geojson",
+      "fitur": 278,
+      "ukuran_mb": 2.58,
+      "total_ha": 114489.62
+    },
+    "transportasi": {
+      "file": "full/transportasi.geojson",
+      "fitur": 262,
+      "ukuran_mb": 1.06,
+      "total_ha": null
+    },
+    "sungai": {
+      "file": "full/sungai.geojson",
+      "fitur": 3332,
+      "ukuran_mb": 2.76,
+      "total_ha": null
+    }
+  },
+  "kecamatan": {
+    "banjarmangu": {
+      "nama": "Banjarmangu",
+      "slug": "banjarmangu",
+      "layers": {
+        "pola_ruang": {
+          "file": "banjarmangu/pola_ruang.geojson",
+          "fitur": 721,
+          "ukuran_mb": 3.003
+        },
+        "batas_desa": {
+          "file": "banjarmangu/batas_desa.geojson",
+          "fitur": 17,
+          "ukuran_mb": 0.242
+        },
+        "transportasi": {
+          "file": "banjarmangu/transportasi.geojson",
+          "fitur": 13,
+          "ukuran_mb": 0.041
+        },
+        "sungai": {
+          "file": "banjarmangu/sungai.geojson",
+          "fitur": 148,
+          "ukuran_mb": 0.134
+        }
+      },
+      "luas_ha": {
+        "pola_ruang": 5374.47,
+        "batas_desa": 5374.54
+      },
+      "total_mb": 3.42
+    },
+    "banjarnegara": {
+      "nama": "Banjarnegara",
+      "slug": "banjarnegara",
+      "layers": {
+        "pola_ruang": {
+          "file": "banjarnegara/pola_ruang.geojson",
+          "fitur": 277,
+          "ukuran_mb": 1.108
+        },
+        "batas_desa": {
+          "file": "banjarnegara/batas_desa.geojson",
+          "fitur": 13,
+          "ukuran_mb": 0.3
+        },
+        "transportasi": {
+          "file": "banjarnegara/transportasi.geojson",
+          "fitur": 53,
+          "ukuran_mb": 0.124
+        },
+        "sungai": {
+          "file": "banjarnegara/sungai.geojson",
+          "fitur": 205,
+          "ukuran_mb": 0.147
+        }
+      },
+      "luas_ha": {
+        "pola_ruang": 3374.68,
+        "batas_desa": 3374.84
+      },
+      "total_mb": 1.68
+    },
+    "batur": {
+      "nama": "Batur",
+      "slug": "batur",
+      "layers": {
+        "pola_ruang": {
+          "file": "batur/pola_ruang.geojson",
+          "fitur": 109,
+          "ukuran_mb": 0.633
+        },
+        "batas_desa": {
+          "file": "batur/batas_desa.geojson",
+          "fitur": 8,
+          "ukuran_mb": 0.091
+        },
+        "transportasi": {
+          "file": "batur/transportasi.geojson",
+          "fitur": 22,
+          "ukuran_mb": 0.053
+        },
+        "sungai": {
+          "file": "batur/sungai.geojson",
+          "fitur": 265,
+          "ukuran_mb": 0.199
+        }
+      },
+      "luas_ha": {
+        "pola_ruang": 5079.13,
+        "batas_desa": 5079.15
+      },
+      "total_mb": 0.98
+    },
+    "bawang": {
+      "nama": "Bawang",
+      "slug": "bawang",
+      "layers": {
+        "pola_ruang": {
+          "file": "bawang/pola_ruang.geojson",
+          "fitur": 774,
+          "ukuran_mb": 2.378
+        },
+        "batas_desa": {
+          "file": "bawang/batas_desa.geojson",
+          "fitur": 18,
+          "ukuran_mb": 0.102
+        },
+        "transportasi": {
+          "file": "bawang/transportasi.geojson",
+          "fitur": 17,
+          "ukuran_mb": 0.073
+        },
+        "sungai": {
+          "file": "bawang/sungai.geojson",
+          "fitur": 139,
+          "ukuran_mb": 0.121
+        }
+      },
+      "luas_ha": {
+        "pola_ruang": 6049.03,
+        "batas_desa": 6049.44
+      },
+      "total_mb": 2.67
+    },
+    "kalibening": {
+      "nama": "Kalibening",
+      "slug": "kalibening",
+      "layers": {
+        "pola_ruang": {
+          "file": "kalibening/pola_ruang.geojson",
+          "fitur": 554,
+          "ukuran_mb": 2.047
+        },
+        "batas_desa": {
+          "file": "kalibening/batas_desa.geojson",
+          "fitur": 16,
+          "ukuran_mb": 0.096
+        },
+        "transportasi": {
+          "file": "kalibening/transportasi.geojson",
+          "fitur": 15,
+          "ukuran_mb": 0.048
+        },
+        "sungai": {
+          "file": "kalibening/sungai.geojson",
+          "fitur": 384,
+          "ukuran_mb": 0.306
+        }
+      },
+      "luas_ha": {
+        "pola_ruang": 9297.73,
+        "batas_desa": 9297.92
+      },
+      "total_mb": 2.5
+    },
+    "karangkobar": {
+      "nama": "Karangkobar",
+      "slug": "karangkobar",
+      "layers": {
+        "pola_ruang": {
+          "file": "karangkobar/pola_ruang.geojson",
+          "fitur": 516,
+          "ukuran_mb": 1.582
+        },
+        "batas_desa": {
+          "file": "karangkobar/batas_desa.geojson",
+          "fitur": 13,
+          "ukuran_mb": 0.071
+        },
+        "transportasi": {
+          "file": "karangkobar/transportasi.geojson",
+          "fitur": 20,
+          "ukuran_mb": 0.05
+        },
+        "sungai": {
+          "file": "karangkobar/sungai.geojson",
+          "fitur": 168,
+          "ukuran_mb": 0.138
+        }
+      },
+      "luas_ha": {
+        "pola_ruang": 4074.57,
+        "batas_desa": 4074.89
+      },
+      "total_mb": 1.84
+    },
+    "madukara": {
+      "nama": "Madukara",
+      "slug": "madukara",
+      "layers": {
+        "pola_ruang": {
+          "file": "madukara/pola_ruang.geojson",
+          "fitur": 386,
+          "ukuran_mb": 1.32
+        },
+        "batas_desa": {
+          "file": "madukara/batas_desa.geojson",
+          "fitur": 20,
+          "ukuran_mb": 0.334
+        },
+        "transportasi": {
+          "file": "madukara/transportasi.geojson",
+          "fitur": 12,
+          "ukuran_mb": 0.033
+        },
+        "sungai": {
+          "file": "madukara/sungai.geojson",
+          "fitur": 141,
+          "ukuran_mb": 0.123
+        }
+      },
+      "luas_ha": {
+        "pola_ruang": 4597.91,
+        "batas_desa": 4598.02
+      },
+      "total_mb": 1.81
+    },
+    "mandiraja": {
+      "nama": "Mandiraja",
+      "slug": "mandiraja",
+      "layers": {
+        "pola_ruang": {
+          "file": "mandiraja/pola_ruang.geojson",
+          "fitur": 826,
+          "ukuran_mb": 2.709
+        },
+        "batas_desa": {
+          "file": "mandiraja/batas_desa.geojson",
+          "fitur": 16,
+          "ukuran_mb": 0.082
+        },
+        "transportasi": {
+          "file": "mandiraja/transportasi.geojson",
+          "fitur": 25,
+          "ukuran_mb": 0.076
+        },
+        "sungai": {
+          "file": "mandiraja/sungai.geojson",
+          "fitur": 149,
+          "ukuran_mb": 0.124
+        }
+      },
+      "luas_ha": {
+        "pola_ruang": 5440.9,
+        "batas_desa": 5441.39
+      },
+      "total_mb": 2.99
+    },
+    "pagedongan": {
+      "nama": "Pagedongan",
+      "slug": "pagedongan",
+      "layers": {
+        "pola_ruang": {
+          "file": "pagedongan/pola_ruang.geojson",
+          "fitur": 343,
+          "ukuran_mb": 1.366
+        },
+        "batas_desa": {
+          "file": "pagedongan/batas_desa.geojson",
+          "fitur": 9,
+          "ukuran_mb": 0.097
+        },
+        "transportasi": {
+          "file": "pagedongan/transportasi.geojson",
+          "fitur": 11,
+          "ukuran_mb": 0.049
+        },
+        "sungai": {
+          "file": "pagedongan/sungai.geojson",
+          "fitur": 288,
+          "ukuran_mb": 0.191
+        }
+      },
+      "luas_ha": {
+        "pola_ruang": 8146.89,
+        "batas_desa": 8146.95
+      },
+      "total_mb": 1.7
+    },
+    "pagentan": {
+      "nama": "Pagentan",
+      "slug": "pagentan",
+      "layers": {
+        "pola_ruang": {
+          "file": "pagentan/pola_ruang.geojson",
+          "fitur": 535,
+          "ukuran_mb": 1.792
+        },
+        "batas_desa": {
+          "file": "pagentan/batas_desa.geojson",
+          "fitur": 16,
+          "ukuran_mb": 0.104
+        },
+        "transportasi": {
+          "file": "pagentan/transportasi.geojson",
+          "fitur": 14,
+          "ukuran_mb": 0.045
+        },
+        "sungai": {
+          "file": "pagentan/sungai.geojson",
+          "fitur": 222,
+          "ukuran_mb": 0.147
+        }
+      },
+      "luas_ha": {
+        "pola_ruang": 5000.4,
+        "batas_desa": 5000.57
+      },
+      "total_mb": 2.09
+    },
+    "pandanarum": {
+      "nama": "Pandanarum",
+      "slug": "pandanarum",
+      "layers": {
+        "pola_ruang": {
+          "file": "pandanarum/pola_ruang.geojson",
+          "fitur": 970,
+          "ukuran_mb": 2.952
+        },
+        "batas_desa": {
+          "file": "pandanarum/batas_desa.geojson",
+          "fitur": 8,
+          "ukuran_mb": 0.047
+        },
+        "transportasi": {
+          "file": "pandanarum/transportasi.geojson",
+          "fitur": 8,
+          "ukuran_mb": 0.054
+        },
+        "sungai": {
+          "file": "pandanarum/sungai.geojson",
+          "fitur": 170,
+          "ukuran_mb": 0.141
+        }
+      },
+      "luas_ha": {
+        "pola_ruang": 5806.62,
+        "batas_desa": 5807.11
+      },
+      "total_mb": 3.19
+    },
+    "pejawaran": {
+      "nama": "Pejawaran",
+      "slug": "pejawaran",
+      "layers": {
+        "pola_ruang": {
+          "file": "pejawaran/pola_ruang.geojson",
+          "fitur": 272,
+          "ukuran_mb": 1.139
+        },
+        "batas_desa": {
+          "file": "pejawaran/batas_desa.geojson",
+          "fitur": 17,
+          "ukuran_mb": 0.123
+        },
+        "transportasi": {
+          "file": "pejawaran/transportasi.geojson",
+          "fitur": 22,
+          "ukuran_mb": 0.068
+        },
+        "sungai": {
+          "file": "pejawaran/sungai.geojson",
+          "fitur": 289,
+          "ukuran_mb": 0.23
+        }
+      },
+      "luas_ha": {
+        "pola_ruang": 5570.54,
+        "batas_desa": 5570.59
+      },
+      "total_mb": 1.56
+    },
+    "punggelan": {
+      "nama": "Punggelan",
+      "slug": "punggelan",
+      "layers": {
+        "pola_ruang": {
+          "file": "punggelan/pola_ruang.geojson",
+          "fitur": 947,
+          "ukuran_mb": 3.28
+        },
+        "batas_desa": {
+          "file": "punggelan/batas_desa.geojson",
+          "fitur": 17,
+          "ukuran_mb": 0.112
+        },
+        "transportasi": {
+          "file": "punggelan/transportasi.geojson",
+          "fitur": 24,
+          "ukuran_mb": 0.072
+        },
+        "sungai": {
+          "file": "punggelan/sungai.geojson",
+          "fitur": 176,
+          "ukuran_mb": 0.143
+        }
+      },
+      "luas_ha": {
+        "pola_ruang": 11374.21,
+        "batas_desa": 11374.59
+      },
+      "total_mb": 3.61
+    },
+    "purwanegara": {
+      "nama": "Purwanegara",
+      "slug": "purwanegara",
+      "layers": {
+        "pola_ruang": {
+          "file": "purwanegara/pola_ruang.geojson",
+          "fitur": 914,
+          "ukuran_mb": 2.73
+        },
+        "batas_desa": {
+          "file": "purwanegara/batas_desa.geojson",
+          "fitur": 13,
+          "ukuran_mb": 0.086
+        },
+        "transportasi": {
+          "file": "purwanegara/transportasi.geojson",
+          "fitur": 16,
+          "ukuran_mb": 0.075
+        },
+        "sungai": {
+          "file": "purwanegara/sungai.geojson",
+          "fitur": 95,
+          "ukuran_mb": 0.089
+        }
+      },
+      "luas_ha": {
+        "pola_ruang": 8085.14,
+        "batas_desa": 8085.46
+      },
+      "total_mb": 2.98
+    },
+    "purwareja-klampok": {
+      "nama": "Purwareja Klampok",
+      "slug": "purwareja-klampok",
+      "layers": {
+        "pola_ruang": {
+          "file": "purwareja-klampok/pola_ruang.geojson",
+          "fitur": 356,
+          "ukuran_mb": 1.004
+        },
+        "batas_desa": {
+          "file": "purwareja-klampok/batas_desa.geojson",
+          "fitur": 8,
+          "ukuran_mb": 0.047
+        },
+        "transportasi": {
+          "file": "purwareja-klampok/transportasi.geojson",
+          "fitur": 18,
+          "ukuran_mb": 0.037
+        },
+        "sungai": {
+          "file": "purwareja-klampok/sungai.geojson",
+          "fitur": 68,
+          "ukuran_mb": 0.055
+        }
+      },
+      "luas_ha": {
+        "pola_ruang": 2368.75,
+        "batas_desa": 2368.97
+      },
+      "total_mb": 1.14
+    },
+    "rakit": {
+      "nama": "Rakit",
+      "slug": "rakit",
+      "layers": {
+        "pola_ruang": {
+          "file": "rakit/pola_ruang.geojson",
+          "fitur": 362,
+          "ukuran_mb": 1.418
+        },
+        "batas_desa": {
+          "file": "rakit/batas_desa.geojson",
+          "fitur": 11,
+          "ukuran_mb": 0.043
+        },
+        "transportasi": {
+          "file": "rakit/transportasi.geojson",
+          "fitur": 11,
+          "ukuran_mb": 0.021
+        },
+        "sungai": {
+          "file": "rakit/sungai.geojson",
+          "fitur": 17,
+          "ukuran_mb": 0.031
+        }
+      },
+      "luas_ha": {
+        "pola_ruang": 3267.68,
+        "batas_desa": 3267.8
+      },
+      "total_mb": 1.51
+    },
+    "sigaluh": {
+      "nama": "Sigaluh",
+      "slug": "sigaluh",
+      "layers": {
+        "pola_ruang": {
+          "file": "sigaluh/pola_ruang.geojson",
+          "fitur": 226,
+          "ukuran_mb": 0.841
+        },
+        "batas_desa": {
+          "file": "sigaluh/batas_desa.geojson",
+          "fitur": 15,
+          "ukuran_mb": 0.32
+        },
+        "transportasi": {
+          "file": "sigaluh/transportasi.geojson",
+          "fitur": 11,
+          "ukuran_mb": 0.079
+        },
+        "sungai": {
+          "file": "sigaluh/sungai.geojson",
+          "fitur": 174,
+          "ukuran_mb": 0.118
+        }
+      },
+      "luas_ha": {
+        "pola_ruang": 4258.31,
+        "batas_desa": 4258.38
+      },
+      "total_mb": 1.36
+    },
+    "susukan": {
+      "nama": "Susukan",
+      "slug": "susukan",
+      "layers": {
+        "pola_ruang": {
+          "file": "susukan/pola_ruang.geojson",
+          "fitur": 588,
+          "ukuran_mb": 2.315
+        },
+        "batas_desa": {
+          "file": "susukan/batas_desa.geojson",
+          "fitur": 15,
+          "ukuran_mb": 0.099
+        },
+        "transportasi": {
+          "file": "susukan/transportasi.geojson",
+          "fitur": 10,
+          "ukuran_mb": 0.051
+        },
+        "sungai": {
+          "file": "susukan/sungai.geojson",
+          "fitur": 103,
+          "ukuran_mb": 0.104
+        }
+      },
+      "luas_ha": {
+        "pola_ruang": 5317.35,
+        "batas_desa": 5317.56
+      },
+      "total_mb": 2.57
+    },
+    "wanadadi": {
+      "nama": "Wanadadi",
+      "slug": "wanadadi",
+      "layers": {
+        "pola_ruang": {
+          "file": "wanadadi/pola_ruang.geojson",
+          "fitur": 485,
+          "ukuran_mb": 1.964
+        },
+        "batas_desa": {
+          "file": "wanadadi/batas_desa.geojson",
+          "fitur": 11,
+          "ukuran_mb": 0.07
+        },
+        "transportasi": {
+          "file": "wanadadi/transportasi.geojson",
+          "fitur": 13,
+          "ukuran_mb": 0.023
+        },
+        "sungai": {
+          "file": "wanadadi/sungai.geojson",
+          "fitur": 91,
+          "ukuran_mb": 0.076
+        }
+      },
+      "luas_ha": {
+        "pola_ruang": 2949.01,
+        "batas_desa": 2949.68
+      },
+      "total_mb": 2.13
+    },
+    "wanayasa": {
+      "nama": "Wanayasa",
+      "slug": "wanayasa",
+      "layers": {
+        "pola_ruang": {
+          "file": "wanayasa/pola_ruang.geojson",
+          "fitur": 655,
+          "ukuran_mb": 1.741
+        },
+        "batas_desa": {
+          "file": "wanayasa/batas_desa.geojson",
+          "fitur": 17,
+          "ukuran_mb": 0.113
+        },
+        "transportasi": {
+          "file": "wanayasa/transportasi.geojson",
+          "fitur": 23,
+          "ukuran_mb": 0.055
+        },
+        "sungai": {
+          "file": "wanayasa/sungai.geojson",
+          "fitur": 303,
+          "ukuran_mb": 0.234
+        }
+      },
+      "luas_ha": {
+        "pola_ruang": 9051.42,
+        "batas_desa": 9051.79
+      },
+      "total_mb": 2.14
+    }
+  }
+}

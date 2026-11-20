@@ -1,0 +1,446 @@
+{
+  "kabupaten": "Banjarnegara",
+  "jumlah": 20,
+  "kecamatan": [
+    {
+      "nama": "Banjarmangu",
+      "slug": "banjarmangu",
+      "luas_ha": 5374.54,
+      "jumlah_desa": 17,
+      "centroid": [
+        109.682715,
+        -7.330125
+      ],
+      "bbox": [
+        109.643211,
+        -7.397313,
+        109.726146,
+        -7.280753
+      ],
+      "layers": {
+        "pola_ruang": "banjarmangu/pola_ruang.geojson",
+        "batas_desa": "banjarmangu/batas_desa.geojson",
+        "transportasi": "banjarmangu/transportasi.geojson",
+        "sungai": "banjarmangu/sungai.geojson"
+      }
+    },
+    {
+      "nama": "Banjarnegara",
+      "slug": "banjarnegara",
+      "luas_ha": 3374.84,
+      "jumlah_desa": 13,
+      "centroid": [
+        109.712057,
+        -7.410198
+      ],
+      "bbox": [
+        109.663259,
+        -7.439426,
+        109.756045,
+        -7.384107
+      ],
+      "layers": {
+        "pola_ruang": "banjarnegara/pola_ruang.geojson",
+        "batas_desa": "banjarnegara/batas_desa.geojson",
+        "transportasi": "banjarnegara/transportasi.geojson",
+        "sungai": "banjarnegara/sungai.geojson"
+      }
+    },
+    {
+      "nama": "Batur",
+      "slug": "batur",
+      "luas_ha": 5079.15,
+      "jumlah_desa": 8,
+      "centroid": [
+        109.853526,
+        -7.20557
+      ],
+      "bbox": [
+        109.79086,
+        -7.239572,
+        109.917709,
+        -7.1777
+      ],
+      "layers": {
+        "pola_ruang": "batur/pola_ruang.geojson",
+        "batas_desa": "batur/batas_desa.geojson",
+        "transportasi": "batur/transportasi.geojson",
+        "sungai": "batur/sungai.geojson"
+      }
+    },
+    {
+      "nama": "Bawang",
+      "slug": "bawang",
+      "luas_ha": 6049.44,
+      "jumlah_desa": 18,
+      "centroid": [
+        109.627533,
+        -7.429017
+      ],
+      "bbox": [
+        109.59103,
+        -7.499055,
+        109.670274,
+        -7.380444
+      ],
+      "layers": {
+        "pola_ruang": "bawang/pola_ruang.geojson",
+        "batas_desa": "bawang/batas_desa.geojson",
+        "transportasi": "bawang/transportasi.geojson",
+        "sungai": "bawang/sungai.geojson"
+      }
+    },
+    {
+      "nama": "Kalibening",
+      "slug": "kalibening",
+      "luas_ha": 9297.92,
+      "jumlah_desa": 16,
+      "centroid": [
+        109.661412,
+        -7.22696
+      ],
+      "bbox": [
+        109.610299,
+        -7.291586,
+        109.71305,
+        -7.172391
+      ],
+      "layers": {
+        "pola_ruang": "kalibening/pola_ruang.geojson",
+        "batas_desa": "kalibening/batas_desa.geojson",
+        "transportasi": "kalibening/transportasi.geojson",
+        "sungai": "kalibening/sungai.geojson"
+      }
+    },
+    {
+      "nama": "Karangkobar",
+      "slug": "karangkobar",
+      "luas_ha": 4074.89,
+      "jumlah_desa": 13,
+      "centroid": [
+        109.713148,
+        -7.279
+      ],
+      "bbox": [
+        109.668358,
+        -7.320778,
+        109.746154,
+        -7.24813
+      ],
+      "layers": {
+        "pola_ruang": "karangkobar/pola_ruang.geojson",
+        "batas_desa": "karangkobar/batas_desa.geojson",
+        "transportasi": "karangkobar/transportasi.geojson",
+        "sungai": "karangkobar/sungai.geojson"
+      }
+    },
+    {
+      "nama": "Madukara",
+      "slug": "madukara",
+      "luas_ha": 4598.02,
+      "jumlah_desa": 20,
+      "centroid": [
+        109.731592,
+        -7.363234
+      ],
+      "bbox": [
+        109.680046,
+        -7.392562,
+        109.777758,
+        -7.320758
+      ],
+      "layers": {
+        "pola_ruang": "madukara/pola_ruang.geojson",
+        "batas_desa": "madukara/batas_desa.geojson",
+        "transportasi": "madukara/transportasi.geojson",
+        "sungai": "madukara/sungai.geojson"
+      }
+    },
+    {
+      "nama": "Mandiraja",
+      "slug": "mandiraja",
+      "luas_ha": 5441.39,
+      "jumlah_desa": 16,
+      "centroid": [
+        109.49827,
+        -7.481008
+      ],
+      "bbox": [
+        109.454177,
+        -7.522437,
+        109.543906,
+        -7.437876
+      ],
+      "layers": {
+        "pola_ruang": "mandiraja/pola_ruang.geojson",
+        "batas_desa": "mandiraja/batas_desa.geojson",
+        "transportasi": "mandiraja/transportasi.geojson",
+        "sungai": "mandiraja/sungai.geojson"
+      }
+    },
+    {
+      "nama": "Pagedongan",
+      "slug": "pagedongan",
+      "luas_ha": 8146.95,
+      "jumlah_desa": 9,
+      "centroid": [
+        109.685535,
+        -7.45719
+      ],
+      "bbox": [
+        109.627848,
+        -7.503461,
+        109.753861,
+        -7.410828
+      ],
+      "layers": {
+        "pola_ruang": "pagedongan/pola_ruang.geojson",
+        "batas_desa": "pagedongan/batas_desa.geojson",
+        "transportasi": "pagedongan/transportasi.geojson",
+        "sungai": "pagedongan/sungai.geojson"
+      }
+    },
+    {
+      "nama": "Pagentan",
+      "slug": "pagentan",
+      "luas_ha": 5000.57,
+      "jumlah_desa": 16,
+      "centroid": [
+        109.792263,
+        -7.30809
+      ],
+      "bbox": [
+        109.725886,
+        -7.365037,
+        109.843606,
+        -7.260676
+      ],
+      "layers": {
+        "pola_ruang": "pagentan/pola_ruang.geojson",
+        "batas_desa": "pagentan/batas_desa.geojson",
+        "transportasi": "pagentan/transportasi.geojson",
+        "sungai": "pagentan/sungai.geojson"
+      }
+    },
+    {
+      "nama": "Pandanarum",
+      "slug": "pandanarum",
+      "luas_ha": 5807.11,
+      "jumlah_desa": 8,
+      "centroid": [
+        109.591406,
+        -7.250934
+      ],
+      "bbox": [
+        109.538612,
+        -7.300575,
+        109.62927,
+        -7.205857
+      ],
+      "layers": {
+        "pola_ruang": "pandanarum/pola_ruang.geojson",
+        "batas_desa": "pandanarum/batas_desa.geojson",
+        "transportasi": "pandanarum/transportasi.geojson",
+        "sungai": "pandanarum/sungai.geojson"
+      }
+    },
+    {
+      "nama": "Pejawaran",
+      "slug": "pejawaran",
+      "luas_ha": 5570.59,
+      "jumlah_desa": 17,
+      "centroid": [
+        109.809957,
+        -7.243653
+      ],
+      "bbox": [
+        109.764684,
+        -7.282647,
+        109.870195,
+        -7.198847
+      ],
+      "layers": {
+        "pola_ruang": "pejawaran/pola_ruang.geojson",
+        "batas_desa": "pejawaran/batas_desa.geojson",
+        "transportasi": "pejawaran/transportasi.geojson",
+        "sungai": "pejawaran/sungai.geojson"
+      }
+    },
+    {
+      "nama": "Punggelan",
+      "slug": "punggelan",
+      "luas_ha": 11374.59,
+      "jumlah_desa": 17,
+      "centroid": [
+        109.592116,
+        -7.335605
+      ],
+      "bbox": [
+        109.518437,
+        -7.398688,
+        109.658877,
+        -7.263249
+      ],
+      "layers": {
+        "pola_ruang": "punggelan/pola_ruang.geojson",
+        "batas_desa": "punggelan/batas_desa.geojson",
+        "transportasi": "punggelan/transportasi.geojson",
+        "sungai": "punggelan/sungai.geojson"
+      }
+    },
+    {
+      "nama": "Purwanegara",
+      "slug": "purwanegara",
+      "luas_ha": 8085.46,
+      "jumlah_desa": 13,
+      "centroid": [
+        109.569832,
+        -7.467824
+      ],
+      "bbox": [
+        109.521466,
+        -7.522672,
+        109.615285,
+        -7.40601
+      ],
+      "layers": {
+        "pola_ruang": "purwanegara/pola_ruang.geojson",
+        "batas_desa": "purwanegara/batas_desa.geojson",
+        "transportasi": "purwanegara/transportasi.geojson",
+        "sungai": "purwanegara/sungai.geojson"
+      }
+    },
+    {
+      "nama": "Purwareja Klampok",
+      "slug": "purwareja-klampok",
+      "luas_ha": 2368.97,
+      "jumlah_desa": 8,
+      "centroid": [
+        109.450233,
+        -7.477322
+      ],
+      "bbox": [
+        109.417988,
+        -7.525016,
+        109.47368,
+        -7.44606
+      ],
+      "layers": {
+        "pola_ruang": "purwareja-klampok/pola_ruang.geojson",
+        "batas_desa": "purwareja-klampok/batas_desa.geojson",
+        "transportasi": "purwareja-klampok/transportasi.geojson",
+        "sungai": "purwareja-klampok/sungai.geojson"
+      }
+    },
+    {
+      "nama": "Rakit",
+      "slug": "rakit",
+      "luas_ha": 3267.8,
+      "jumlah_desa": 11,
+      "centroid": [
+        109.546653,
+        -7.416145
+      ],
+      "bbox": [
+        109.5015,
+        -7.45056,
+        109.595632,
+        -7.386062
+      ],
+      "layers": {
+        "pola_ruang": "rakit/pola_ruang.geojson",
+        "batas_desa": "rakit/batas_desa.geojson",
+        "transportasi": "rakit/transportasi.geojson",
+        "sungai": "rakit/sungai.geojson"
+      }
+    },
+    {
+      "nama": "Sigaluh",
+      "slug": "sigaluh",
+      "luas_ha": 4258.38,
+      "jumlah_desa": 15,
+      "centroid": [
+        109.782404,
+        -7.421557
+      ],
+      "bbox": [
+        109.72587,
+        -7.448504,
+        109.832994,
+        -7.385544
+      ],
+      "layers": {
+        "pola_ruang": "sigaluh/pola_ruang.geojson",
+        "batas_desa": "sigaluh/batas_desa.geojson",
+        "transportasi": "sigaluh/transportasi.geojson",
+        "sungai": "sigaluh/sungai.geojson"
+      }
+    },
+    {
+      "nama": "Susukan",
+      "slug": "susukan",
+      "luas_ha": 5317.56,
+      "jumlah_desa": 15,
+      "centroid": [
+        109.407327,
+        -7.504466
+      ],
+      "bbox": [
+        109.361515,
+        -7.540894,
+        109.451561,
+        -7.467194
+      ],
+      "layers": {
+        "pola_ruang": "susukan/pola_ruang.geojson",
+        "batas_desa": "susukan/batas_desa.geojson",
+        "transportasi": "susukan/transportasi.geojson",
+        "sungai": "susukan/sungai.geojson"
+      }
+    },
+    {
+      "nama": "Wanadadi",
+      "slug": "wanadadi",
+      "luas_ha": 2949.68,
+      "jumlah_desa": 11,
+      "centroid": [
+        109.637722,
+        -7.368927
+      ],
+      "bbox": [
+        109.584096,
+        -7.401479,
+        109.677858,
+        -7.32764
+      ],
+      "layers": {
+        "pola_ruang": "wanadadi/pola_ruang.geojson",
+        "batas_desa": "wanadadi/batas_desa.geojson",
+        "transportasi": "wanadadi/transportasi.geojson",
+        "sungai": "wanadadi/sungai.geojson"
+      }
+    },
+    {
+      "nama": "Wanayasa",
+      "slug": "wanayasa",
+      "luas_ha": 9051.79,
+      "jumlah_desa": 17,
+      "centroid": [
+        109.754027,
+        -7.237739
+      ],
+      "bbox": [
+        109.704437,
+        -7.324689,
+        109.81975,
+        -7.170981
+      ],
+      "layers": {
+        "pola_ruang": "wanayasa/pola_ruang.geojson",
+        "batas_desa": "wanayasa/batas_desa.geojson",
+        "transportasi": "wanayasa/transportasi.geojson",
+        "sungai": "wanayasa/sungai.geojson"
+      }
+    }
+  ]
+}
