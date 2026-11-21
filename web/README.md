@@ -28,6 +28,14 @@ luas hasil klip, dan ada tidaknya piksel berwarna di kanvas. Butuh
 `puppeteer-core` (sudah terpasang di `tools/node_modules`) dan Chrome di lokasi
 standar. Port uji bisa diganti: `$env:PORT=8011`.
 
+Halaman banding punya ujinya sendiri; ubin OSM diblokir supaya hasil tangkapan
+layar tidak bergantung jaringan.
+
+```powershell
+cd I:\tataruang
+node tools\uji_banding.js
+```
+
 ## Fitur
 
 - **Tampilan awal seluruh kabupaten** — pola ruang 13 kelas sudah terlihat sejak
@@ -48,6 +56,18 @@ standar. Port uji bisa diganti: `$env:PORT=8011`.
 - **Responsif** — di layar < 860 px panel menjadi bottom sheet dengan tombol
   "Panel".
 
+## Halaman banding
+
+`banding.html` adalah halaman terpisah untuk membandingkan peta: dua peta
+Leaflet yang tampilannya disinkronkan, ditumpuk, dengan pembatas geser di
+tengah. Sisi kanan menampilkan pola ruang lebih pudar agar perbandingan
+terbaca.
+
+Data contoh berasal dari `scripts/contoh_bangunan.py`, yang menghitung
+kepadatan bangunan OpenStreetMap (400 m per sel) lalu menyambungkannya dengan
+zona pola ruang. Data OSM tidak lengkap di pedesaan, jadi hasilnya hanya
+contoh, bukan dokumen perencanaan.
+
 ## Struktur
 
 ```
@@ -55,6 +75,9 @@ web/
 ├── index.html
 ├── style.css
 ├── app.js
+├── banding.html        # halaman pembanding, terpisah dari viewer
+├── banding.css
+├── banding.js
 ├── vendor/
 │   ├── leaflet.js     # 1.9.4, disimpan lokal agar tidak bergantung CDN
 │   └── leaflet.css
