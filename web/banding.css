@@ -1,0 +1,380 @@
+/* Halaman pembanding. Sengaja tidak memakai style.css: berkas itu milik
+   aplikasi utama (panel, dropdown, toggle), dan halaman ini hanya butuh peta
+   penuh dengan dua kartu mengambang. Yang disamakan hanya token warnanya. */
+
+:root {
+  --ink: #1b1d21;
+  --ink-2: #52585f;
+  --ink-3: #8b9198;
+  --line: #d8d6d1;
+  --surface: #ffffff;
+  --page: #eceae6;
+  --accent: #1f5b73;
+  --radius: 3px;
+  --font: "Segoe UI", system-ui, -apple-system, "Helvetica Neue", Arial, sans-serif;
+  --tinggi-kepala: 56px;
+}
+
+* { box-sizing: border-box; }
+
+html, body {
+  margin: 0;
+  height: 100%;
+  font-family: var(--font);
+  color: var(--ink);
+  background: var(--page);
+  -webkit-font-smoothing: antialiased;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+/* ---------- kepala ---------- */
+
+.kepala {
+  flex: 0 0 auto;
+  height: var(--tinggi-kepala);
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 0 16px;
+  background: var(--surface);
+  border-bottom: 1px solid var(--line);
+  z-index: 1200;
+}
+
+.kembali {
+  color: var(--accent);
+  text-decoration: none;
+  font-size: 12.5px;
+  font-weight: 600;
+  padding: 7px 10px;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  white-space: nowrap;
+}
+
+.kembali:hover { background: #e4edf0; }
+.kembali:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+
+.judul { min-width: 0; }
+
+.judul h1 {
+  margin: 0;
+  font-size: 14px;
+  font-weight: 650;
+  letter-spacing: -0.01em;
+}
+
+.judul p {
+  margin: 1px 0 0;
+  font-size: 11.5px;
+  color: var(--ink-3);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.tanda {
+  margin-left: auto;
+  flex: 0 0 auto;
+  font-size: 10.5px;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: #7a4a00;
+  background: #fdf0d5;
+  border: 1px solid #efd9a8;
+  border-radius: 999px;
+  padding: 4px 9px;
+}
+
+/* ---------- peringatan ---------- */
+
+.peringatan {
+  flex: 0 0 auto;
+  margin: 0;
+  padding: 8px 16px;
+  font-size: 11.5px;
+  line-height: 1.5;
+  color: #5c4300;
+  background: #fdf0d5;
+  border-bottom: 1px solid #efd9a8;
+}
+
+.peringatan strong { font-weight: 650; }
+
+/* ---------- peta ---------- */
+
+.peta-bungkus {
+  position: relative;
+  flex: 1 1 auto;
+  min-height: 0;
+}
+
+.peta {
+  position: absolute;
+  inset: 0;
+  background: #dfe5e8;
+}
+
+/* Wadah peta kanan dipotong, bukan kanvasnya: wadah tidak ikut bergeser saat
+   peta digeser, jadi potongan dalam persen selalu tepat. clip-path juga
+   memotong area klik, sehingga bagian kiri tetap dilayani peta kiri. */
+.peta-kanan {
+  clip-path: inset(0 0 0 50%);
+  z-index: 1;
+}
+
+/* Peta kiri tetap menerima gulir dan seret di mana pun; pembatas yang
+   menangkap gesturnya sendiri. */
+.peta-kiri { z-index: 0; }
+
+/* ---------- pembatas geser ---------- */
+
+.pembatas {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  width: 44px;                 /* area sentuh selebar 44 px, garisnya tetap tipis */
+  margin-left: -22px;
+  cursor: ew-resize;
+  touch-action: none;
+  z-index: 800;
+}
+
+.pembatas-garis {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  width: 2px;
+  margin-left: -1px;
+  background: var(--surface);
+  box-shadow: 0 0 0 1px rgba(27, 29, 33, 0.28);
+}
+
+.pembatas-pegangan {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 40px;
+  height: 40px;
+  margin: -20px 0 0 -20px;
+  display: grid;
+  place-items: center;
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: 50%;
+  box-shadow: 0 1px 4px rgba(27, 29, 33, 0.25);
+  color: var(--ink-2);
+}
+
+.pembatas:focus-visible { outline: none; }
+.pembatas:focus-visible .pembatas-pegangan {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+}
+
+.pembatas.seret .pembatas-pegangan { background: #e4edf0; }
+
+/* ---------- label sisi ---------- */
+
+.label {
+  position: absolute;
+  top: 10px;
+  padding: 3px 8px;
+  font-size: 10.5px;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: var(--ink-2);
+  background: rgba(255, 255, 255, 0.9);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  /* tidak menghalangi gestur geser maupun klik peta */
+  pointer-events: none;
+  z-index: 700;
+}
+
+.label-kiri { left: 56px; }   /* kontrol zoom Leaflet menempati sudut kiri atas */
+.label-kanan { right: 12px; }
+
+/* Atribusi peta dasar sengaja tidak dipasang sebagai kontrol Leaflet: kedua
+   peta bertumpuk, sehingga kontrol di sudut kanan peta kiri selalu tertutup
+   peta kanan dan bisa hilang sama sekali saat pembatas digeser penuh. */
+.kaki-halaman {
+  flex: 0 0 auto;
+  padding: 5px 16px;
+  font-size: 10.5px;
+  color: var(--ink-3);
+  background: var(--surface);
+  border-top: 1px solid var(--line);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.kaki-halaman a { color: var(--accent); }
+
+/* ---------- kartu ---------- */
+
+.kartu {
+  position: absolute;
+  background: rgba(255, 255, 255, 0.96);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  box-shadow: 0 1px 3px rgba(27, 29, 33, 0.12);
+  font-size: 11.5px;
+  z-index: 900;
+}
+
+.kartu h2 {
+  margin: 0 0 6px;
+  font-size: 10.5px;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: var(--ink-3);
+}
+
+.redup { font-weight: 500; letter-spacing: 0.02em; text-transform: none; }
+
+.daftar-warna {
+  list-style: none;
+  margin: 0 0 12px;
+  padding: 0;
+  display: grid;
+  gap: 3px;
+}
+
+.daftar-warna:last-child { margin-bottom: 0; }
+
+.daftar-warna li {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  line-height: 1.35;
+  color: var(--ink-2);
+}
+
+.daftar-warna i {
+  flex: 0 0 auto;
+  width: 12px;
+  height: 12px;
+  border-radius: 2px;
+  box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.15);
+}
+
+/* legenda: kiri bawah */
+
+.legenda {
+  left: 12px;
+  bottom: 12px;
+  width: 236px;
+  max-height: calc(100% - 24px);
+  overflow: auto;
+  padding: 10px 12px;
+}
+
+.legenda summary {
+  cursor: pointer;
+  font-size: 10.5px;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: var(--ink-3);
+  padding: 2px 0 6px;
+}
+
+.legenda details > summary::-webkit-details-marker { display: none; }
+
+/* ringkasan: kanan bawah */
+
+.ringkas {
+  right: 12px;
+  bottom: 12px;
+  width: 258px;
+  max-height: calc(100% - 24px);
+  overflow: auto;
+  padding: 10px 12px;
+}
+
+.kendali {
+  margin-bottom: 8px;
+  padding-bottom: 8px;
+  border-bottom: 1px solid var(--line);
+}
+
+.kendali label {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  cursor: pointer;
+  color: var(--ink-2);
+}
+
+.kendali input { accent-color: #b3175f; }
+
+#tabel-zona {
+  width: 100%;
+  border-collapse: collapse;
+  font-variant-numeric: tabular-nums;
+}
+
+#tabel-zona th {
+  text-align: left;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--ink-3);
+  border-bottom: 1px solid var(--line);
+  padding: 0 0 4px;
+}
+
+#tabel-zona th:last-child,
+#tabel-zona td:last-child { text-align: right; }
+
+#tabel-zona td {
+  padding: 3px 0;
+  border-bottom: 1px solid #f0eeea;
+  color: var(--ink-2);
+}
+
+#tabel-zona tr.luar td:first-child::after {
+  content: "";
+  display: inline-block;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: #b3175f;
+  margin-left: 5px;
+  vertical-align: 1px;
+}
+
+.kaki {
+  margin: 7px 0 0;
+  font-size: 10.5px;
+  line-height: 1.45;
+  color: var(--ink-3);
+}
+
+/* ---------- layar sempit ---------- */
+
+@media (max-width: 700px) {
+  .judul p { display: none; }
+  .kartu { font-size: 11px; }
+  .legenda { width: 190px; }
+  .ringkas { width: 190px; }
+  #tabel-zona td, #tabel-zona th { font-size: 10.5px; }
+  .label { display: none; }
+}
+
+@media (max-height: 560px) {
+  .ringkas { display: none; }
+}

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Peta Pembanding — Kabupaten Banjarnegara</title>
+<link rel="stylesheet" href="vendor/leaflet.css">
+<link rel="stylesheet" href="banding.css">
+</head>
+<body>
+
+<header class="kepala">
+  <a class="kembali" href="index.html">&larr; Peta utama</a>
+  <div class="judul">
+    <h1>Peta Pembanding</h1>
+    <p>Pola ruang RTRW di kiri, bangunan yang tercatat di lapangan di kanan</p>
+  </div>
+  <span class="tanda">Data contoh</span>
+</header>
+
+<p class="peringatan" role="note">
+  Lapisan kanan berisi <strong>bangunan dari OpenStreetMap</strong>, bukan hasil klasifikasi citra.
+  OSM tidak lengkap di perdesaan: sel tanpa bangunan bukan berarti tidak ada bangunan.
+  Peta ini bukan dokumen rencana dan tidak bisa dipakai sebagai dasar hukum.
+</p>
+
+<main class="peta-bungkus">
+  <div id="peta-kiri" class="peta peta-kiri"></div>
+  <div id="peta-kanan" class="peta peta-kanan" aria-hidden="true"></div>
+
+  <div id="pembatas" class="pembatas" role="slider" tabindex="0"
+       aria-label="Geser pembatas antara pola ruang dan bangunan"
+       aria-valuemin="0" aria-valuemax="100" aria-valuenow="50" aria-valuetext="50 persen">
+    <span class="pembatas-garis"></span>
+    <span class="pembatas-pegangan" aria-hidden="true">
+      <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor"
+           stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M9 5 4 12l5 7M15 5l5 7-5 7"/>
+      </svg>
+    </span>
+  </div>
+
+  <span class="label label-kiri" id="label-kiri">Pola ruang</span>
+  <span class="label label-kanan" id="label-kanan">Bangunan</span>
+
+  <section class="kartu legenda" aria-label="Legenda">
+    <details open>
+      <summary>Legenda</summary>
+      <h2>Pola ruang <span class="redup">RTRW</span></h2>
+      <ul id="legenda-pola" class="daftar-warna"></ul>
+      <h2>Bangunan <span class="redup">OSM, per sel 400 m</span></h2>
+      <ul class="daftar-warna">
+        <li><i style="background:#37414d"></i>ada &ge; 3 bangunan</li>
+        <li><i style="background:#b3175f"></i>di luar zona terbangun</li>
+      </ul>
+    </details>
+  </section>
+
+  <section class="kartu ringkas" aria-label="Ringkasan per zona">
+    <h2>Bangunan per zona pola ruang</h2>
+    <div class="kendali">
+      <label for="sorot">
+        <input type="checkbox" id="sorot">
+        Sorot yang di luar zona terbangun
+      </label>
+    </div>
+    <table id="tabel-zona">
+      <thead><tr><th>Zona</th><th>Sel</th></tr></thead>
+      <tbody></tbody>
+    </table>
+    <p class="kaki" id="kaki-ringkas"></p>
+  </section>
+</main>
+
+<footer class="kaki-halaman">
+  Peta dasar &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors.
+  Bangunan: OSM per sel 400 m. Bukan dokumen rencana.
+</footer>
+
+<script src="vendor/leaflet.js"></script>
+<script src="banding.js"></script>
+</body>
+</html>
