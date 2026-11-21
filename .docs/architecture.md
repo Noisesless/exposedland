@@ -50,6 +50,7 @@ flowchart TD
         D2["web/banding.html (Dual-Map Swipe Comparator)"]
         D3["web/space.html (URA Space Planning Portal + ITBX)"]
         D4["web/3d.html (Three.js WebGL Elevation Terrain)"]
+        D5["web/kadaster.html (Inspektur Persil Kadaster Satelit 2026)"]
     end
 
     S1 --> S2 --> S3 --> S4
@@ -68,3 +69,9 @@ flowchart TD
 - **Proyeksi UTM Zone 49S:** Elevasi topografi diolah pada satuan meter riil (1:1 scale) sehingga gradien kemiringan lereng perbukitan selatan Banjarnegara, lembah Serayu, hingga dataran tinggi Dieng akurat secara geodesik.
 - **Tree Clumping & Building Instancing:** Pepohonan diatur menggunakan `THREE.InstancedMesh` dengan clustering probabilistik berbasis elevasi dan tutupan lahan untuk efisiensi render GPU.
 - **Export Pipeline:** Modul ekspor menghasilkan file 3D siap cetak/impor (OBJ dengan MTL, GLTF/GLB biner, STL untuk 3D print, dan 3MF).
+
+### 2.3 Cadastral Satellite 2026 Extractor Engine
+- **Tile Fetcher & Stitcher (`tools/kadaster_extractor/`):** Mengunduh paralel asinkron (`aiohttp`) ubin Google Maps Satelit 2026 zoom 18/19 dan merakitnya menjadi raster komputasi spasial WGS84.
+- **Watershed Instance Separation (`detector.py`):** Menggunakan *Euclidean Distance Transform* dan deteksi puncak bubungan atap untuk memisahkan persil bangunan yang saling berhimpitan di kawasan perkotaan/desa.
+- **Orthogonal Rectification Engine (`regularizer.py`):** Menjamin geometri persil bangunan memiliki sudut siku-siku $90^\circ$ (96,2% kotak/OBB) dan majemuk ortogonal (3,8% leter-L/T), bebas dari gerigi gergaji acak.
+- **Inspektur Persil Interaktif (`web/kadaster.html`):** Memungkinkan komparasi langsung poligon vektor persil di atas citra satelit sumber dengan pengatur transparansi $0-100\%$, mode wireframe, dan filter per kelurahan.

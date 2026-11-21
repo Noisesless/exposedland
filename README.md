@@ -18,7 +18,8 @@ Aplikasi Serayu menyediakan 4 antarmuka interaktif yang dapat diakses langsung m
 | **1. Web GIS Hierarkis 2D** | [`/web/index.html`](web/index.html) | Viewer interaktif 3 tingkat (Kabupaten → Kecamatan → Desa), toggle Rencana Pola Ruang & Rawan Bencana (KRB), multibasemap. |
 | **2. Split-Screen Comparator** | [`/web/banding.html`](web/banding.html) | Analisis komparasi swipe slider dua peta berdampingan antara zonasi RTRW vs kepadatan fisik bangunan satelit. |
 | **3. SIMTARU SPACE (Kec. Banjarnegara)** | [`/web/space.html`](web/space.html) | Portal perencanaan perkotaan terinspirasi **Singapore URA SPACE**: 10.918 bangunan kadaster, 277 zona pola ruang, aturan ITBX (Diizinkan, Terbatas, Bersyarat, Dilarang), isolasi kelurahan murni, dan 12 landmark presisi GPS. |
-| **4. 3D Elevation & Landscape Visualizer** | [`/web/3d.html`](web/3d.html) | Visualisasi 3D WebGL Three.js berbasis elevasi DEM SRTM 30m nyata (UTM Zone 49S), gerombol hutan adaptif, dan ekspor model 3D (OBJ, GLTF, STL, 3MF). |
+| **4. Inspeksi Kadaster Satelit 2026** | [`/web/kadaster.html`](web/kadaster.html) | Antarmuka inspeksi dan pembuktian 6.910 persil bangunan hasil ekstraksi AI ortogonal murni (96,2% kotak/OBB) langsung di atas peta dasar Google Satelit HD 2026 dengan slider transparansi dan mode rangka wireframe. |
+| **5. 3D Elevation & Landscape Visualizer** | [`/web/3d.html`](web/3d.html) | Visualisasi 3D WebGL Three.js berbasis elevasi DEM SRTM 30m nyata (UTM Zone 49S), gerombol hutan adaptif, dan ekspor model 3D (OBJ, GLTF, STL, 3MF). |
 
 ---
 
@@ -33,6 +34,7 @@ Jalankan skrip server statis bawaan:
 Buka salah satu tautan di peramban Anda:
 - Viewer Kabupaten: `http://127.0.0.1:8080/web/`
 - URA SPACE Kecamatan: `http://127.0.0.1:8080/web/space.html`
+- Inspeksi Kadaster Satelit: `http://127.0.0.1:8080/web/kadaster.html`
 - Visualizer 3D: `http://127.0.0.1:8080/web/3d.html`
 - Komparasi Swipe: `http://127.0.0.1:8080/web/banding.html`
 

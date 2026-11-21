@@ -25,6 +25,15 @@ Dokumen ini mencatat daftar anomali, batasan teknis, isu regulasi, dan perbaikan
 - **Deskripsi:** Dataset SIMTARU Banjarnegara saat ini baru menyajikan RTRW skala 1:50.000. Dokumen RDTR (skala 1:5.000) digital resmi belum dipublikasikan secara terbuka untuk 20 kecamatan.
 - **Mitigasi:** Pada modul `web/space.html` (Kecamatan Banjarnegara), aturan intensitas (KDB, KLB, KDH, GSB) dan ITBX diintegrasikan dari standar pedoman Permen ATR/BPN No. 1/2020 sebagai jembatan analisis mikro.
 
+### ISS-004: False Positive pada Rumput/Lapangan Terbuka Alun-Alun & Deteksi Bangunan Kompleks/Besar
+- **Status:** `OPEN` (Karakteristik Spektral Satelit & Target Penyempurnaan Besok)
+- **Komponen:** `tools/kadaster_extractor/detector.py`, `tools/kadaster_extractor/regularizer.py`, `web/kadaster.html`
+- **Deskripsi:** Pada inspeksi Alun-Alun Banjarnegara, ditemukan poligon persil persegi panjang palsu (*false positive*) yang muncul di tengah rumput/lapangan hijau terbuka akibat bercak rumput kering/paving terik matahari. Sebaliknya, bangunan beratap kompleks sangat besar (seperti sayap Pendopo Dipayuda / Kantor Bupati) mengalami *under-detection* atau hanya terdeteksi sebagian di tepinya.
+- **Penyebab:** Pendekatan segmentasi warna murni (HSV/RGB) belum memperhitungkan indeks tutupan kanopi multi-spektral atau elevasi tinggi bangunan (DSM/nDSM) untuk membedakan bidang tanah lapang datar vs atap berketinggian.
+- **Rencana Tindak Lanjut Besok:**
+  1. Penambahan filter *Green Lawn Suppression* (analisis rasio tekstur permukaan lapangan rumput vs atap genteng).
+  2. Pemanfaatan pre-trained building weights / deep learning segmentation atau data Google Open Buildings V3 sebagai ground-truth rujukan untuk mengeliminasi false positive di lapangan publik.
+
 ---
 
 ## 2. Riwayat Isu Selesai (RESOLVED) — FIFO Max 10

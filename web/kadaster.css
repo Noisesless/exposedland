@@ -1,0 +1,592 @@
+/**
+ * SIMTARU KADASTER SATELIT 2026 — INSPECTOR STYLESHEET
+ * High contrast, cartographic precision, glassmorphism HUD interface
+ */
+
+:root {
+  --kds-bg: #090d16;
+  --kds-surface: rgba(15, 23, 42, 0.92);
+  --kds-surface-light: rgba(30, 41, 59, 0.85);
+  --kds-border: rgba(148, 163, 184, 0.22);
+  --kds-border-active: #38bdf8;
+  
+  --kds-cyan: #06b6d4;
+  --kds-blue: #38bdf8;
+  --kds-gold: #f59e0b;
+  --kds-red: #ef4444;
+  
+  --kds-text: #f8fafc;
+  --kds-muted: #94a3b8;
+  --kds-radius: 8px;
+  --font-main: "Plus Jakarta Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  --font-head: "Space Grotesk", sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: var(--font-main);
+  background-color: var(--kds-bg);
+  color: var(--kds-text);
+  overflow: hidden;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+}
+
+/* ------------------------------------------------------------------------- */
+/* 1. Header Navigation                                                      */
+/* ------------------------------------------------------------------------- */
+.kds-header {
+  height: 60px;
+  background: rgba(15, 23, 42, 0.96);
+  backdrop-filter: blur(12px);
+  border-bottom: 1px solid var(--kds-border);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+  z-index: 2000;
+  flex-shrink: 0;
+}
+
+.kds-header__brand {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.kds-badge {
+  background: linear-gradient(135deg, #0284c7, #06b6d4);
+  color: #fff;
+  font-size: 10px;
+  font-weight: 700;
+  padding: 4px 8px;
+  border-radius: 4px;
+  letter-spacing: 0.8px;
+  font-family: var(--font-head);
+}
+
+.kds-title-group h1 {
+  font-size: 15px;
+  font-weight: 700;
+  color: #ffffff;
+  font-family: var(--font-head);
+  letter-spacing: -0.2px;
+}
+
+.kds-title-group p {
+  font-size: 11px;
+  color: var(--kds-muted);
+}
+
+/* Presets */
+.kds-presets {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.kds-presets__label {
+  font-size: 11px;
+  color: var(--kds-muted);
+  font-weight: 500;
+}
+
+.kds-btn-preset {
+  background: rgba(30, 41, 59, 0.8);
+  border: 1px solid var(--kds-border);
+  color: #e2e8f0;
+  font-size: 11px;
+  font-weight: 500;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.kds-btn-preset:hover {
+  background: #0284c7;
+  color: #ffffff;
+  border-color: #38bdf8;
+}
+
+/* Actions */
+.kds-header__actions {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.kds-link-btn {
+  background: transparent;
+  color: #cbd5e1;
+  border: 1px solid var(--kds-border);
+  padding: 6px 12px;
+  font-size: 12px;
+  font-weight: 600;
+  border-radius: 6px;
+  text-decoration: none;
+  transition: all 0.2s ease;
+}
+
+.kds-link-btn:hover {
+  background: rgba(255, 255, 255, 0.08);
+  color: #ffffff;
+}
+
+.kds-link-btn--primary {
+  background: #0284c7;
+  border-color: #0284c7;
+  color: #ffffff;
+}
+
+.kds-link-btn--primary:hover {
+  background: #0369a1;
+}
+
+/* ------------------------------------------------------------------------- */
+/* 2. Main Layout & Map                                                      */
+/* ------------------------------------------------------------------------- */
+.kds-main {
+  position: relative;
+  flex: 1;
+  width: 100%;
+  height: calc(100vh - 60px);
+}
+
+.kds-map {
+  width: 100%;
+  height: 100%;
+  background-color: #050810;
+}
+
+/* ------------------------------------------------------------------------- */
+/* 3. Floating Left Control Panel                                            */
+/* ------------------------------------------------------------------------- */
+.kds-panel {
+  position: absolute;
+  top: 16px;
+  left: 16px;
+  width: 380px;
+  max-height: calc(100vh - 92px);
+  background: var(--kds-surface);
+  backdrop-filter: blur(16px);
+  border: 1px solid var(--kds-border);
+  border-radius: var(--kds-radius);
+  box-shadow: 0 12px 36px rgba(0, 0, 0, 0.45);
+  display: flex;
+  flex-direction: column;
+  z-index: 1000;
+  transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1), opacity 0.3s ease;
+}
+
+.kds-panel.is-hidden {
+  transform: translateX(-420px);
+  opacity: 0;
+  pointer-events: none;
+}
+
+.kds-panel__header {
+  padding: 14px 18px;
+  border-bottom: 1px solid var(--kds-border);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.kds-panel__title-wrap {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.kds-panel__title-wrap h2 {
+  font-size: 14px;
+  font-weight: 700;
+  color: #ffffff;
+}
+
+.kds-panel__counter {
+  background: rgba(56, 189, 248, 0.15);
+  color: #38bdf8;
+  font-size: 11px;
+  font-weight: 700;
+  padding: 2px 7px;
+  border-radius: 4px;
+  border: 1px solid rgba(56, 189, 248, 0.3);
+}
+
+.kds-panel__toggle {
+  background: transparent;
+  border: none;
+  color: var(--kds-muted);
+  font-size: 22px;
+  line-height: 1;
+  cursor: pointer;
+  padding: 2px;
+}
+
+.kds-panel__toggle:hover {
+  color: #ffffff;
+}
+
+.kds-panel__body {
+  padding: 16px 18px;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.kds-control-card {
+  background: var(--kds-surface-light);
+  border: 1px solid var(--kds-border);
+  border-radius: 6px;
+  padding: 14px;
+}
+
+.kds-control-card__head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 6px;
+}
+
+.kds-control-card__head label,
+.kds-section-label {
+  font-size: 12px;
+  font-weight: 700;
+  color: #f1f5f9;
+  display: block;
+}
+
+.kds-desc {
+  font-size: 11px;
+  color: var(--kds-muted);
+  line-height: 1.45;
+  margin-bottom: 12px;
+}
+
+.kds-val-badge {
+  background: #0284c7;
+  color: #ffffff;
+  font-size: 11px;
+  font-weight: 700;
+  padding: 2px 8px;
+  border-radius: 4px;
+}
+
+/* Slider */
+.kds-slider {
+  width: 100%;
+  accent-color: #38bdf8;
+  cursor: pointer;
+  margin-bottom: 6px;
+}
+
+.kds-slider-ticks {
+  display: flex;
+  justify-content: space-between;
+  font-size: 10px;
+  color: var(--kds-muted);
+}
+
+/* Switch & Checkbox */
+.kds-switch-group {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-top: 8px;
+}
+
+.kds-checkbox-row {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 12px;
+  color: #e2e8f0;
+  cursor: pointer;
+}
+
+.kds-checkbox-row input {
+  accent-color: #0284c7;
+  cursor: pointer;
+}
+
+/* Radio */
+.kds-radio-group {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  margin-top: 8px;
+}
+
+.kds-radio-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 12px;
+  color: #cbd5e1;
+  cursor: pointer;
+}
+
+.kds-radio-item input {
+  accent-color: #0284c7;
+  cursor: pointer;
+}
+
+/* Select */
+.kds-select {
+  width: 100%;
+  background: #0f172a;
+  border: 1px solid var(--kds-border);
+  color: #f8fafc;
+  padding: 8px 10px;
+  border-radius: 5px;
+  font-size: 12px;
+  font-family: inherit;
+  cursor: pointer;
+}
+
+.kds-select:focus {
+  outline: none;
+  border-color: #38bdf8;
+}
+
+.kds-btn-text {
+  background: transparent;
+  border: none;
+  color: #38bdf8;
+  font-size: 11px;
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+/* Basemap selector */
+.kds-basemap-selector {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 8px;
+  margin-top: 8px;
+}
+
+.kds-btn-basemap {
+  background: #0f172a;
+  border: 1px solid var(--kds-border);
+  border-radius: 6px;
+  padding: 8px 10px;
+  text-align: left;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  transition: all 0.2s ease;
+}
+
+.kds-btn-basemap strong {
+  font-size: 11px;
+  color: #e2e8f0;
+}
+
+.kds-btn-basemap span {
+  font-size: 9px;
+  color: var(--kds-muted);
+}
+
+.kds-btn-basemap.is-active {
+  border-color: #38bdf8;
+  background: rgba(2, 132, 199, 0.2);
+}
+
+.kds-btn-basemap.is-active strong {
+  color: #38bdf8;
+}
+
+/* Legend */
+.kds-legend-list {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  margin-top: 8px;
+}
+
+.kds-legend-row {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 11px;
+  color: #cbd5e1;
+}
+
+.kds-swatch {
+  width: 14px;
+  height: 14px;
+  border-radius: 3px;
+  flex-shrink: 0;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+/* ------------------------------------------------------------------------- */
+/* 4. Right Inspector Card                                                   */
+/* ------------------------------------------------------------------------- */
+.kds-inspector {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  width: 340px;
+  background: var(--kds-surface);
+  backdrop-filter: blur(16px);
+  border: 1px solid var(--kds-border);
+  border-radius: var(--kds-radius);
+  box-shadow: 0 12px 36px rgba(0, 0, 0, 0.45);
+  padding: 16px 18px;
+  z-index: 1000;
+  transform: translateX(380px);
+  opacity: 0;
+  pointer-events: none;
+  transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1), opacity 0.3s ease;
+}
+
+.kds-inspector.is-visible {
+  transform: translateX(0);
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.kds-inspector__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 8px;
+}
+
+.kds-inspector__badge {
+  background: #f59e0b;
+  color: #0f172a;
+  font-size: 10px;
+  font-weight: 700;
+  padding: 3px 7px;
+  border-radius: 4px;
+  text-transform: uppercase;
+}
+
+.kds-inspector__close {
+  background: transparent;
+  border: none;
+  color: var(--kds-muted);
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.kds-inspector__title {
+  font-size: 15px;
+  font-weight: 700;
+  color: #ffffff;
+}
+
+.kds-inspector__sub {
+  font-size: 11px;
+  color: var(--kds-muted);
+  margin-bottom: 14px;
+}
+
+.kds-inspector__stats-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+  margin-bottom: 14px;
+}
+
+.kds-stat-box {
+  background: rgba(30, 41, 59, 0.7);
+  border: 1px solid var(--kds-border);
+  padding: 10px;
+  border-radius: 6px;
+  text-align: center;
+}
+
+.kds-stat-label {
+  font-size: 10px;
+  color: var(--kds-muted);
+  display: block;
+  margin-bottom: 2px;
+}
+
+.kds-stat-value {
+  font-size: 16px;
+  font-weight: 700;
+  color: #38bdf8;
+  font-family: var(--font-head);
+}
+
+.kds-inspector__meta {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding-top: 10px;
+  border-top: 1px solid var(--kds-border);
+  font-size: 11px;
+  margin-bottom: 14px;
+}
+
+.kds-meta-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.kds-meta-row span {
+  color: var(--kds-muted);
+}
+
+.kds-meta-row strong,
+.kds-meta-row code {
+  color: #f1f5f9;
+}
+
+.kds-btn-zoom-feature {
+  width: 100%;
+  background: #0284c7;
+  color: #ffffff;
+  border: none;
+  padding: 8px;
+  font-size: 12px;
+  font-weight: 600;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.kds-btn-zoom-feature:hover {
+  background: #0369a1;
+}
+
+/* Floating re-open button */
+.kds-floating-open-btn {
+  position: absolute;
+  top: 16px;
+  left: 16px;
+  background: var(--kds-surface);
+  border: 1px solid var(--kds-border);
+  color: #ffffff;
+  padding: 8px 14px;
+  font-size: 12px;
+  font-weight: 600;
+  border-radius: 6px;
+  display: none;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+  z-index: 999;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.4);
+}
+
+.kds-floating-open-btn.is-visible {
+  display: flex;
+}

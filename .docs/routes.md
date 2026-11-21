@@ -11,6 +11,7 @@ Aplikasi Serayu berjalan sebagai **Client-Side Spatial Application (CSSA)** tanp
 | `/web/` atau `/web/index.html` | `web/index.html` | Peta Tata Ruang Kabupaten Banjarnegara | Publik | Viewer interaktif utama 3 tingkat hierarki (Kabupaten, Kecamatan, Desa) dengan mode Pola Ruang (13 kelas) & Rawan Bencana (3 kategori). |
 | `/web/banding.html` | `web/banding.html` | Perbandingan Tata Ruang — Banjarnegara | Publik | Antarmuka komparasi split-screen (swipe slider) antara zonasi RTRW dan sebaran kepadatan bangunan OpenStreetMap / citra satelit. |
 | `/web/space.html` | `web/space.html` | SIMTARU SPACE — Kecamatan Banjarnegara | Publik | Portal tata ruang terinspirasi Singapore URA SPACE (277 Rencana Pola Ruang, 10.918 Persil Bangunan Kadaster, ITBX Development Control, Isolasi 13 Kelurahan/Desa, dan 12 Landmark Terkalibrasi). |
+| `/web/kadaster.html` | `web/kadaster.html` | Inspeksi Kadaster Satelit 2026 | Publik | Viewer inspeksi dan komparasi 6.910 poligon persil bangunan hasil ekstraksi AI ortogonal murni (96,2% kotak/OBB) langsung di atas peta dasar Google Maps Satelit HD 2026 dengan slider transparansi & mode wireframe. |
 | `/web/3d.html` | `web/3d.html` | 3D Terrain & Landscape — Banjarnegara | Publik | Visualisasi elevasi 3D interaktif Three.js berbasis elevasi DEM SRTM nyata (UTM 49S), gerombol vegetasi/pohon adaptif, sebaran bangunan, tekstur satelit/pola ruang, dan ekspor model 3D (OBJ/GLTF/STL/3MF). |
 
 ---

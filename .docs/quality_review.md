@@ -38,3 +38,8 @@ Dokumen ini memuat hasil audit kualitas teknis, validasi geospasial, dan review 
 ### 2.4 Peniadaan Mask Murky Gelap demi Clean Basemap
 - **Tantangan:** Mask poligon dunia berlubang desa sebelumnya menyebabkan wilayah luar terlihat gelap kusam dan garis layer masih tampak di baliknya.
 - **Solusi:** Arsitektur *Spatial Dataset Replacement* mengganti data secara instan dari `desa_clipped_layers.json`. Di luar poligon desa terpilih, peta menampilkan peta dasar Esri Gray Canvas bersih tanpa satu pun garis layer yang tumpang-tindih.
+
+### 2.5 Regularisasi Kadaster Ortogonal & Instance Watershed Satelit 2026
+- **Tantangan Awal:** Ekstraksi kontur mentah menghasilkan pecahan poligon bergerigi dan segitiga sembarangan akibat bayangan dan tekstur genteng.
+- **Solusi:** Mengganti *Douglas-Peucker* bebas dengan **Oriented Bounding Box (OBB)** dan pemisahan instance *Watershed*. Menghasilkan 6.910 persil bangunan di mana **96,2% berbentuk kotak sempurna ($90^\circ$)** dan **3,8% majemuk ortogonal ($90^\circ$ & $270^\circ$)**.
+- **Known Limitation Terbuka (ISS-004):** Bercak rumput kering di tengah Alun-Alun masih memicu false positive persegi; ditargetkan untuk disempurnakan dengan penapis tekstur lapangan terbuka/elevasi pada sesi lanjutan.
