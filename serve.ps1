@@ -102,6 +102,7 @@ Write-Host ""
 Write-Host "  Viewer Tata Ruang Kabupaten Banjarnegara" -ForegroundColor White
 Write-Host "  ----------------------------------------"
 Write-Host "  Buka di browser : $url" -ForegroundColor Green
+Write-Host "  Halaman banding : ${url}banding.html" -ForegroundColor Green
 Write-Host "  Akar folder     : $root"
 Write-Host "  Python          : $python"
 Write-Host "  Hentikan        : Ctrl+C"
