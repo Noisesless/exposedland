@@ -18,7 +18,6 @@
   'use strict';
 
   const DATA = '../geojson/index';
-  const TILE = 'https://tile.openstreetmap.org/{z}/{x}/{y}.png';
 
   const PALET_POLA = {
     '31010000': { nama: 'Badan Air', warna: '#2f7cb8' },
@@ -69,7 +68,7 @@
       renderer: L.canvas({ padding: 0.15 }),
     }).setView([-7.35, 109.6], 10);
 
-    L.tileLayer(TILE, { maxZoom: 19, crossOrigin: true }).addTo(peta);
+    /* peta dasar dipasang sekali untuk kedua peta oleh pasangDasar() */
     return peta;
   }
 
@@ -254,9 +253,24 @@
 
   /* ---------- mulai ---------- */
 
+  /* Keterangan peta dasar ikut berpindah kalau penyedianya berganti, dan
+     kalau semuanya gagal halaman mengatakannya di kaki, bukan diam saja. */
+  function pasangDasar() {
+    const catatan = document.getElementById('atribusi-dasar');
+    PetaDasar.pasang([state.kiri, state.kanan], {
+      onGanti: function (p) {
+        if (catatan) catatan.innerHTML = 'Peta dasar ' + p.ket + '.';
+      },
+      onHabis: function () {
+        if (catatan) catatan.innerHTML = 'Peta dasar gagal dimuat: penyedia ubin tidak terjangkau.';
+      },
+    });
+  }
+
   function mulai() {
     state.kiri = petaBaru('peta-kiri', true);
     state.kanan = petaBaru('peta-kanan', false);
+    pasangDasar();
     sinkronkan();
     isiLegenda();
     pasangPembatas();

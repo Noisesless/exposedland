@@ -118,7 +118,7 @@ body {
 .peta {
   position: absolute;
   inset: 0;
-  background: #dfe5e8;
+  background: #1c2226;   /* ubin satelit belum datang: gelap, bukan abu terang */
 }
 
 /* Wadah peta kanan dipotong, bukan kanvasnya: wadah tidak ikut bergeser saat

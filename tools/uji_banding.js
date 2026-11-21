@@ -43,13 +43,23 @@ function lapor(ok, pesan) {
   });
   const page = await browser.newPage();
 
-  /* Peta dasar sengaja dimatikan: ubin OSM datang kapan saja, sehingga potret
-     layar sebelum dan sesudah bisa berbeda bukan karena pembatas. Dengan ubin
-     ditolak, yang tersisa di layar hanya layer yang memang diuji. */
+  /* Peta dasar sengaja dimatikan: ubin citra datang kapan saja, sehingga
+     potret layar sebelum dan sesudah bisa berbeda bukan karena pembatas.
+     Dengan ubin ditolak, yang tersisa di layar hanya layer yang memang diuji.
+     Yang ditolak semua permintaan ke luar 127.0.0.1, sebab halaman berhak
+     berpindah penyedia ubin dan penyedia cadangan itu juga harus diam. */
+  const LOKAL = 'http://127.0.0.1:' + PORT;
   await page.setRequestInterception(true);
   page.on('request', (req) => {
-    if (req.url().indexOf('tile.openstreetmap.org') !== -1) {
-      req.respond({ status: 204, contentType: 'image/png', body: '' }).catch(() => {});
+    if (req.url().indexOf(LOKAL) !== 0) {
+      /* Ubin diminta dalam mode CORS (crossOrigin: true), jadi jawaban tiruan
+         ini juga perlu header CORS; tanpa itu konsol mencatat galat CORS yang
+         tidak ada hubungannya dengan halaman. */
+      req.respond({
+        status: 204,
+        headers: { 'access-control-allow-origin': '*', 'content-type': 'image/png' },
+        body: '',
+      }).catch(() => {});
       return;
     }
     req.continue().catch(() => {});
@@ -62,7 +72,7 @@ function lapor(ok, pesan) {
     const t = m.text();
     /* peta dasar butuh internet; ketiadaan tile bukan cacat halaman, dan
        favicon memang tidak disediakan */
-    if (t.indexOf('tile.openstreetmap.org') !== -1 || t.indexOf('favicon') !== -1) return;
+    if (t.indexOf('favicon') !== -1) return;
     if (t.indexOf('Failed to load resource') !== -1) return;
     galat.push(t);
   });
@@ -82,6 +92,30 @@ function lapor(ok, pesan) {
     const k = window.banding.kanan().getContainer();
     return /inset/.test(k.style.clipPath || '');
   }), 'wadah peta kanan dipotong (clip-path terpasang)');
+
+  /* Semua ubin ditolak di sini, jadi ketiga penyedia pasti dianggap gagal.
+     Yang diuji: halaman tetap terbuka dan mengatakan alasannya, bukan
+     menampilkan peta gelap tanpa keterangan. */
+  const dasar = await page.evaluate(() => new Promise((selesai) => {
+    const cek = () => {
+      const t = document.getElementById('atribusi-dasar');
+      if (t && /gagal/i.test(t.textContent)) return { teks: t.textContent, habis: true };
+      return null;
+    };
+    const awal = cek();
+    if (awal) return selesai(awal);
+    let n = 0;
+    const ulang = setInterval(() => {
+      const r = cek();
+      if (r) { clearInterval(ulang); return selesai(r); }
+      if (++n > 40) {
+        clearInterval(ulang);
+        const t = document.getElementById('atribusi-dasar');
+        selesai({ teks: t ? t.textContent : '', habis: false });
+      }
+    }, 250);
+  }));
+  lapor(dasar.habis, 'peta dasar yang gagal dimuat disebutkan di kaki halaman: ' + dasar.teks.trim());
 
   const barisZona = await page.evaluate(() =>
     Array.from(document.querySelectorAll('#tabel-zona tbody tr')).map(tr => tr.children[0].textContent));

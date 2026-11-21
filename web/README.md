@@ -1,7 +1,7 @@
 # Viewer Tata Ruang Kabupaten Banjarnegara
 
 Viewer statis untuk memeriksa hasil konversi data SIMTARU. Tanpa build step,
-tanpa dependency online kecuali tile peta OpenStreetMap.
+tanpa dependency selain ubin citra satelit untuk peta dasar.
 
 ## Menjalankan
 
@@ -28,8 +28,8 @@ luas hasil klip, dan ada tidaknya piksel berwarna di kanvas. Butuh
 `puppeteer-core` (sudah terpasang di `tools/node_modules`) dan Chrome di lokasi
 standar. Port uji bisa diganti: `$env:PORT=8011`.
 
-Halaman banding punya ujinya sendiri; ubin OSM diblokir supaya hasil tangkapan
-layar tidak bergantung jaringan.
+Halaman banding punya ujinya sendiri; semua permintaan ke luar diblokir supaya
+hasil tangkapan layar tidak bergantung jaringan.
 
 ```powershell
 cd I:\tataruang
@@ -68,6 +68,25 @@ kepadatan bangunan OpenStreetMap (400 m per sel) lalu menyambungkannya dengan
 zona pola ruang. Data OSM tidak lengkap di pedesaan, jadi hasilnya hanya
 contoh, bukan dokumen perencanaan.
 
+## Peta dasar
+
+`peta-dasar.js` menyediakan ubin citra satelit untuk kedua halaman. Ubin
+OpenStreetMap tidak dipakai lagi (diblokir di sebagian jaringan) dan CARTO juga
+tidak (sekarang menuntut kunci API). Yang dicoba berurutan:
+
+1. Citra Esri (World Imagery) — global, tanpa kunci, atribusi Esri/Maxar.
+2. Sentinel-2 cloudless (EOX) — cadangan bila Esri tidak terjangkau.
+3. Peta jalan Esri — pilihan terakhir, bukan citra, supaya halaman tidak kosong.
+
+Perpindahan terjadi sendiri: setelah empat ubin gagal, penyedia berikutnya
+dipasang dan atribusi di kaki halaman ikut berganti. Batas empat itu bukan
+angka keramat — satu-dua ubin bisa gagal karena gangguan sesaat, sedangkan
+blokir jaringan membuat hampir semuanya gagal sekaligus.
+
+Catatan: `crossOrigin: true` pada layer ubin mengharuskan penyedia mengirim
+header CORS. Ketiganya mengirim, jadi kanvas tidak tercemar; kalau nanti ada
+penyedia baru yang tidak mengirim, layer harus dipasang tanpa `crossOrigin`.
+
 ## Struktur
 
 ```
@@ -78,6 +97,7 @@ web/
 ├── banding.html        # halaman pembanding, terpisah dari viewer
 ├── banding.css
 ├── banding.js
+├── peta-dasar.js       # ubin citra satelit + cadangan, dipakai kedua halaman
 ├── vendor/
 │   ├── leaflet.js     # 1.9.4, disimpan lokal agar tidak bergantung CDN
 │   └── leaflet.css
@@ -152,8 +172,9 @@ bagian dalamnya.
 
 - Peta memakai satu kanvas (`L.canvas({tolerance: 3})`). Dengan SVG, 947 poligon
   per kecamatan membuat interaksi tersendat.
-- Tile OSM butuh internet. Tanpa internet, poligon tetap tampil di atas
-  latar abu-abu.
+- Peta dasar butuh internet. Kalau penyedia ubin tidak terjangkau, layer
+  berpindah ke penyedia cadangan; kalau semuanya gagal, poligon tetap tampil di
+  atas latar gelap dan atribusi di kaki halaman menyebutkan kegagalannya.
 - `KODKWS` dipakai sebagai kunci warna karena stabil; `NAMOBJ` dipakai sebagai
   label.
 - Pada layer sungai, `NAMOBJ` adalah **nama** sungai dan `REMARK` adalah

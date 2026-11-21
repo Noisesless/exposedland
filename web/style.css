@@ -286,7 +286,7 @@ input:focus-visible {
 
 .peta-judul strong { color: var(--ink); font-weight: 650; }
 
-.leaflet-container { font-family: var(--font); background: #dfe0dc; }
+.leaflet-container { font-family: var(--font); background: #1c2226; }
 
 .leaflet-popup-content-wrapper {
   border-radius: var(--radius);

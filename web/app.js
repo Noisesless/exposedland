@@ -129,11 +129,10 @@ function siapkanPeta() {
     maxZoom: 18,
   });
 
-  L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
-    maxZoom: 19,
-    attribution: '© OpenStreetMap',
-    crossOrigin: true,
-  }).addTo(peta);
+  /* Peta dasar citra satelit; peta-dasar.js yang memilih penyedia dan
+     memindahkannya kalau ubin gagal. Atribusinya masuk ke kontrol attribusi
+     Leaflet dengan sendirinya saat layer dipasang. */
+  PetaDasar.pasang(peta);
 
   /* Jalan dan sungai sengaja TIDAK diberi pane sendiri. Pane terpisah
      memang menjaga garis di atas poligon, tetapi kanvas pane itu menelan
@@ -143,11 +142,6 @@ function siapkanPeta() {
 
   L.control.zoom({ position: 'bottomright' }).addTo(peta);
   L.control.scale({ position: 'bottomright', imperial: false }).addTo(peta);
-
-  /* Bila tile gagal (offline), peta tetap menampilkan poligon */
-  peta.on('tileerror', function () {
-    peta.getContainer().style.background = '#dfe0dc';
-  });
 }
 
 function gambarIndeks(geo) {
