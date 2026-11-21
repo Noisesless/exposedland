@@ -16,3 +16,16 @@ geojson/full/
 # Sumber mentah tambahan (kontur 94 MB, bangunan 55 MB) melewati batas 100 MB
 # per berkas milik GitHub, dan tidak dipakai viewer.
 new/
+
+# Cache unduhan DEM & Citra Satelit
+tools/cache_dem/
+tools/cache_sat/
+
+# Internal AI session tracking
+app-context.md
+handover.md
+todo.md
+prd.md
+.scratchpad/
+*.log
+

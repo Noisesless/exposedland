@@ -1,0 +1,122 @@
+[
+  {
+    "id": "POI-01",
+    "nama": "Alun-Alun Banjarnegara",
+    "kategori": "Ruang Terbuka Publik",
+    "keterangan": "Pusat ruang terbuka hijau publik & landmark bersejarah jantung kota Banjarnegara",
+    "desa": "Kel.Kutabanjarnegara",
+    "lat": -7.39617,
+    "lon": 109.69515,
+    "icon": "park"
+  },
+  {
+    "id": "POI-02",
+    "nama": "Pendopo Dipayuda Adigraha & Kantor Bupati",
+    "kategori": "Pemerintahan / Civic",
+    "keterangan": "Pusat pemerintahan Kabupaten Banjarnegara & cagar budaya arsitektur tradisional Jawa (Sisi Utara Alun-Alun)",
+    "desa": "Kel.Krandegan",
+    "lat": -7.39525,
+    "lon": 109.69578,
+    "icon": "civic"
+  },
+  {
+    "id": "POI-03",
+    "nama": "Masjid Agung An-Nuur Banjarnegara",
+    "kategori": "Sarana Peribadatan",
+    "keterangan": "Masjid raya agung kabupaten di sisi barat Alun-Alun Banjarnegara",
+    "desa": "Kel.Kutabanjarnegara",
+    "lat": -7.39611,
+    "lon": 109.69407,
+    "icon": "religious"
+  },
+  {
+    "id": "POI-04",
+    "nama": "Bappeda Kabupaten Banjarnegara",
+    "kategori": "Pemerintahan / Civic",
+    "keterangan": "Badan Perencanaan Pembangunan, Penelitian dan Pengembangan Daerah (Kompleks Setda Jl. Dipayuda)",
+    "desa": "Kel.Krandegan",
+    "lat": -7.3949,
+    "lon": 109.6963,
+    "icon": "civic"
+  },
+  {
+    "id": "POI-05",
+    "nama": "Dinas PUPR Kabupaten Banjarnegara",
+    "kategori": "Pemerintahan / Civic",
+    "keterangan": "Dinas Pekerjaan Umum dan Penataan Ruang penyelenggara teknis tata ruang & infrastruktur (Jl. Mayjend Panjaitan No. 13)",
+    "desa": "Kel.Krandegan",
+    "lat": -7.3978,
+    "lon": 109.6955,
+    "icon": "civic"
+  },
+  {
+    "id": "POI-06",
+    "nama": "RSUD Hj. Anna Lasmanah Banjarnegara",
+    "kategori": "Pelayanan Kesehatan",
+    "keterangan": "Rumah Sakit Umum Daerah Tipe B rujukan utama di Kabupaten Banjarnegara (Jl. Jend. Sudirman No. 42)",
+    "desa": "Kel.Kutabanjarnegara",
+    "lat": -7.39322,
+    "lon": 109.69324,
+    "icon": "health"
+  },
+  {
+    "id": "POI-07",
+    "nama": "Pasar Kota (Pasar Induk Banjarnegara)",
+    "kategori": "Perdagangan & Jasa",
+    "keterangan": "Pusat perdagangan ritel, komersial tradisional & sentra ekonomi perkotaan (Jl. Letnan Karjono)",
+    "desa": "Kel.Krandegan",
+    "lat": -7.39423,
+    "lon": 109.70133,
+    "icon": "commercial"
+  },
+  {
+    "id": "POI-08",
+    "nama": "Stasiun Banjarnegara (Cagar Budaya SDS/NIS)",
+    "kategori": "Cagar Budaya / Heritage",
+    "keterangan": "Stasiun bersejarah cagar budaya jalur kereta api Serajoedal Stoomtram Maatschappij (Jl. Bambang Sugeng)",
+    "desa": "Kel.Semarang",
+    "lat": -7.39651,
+    "lon": 109.70277,
+    "icon": "heritage"
+  },
+  {
+    "id": "POI-09",
+    "nama": "Sentra Kuliner Dawet Ayu Krandegan",
+    "kategori": "Komersial / Wisata Kuliner",
+    "keterangan": "Pusat ikon kuliner khas Warisan Budaya Takbenda (WBTb) Dawet Ayu Banjarnegara (Krandegan)",
+    "desa": "Kel.Krandegan",
+    "lat": -7.3963,
+    "lon": 109.6975,
+    "icon": "commercial"
+  },
+  {
+    "id": "POI-10",
+    "nama": "Stadion Soemitro Kolopaking",
+    "kategori": "Olahraga & Rekreasi",
+    "keterangan": "Stadion utama kebanggaan warga Banjarnegara untuk kegiatan olahraga dan konser publik (Jl. Stadion, Parakancanggah)",
+    "desa": "Kel.Parakancanggah",
+    "lat": -7.393,
+    "lon": 109.7052,
+    "icon": "sports"
+  },
+  {
+    "id": "POI-11",
+    "nama": "Taman Kota & Hutan Kota Sokanandi",
+    "kategori": "Ruang Terbuka Hijau",
+    "keterangan": "Kawasan RTH paru-paru kota timur Banjarnegara dengan area resapan dan edukasi lingkungan (Sokanandi)",
+    "desa": "Kel.Sokanandi",
+    "lat": -7.3955,
+    "lon": 109.7185,
+    "icon": "park"
+  },
+  {
+    "id": "POI-12",
+    "nama": "Kantor Kecamatan Banjarnegara",
+    "kategori": "Pemerintahan / Civic",
+    "keterangan": "Pusat pelayanan administrasi kependudukan & koordinasi 13 desa/kelurahan (Jl. Gatot Subroto)",
+    "desa": "Kel.Krandegan",
+    "lat": -7.3995,
+    "lon": 109.6958,
+    "icon": "civic"
+  }
+]

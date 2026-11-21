@@ -60,7 +60,7 @@
     const peta = L.map(id, {
       zoomControl: denganKontrol,
       minZoom: 8,
-      maxZoom: 19,
+      maxZoom: 30,
       /* atribusi dipasang di kaki halaman, bukan sebagai kontrol peta */
       attributionControl: false,
       /* satu kanvas per peta: 13 poligon + 2.470 sel masih ringan, tapi

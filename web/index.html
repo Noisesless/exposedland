@@ -49,6 +49,15 @@
         </div>
       </div>
 
+      <div class="field">
+        <label class="field__label" for="pilih-peta-dasar">Peta Dasar</label>
+        <select id="pilih-peta-dasar">
+          <option value="google-citra">Google Satelit</option>
+          <option value="esri-citra">Esri Satelit</option>
+          <option value="esri-jalan">Peta Jalan (Esri)</option>
+        </select>
+      </div>
+
       <div class="legend">
         <div class="legend__head">
           <span class="field__label" style="margin:0" id="judul-legenda">Legenda</span>
@@ -64,6 +73,8 @@
 
   <main class="map" id="peta">
     <div class="peta-judul" id="peta-judul">Kabupaten Banjarnegara</div>
+    <a href="space.html" class="peta-space-link" title="Buka Portal SIMTARU SPACE Kec. Banjarnegara (URA Style)" style="position:absolute; top:12px; right:115px; z-index:1000; background:#c8102e; color:#fff; padding:6px 12px; border-radius:4px; font-size:12px; font-weight:600; text-decoration:none; box-shadow:0 2px 6px rgba(0,0,0,0.25);">🏛️ SIMTARU SPACE</a>
+    <a href="3d.html" class="peta-3d-link" title="Buka Model 3D WebGL Banjarnegara">🏔️ Peta 3D</a>
     <button class="panel-toggle" id="panel-toggle" type="button" aria-expanded="false" aria-controls="panel">Panel</button>
   </main>
 </div>

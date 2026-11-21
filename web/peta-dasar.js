@@ -7,22 +7,23 @@
 (function () {
   const URUTAN = [
     {
+      kunci: 'google-citra',
+      nama: 'Google Satelit',
+      url: 'https://mt{s}.google.com/vt/lyrs=s&x={x}&y={y}&z={z}',
+      subdomains: ['0', '1', '2', '3'],
+      native: 20,
+      ket: 'Citra &copy; Google Maps',
+    },
+    {
       kunci: 'esri-citra',
-      nama: 'citra Esri',
+      nama: 'Esri Satelit',
       url: 'https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}',
       native: 18,
       ket: 'Citra &copy; <a href="https://www.esri.com">Esri</a>, Maxar, Earthstar Geographics',
     },
     {
-      kunci: 'eox-s2',
-      nama: 'Sentinel-2',
-      url: 'https://tiles.maps.eox.at/wmts/1.0.0/s2cloudless-2020_3857/default/g/{z}/{y}/{x}.jpg',
-      native: 14,
-      ket: 'Sentinel-2 cloudless &copy; <a href="https://s2maps.eu">EOX</a>',
-    },
-    {
       kunci: 'esri-jalan',
-      nama: 'peta jalan Esri',
+      nama: 'Peta Jalan (Esri)',
       url: 'https://server.arcgisonline.com/ArcGIS/rest/services/World_Street_Map/MapServer/tile/{z}/{y}/{x}',
       native: 19,
       ket: '&copy; <a href="https://www.esri.com">Esri</a>',
@@ -44,7 +45,7 @@
 
     function lepas() {
       lapisan.forEach(function (x) {
-        if (x.peta.hasLayer(x.lapisan)) x.peta.removeLayer(x.lapisan);
+        if (x.lapisan && x.peta.hasLayer(x.lapisan)) x.peta.removeLayer(x.lapisan);
       });
       lapisan = [];
     }
@@ -68,9 +69,10 @@
       lepas();
       lapisan = semua.map(function (m) {
         const l = L.tileLayer(p.url, {
-          maxZoom: 19,
+          maxZoom: 30,
           maxNativeZoom: p.native,
           crossOrigin: true,
+          subdomains: p.subdomains || 'abc',
           attribution: p.ket,
         });
         l.on('tileerror', salah);

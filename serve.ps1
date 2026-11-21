@@ -33,17 +33,21 @@ if (-not (Test-Path $halaman)) {
 # ---------- cari python ----------
 
 $python = $null
-foreach ($k in @((Join-Path $root '.venv\Scripts\python.exe'),
-                 (Join-Path $root '.venv\Scripts\pythonw.exe'))) {
-    if (Test-Path $k) { $python = $k; break }
+$kandidatPython = @(
+    (Join-Path $root '.venv\Scripts\python.exe'),
+    (Join-Path $root '.venv\Scripts\pythonw.exe'),
+    'python',
+    'py'
+)
+foreach ($k in $kandidatPython) {
+    if ($k -like "$root*" -and (-not (Test-Path $k))) { continue }
+    try {
+        $test = & $k -c "import http.server; print('OK')" 2>$null
+        if ($test -match 'OK') { $python = $k; break }
+    } catch { }
 }
 if (-not $python) {
-    foreach ($k in @('python', 'py')) {
-        if (Get-Command $k -ErrorAction SilentlyContinue) { $python = $k; break }
-    }
-}
-if (-not $python) {
-    Write-Error "Python tidak ditemukan. Pasang Python, atau sajikan folder $root dengan web server apa pun."
+    Write-Error "Python tidak ditemukan atau tidak dapat dijalankan. Pasang Python, atau sajikan folder $root dengan web server apa pun."
     exit 1
 }
 

@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<title>Model Topografi 3D — Kabupaten Banjarnegara</title>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Crect width='16' height='16' fill='%230284c7'/%3E%3Cpath d='M2 12l4-7 3 4 2-3 3 6z' fill='%23ffffff'/%3E%3C/svg%3E">
+<link rel="stylesheet" href="3d.css">
+</head>
+<body>
+
+<!-- Three.js Canvas Container -->
+<div id="canvas-container"></div>
+
+<!-- Top Navigation & Header -->
+<header class="top-bar">
+  <div class="top-bar__left">
+    <a href="index.html" class="nav-btn" title="Kembali ke Peta Interaktif 2D">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 12H5M12 19l-7-7 7-7"/></svg>
+      <span>Peta 2D</span>
+    </a>
+    <a href="space.html" class="nav-btn" title="Buka Portal SIMTARU SPACE Kec. Banjarnegara (URA Style)" style="background:rgba(200, 16, 46, 0.25); border-color:rgba(200, 16, 46, 0.5); color:#fff;">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21h18M3 10h18M5 6l7-3 7 3M4 10v11M20 10v11M8 14v4M12 14v4M16 14v4"/></svg>
+      <span>SIMTARU SPACE</span>
+    </a>
+    <div class="title-badge">
+      <h1>Model 3D Banjarnegara <span class="tag">WebGL 3D</span></h1>
+      <p>Elevasi Copernicus DEM 30m &bull; SIMTARU RTRW Banjarnegara</p>
+    </div>
+  </div>
+
+  <div class="top-bar__right">
+    <button type="button" class="nav-btn" id="btn-autorotate" title="Putar Otomatis Sinematik">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21.5 2v6h-6M21.34 15.57a10 10 0 1 1-.57-8.38l5.67-5.67"/></svg>
+      <span id="txt-autorotate">Putar</span>
+    </button>
+    <button type="button" class="nav-btn" id="btn-reset-cam" title="Atur Ulang Sudut Kamera">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="m10 15 5-3-5-3v6z"/></svg>
+      <span>Reset</span>
+    </button>
+  </div>
+</header>
+
+<!-- Floating Toggle Button (shown when panel is minimized) -->
+<button type="button" class="floating-toggle-btn" id="btn-open-panel">
+  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 6h16M4 12h16M4 18h16"/></svg>
+  <span>Panel Kontrol</span>
+</button>
+
+<!-- Side Control Panel -->
+<aside class="panel-container" id="control-panel">
+  <div class="panel-header">
+    <h2>Kontrol Tampilan 3D</h2>
+    <button type="button" class="panel-collapse-btn" id="btn-close-panel" title="Tutup Panel">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 6L6 18M6 6l12 12"/></svg>
+    </button>
+  </div>
+
+  <div class="panel-body">
+    <!-- Surface Material -->
+    <div class="control-section">
+      <div class="control-label">
+        <span>Tekstur Permukaan</span>
+      </div>
+      <div class="material-grid">
+        <button type="button" class="mat-btn is-active" data-mat="maps3d">
+          <span class="mat-icon">🏔️</span>
+          <span>Maps3D Style</span>
+        </button>
+        <button type="button" class="mat-btn" data-mat="topo">
+          <span class="mat-icon">⛰️</span>
+          <span>Topografi</span>
+        </button>
+        <button type="button" class="mat-btn" data-mat="satelit">
+          <span class="mat-icon">🛰️</span>
+          <span>Citra Satelit</span>
+        </button>
+        <button type="button" class="mat-btn" data-mat="polaruang">
+          <span class="mat-icon">🗺️</span>
+          <span>Pola Ruang</span>
+        </button>
+        <button type="button" class="mat-btn" data-mat="clay">
+          <span class="mat-icon">🏛️</span>
+          <span>Clay (Polos)</span>
+        </button>
+      </div>
+    </div>
+
+    <!-- Elevation Exaggeration Slider -->
+    <div class="control-section">
+      <div class="control-label">
+        <span>Tinggi Relief (Eksagerasi)</span>
+        <span class="val-badge" id="lbl-exaggeration">1.8x</span>
+      </div>
+      <div class="slider-group">
+        <input type="range" class="slider-input" id="slider-exaggeration" min="1.0" max="3.5" step="0.1" value="1.8">
+      </div>
+    </div>
+
+    <!-- Vector Layers -->
+    <div class="control-section">
+      <div class="control-label">
+        <span>Lapisan 3D &amp; Objek Lingkungan</span>
+      </div>
+      <div class="layer-list">
+        <label class="layer-item">
+          <input type="checkbox" id="chk-buildings" checked>
+          <span class="layer-dot" style="background:#f1ece1; border:1px solid #cbd5e1"></span>
+          <span>Bangunan 3D (8.872 unit)</span>
+        </label>
+        <div class="layer-item-wrapper">
+          <label class="layer-item">
+            <input type="checkbox" id="chk-trees" checked>
+            <span class="layer-dot" style="background:#4a7c3a"></span>
+            <span>Pohon &amp; Vegetasi 3D</span>
+          </label>
+          <div class="tree-mode-selector">
+            <button type="button" class="mode-pill is-active" id="btn-tree-auto" title="Otomatis: Bergerombol saat jauh, detail saat dekat">Auto LOD</button>
+            <button type="button" class="mode-pill" id="btn-tree-clumps" title="Kanopi Hutan Bergerombol di Pegunungan">🌲 Bergerombol</button>
+            <button type="button" class="mode-pill" id="btn-tree-indiv" title="Pohon Ramping Individual">🌱 Individual</button>
+          </div>
+        </div>
+        <label class="layer-item">
+          <input type="checkbox" id="chk-jalan" checked>
+          <span class="layer-dot" style="background:#b0b4c0"></span>
+          <span>Jaringan Jalan Raya (Ribbon 3D)</span>
+        </label>
+        <label class="layer-item">
+          <input type="checkbox" id="chk-sungai" checked>
+          <span class="layer-dot" style="background:#0284c7"></span>
+          <span>Waduk Mrica &amp; Sungai (Air 3D)</span>
+        </label>
+        <label class="layer-item">
+          <input type="checkbox" id="chk-kecamatan" checked>
+          <span class="layer-dot" style="background:#facc15"></span>
+          <span>Batas Kecamatan</span>
+        </label>
+        <label class="layer-item">
+          <input type="checkbox" id="chk-landmarks" checked>
+          <span class="layer-dot" style="background:#f43f5e"></span>
+          <span>Puncak &amp; Titik Landmark</span>
+        </label>
+        <label class="layer-item">
+          <input type="checkbox" id="chk-wireframe">
+          <span class="layer-dot" style="background:#94a3b8"></span>
+          <span>Struktur Jaring (Wireframe)</span>
+        </label>
+      </div>
+    </div>
+
+    <!-- Sliders for Object Scale -->
+    <div class="control-section">
+      <div class="control-label">
+        <span>Tinggi Bangunan 3D</span>
+        <span class="val-badge" id="lbl-bldg-scale">1.5x</span>
+      </div>
+      <div class="slider-group">
+        <input type="range" class="slider-input" id="slider-bldg-scale" min="0.5" max="3.5" step="0.1" value="1.5">
+      </div>
+    </div>
+
+    <div class="control-section">
+      <div class="control-label">
+        <span>Ukuran Pohon 3D</span>
+        <span class="val-badge" id="lbl-tree-scale">1.0x</span>
+      </div>
+      <div class="slider-group">
+        <input type="range" class="slider-input" id="slider-tree-scale" min="0.5" max="2.5" step="0.1" value="1.0">
+      </div>
+    </div>
+
+    <!-- Camera Presets -->
+    <div class="control-section">
+      <div class="control-label">
+        <span>Sudut Pandang Kamera</span>
+      </div>
+      <div class="cam-btn-group" style="grid-template-columns: repeat(3, 1fr); gap: 6px;">
+        <button type="button" class="cam-btn" data-cam="overview">🦅 Ikhtisar</button>
+        <button type="button" class="cam-btn" data-cam="village">🏘️ Desa Lereng</button>
+        <button type="button" class="cam-btn" data-cam="dieng">🌋 Dieng Batur</button>
+        <button type="button" class="cam-btn" data-cam="kota">🏛️ Kota Banjar</button>
+        <button type="button" class="cam-btn" data-cam="south">🧭 Selatan</button>
+        <button type="button" class="cam-btn" data-cam="top">📐 Tegak (2D)</button>
+      </div>
+    </div>
+
+    <!-- Geographic & Elevation Stats -->
+    <div class="control-section">
+      <div class="control-label">
+        <span>Statistik Wilayah</span>
+      </div>
+      <div class="stats-box">
+        <div class="stat-item">
+          <span class="stat-lbl">Titik Terendah</span>
+          <span class="stat-val" id="stat-min">26,3 mdpl</span>
+        </div>
+        <div class="stat-item">
+          <span class="stat-lbl">Titik Tertinggi</span>
+          <span class="stat-val" id="stat-max">2.565 mdpl</span>
+        </div>
+        <div class="stat-item">
+          <span class="stat-lbl">Rentang Relief</span>
+          <span class="stat-val" id="stat-range">2.538 m</span>
+        </div>
+        <div class="stat-item">
+          <span class="stat-lbl">Luas Daratan</span>
+          <span class="stat-val">106.452 ha</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Download Model 3D -->
+    <div class="control-section">
+      <div class="control-label">
+        <span>Ekspor Model 3D</span>
+      </div>
+      <div class="export-group">
+        <a href="data/banjarnegara_3d.stl" download="banjarnegara_3d.stl" class="btn-primary" title="Download model solid watertight siap cetak 3D">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4M7 10l5 5 5-5M12 15V3"/></svg>
+          <span>Unduh File STL (3D Print)</span>
+        </a>
+        <a href="data/banjarnegara_3d.obj" download="banjarnegara_3d.obj" class="btn-secondary" title="Download model OBJ untuk Blender / AutoCAD">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4M7 10l5 5 5-5M12 15V3"/></svg>
+          <span>Unduh File OBJ + MTL</span>
+        </a>
+        <button type="button" class="btn-secondary" id="btn-screenshot" title="Ambil tangkapan layar 3D resolusi tinggi">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="3"/><path d="M3 9a2 2 0 0 1 2-2h3l2-3h4l2 3h3a2 2 0 0 1 2 2v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V9z"/></svg>
+          <span>Tangkapan Layar (PNG)</span>
+        </button>
+      </div>
+    </div>
+  </div>
+</aside>
+
+<!-- Landmark Tooltip Layer (HTML Pins in 3D Space) -->
+<div id="landmark-pins-container"></div>
+
+<!-- Loading Screen -->
+<div class="loading-overlay" id="loading-overlay">
+  <div class="spinner"></div>
+  <p class="loading-text" id="loading-text">Memuat Model Topografi 3D Banjarnegara…</p>
+</div>
+
+<!-- Three.js Libraries -->
+<script src="vendor/three.min.js"></script>
+<script src="vendor/OrbitControls.js"></script>
+<script src="3d.js"></script>
+</body>
+</html>

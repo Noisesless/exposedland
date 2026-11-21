@@ -1,4 +1,4 @@
-﻿'use strict';
+'use strict';
 
 const DATA = '../geojson';
 
@@ -54,6 +54,7 @@ const state = {
 let peta;
 let layerIndeks;
 let layerKecTerpilih;
+let kontrolPetaDasar;
 
 /* ------------------------------------------------------------------ */
 /* utilitas                                                            */
@@ -126,13 +127,18 @@ function siapkanPeta() {
     zoomControl: false,
     attributionControl: true,
     minZoom: 8,
-    maxZoom: 18,
+    maxZoom: 30,
   });
 
   /* Peta dasar citra satelit; peta-dasar.js yang memilih penyedia dan
      memindahkannya kalau ubin gagal. Atribusinya masuk ke kontrol attribusi
      Leaflet dengan sendirinya saat layer dipasang. */
-  PetaDasar.pasang(peta);
+  kontrolPetaDasar = PetaDasar.pasang(peta, {
+    onGanti: function (p) {
+      const el = document.getElementById('pilih-peta-dasar');
+      if (el && el.value !== p.kunci) el.value = p.kunci;
+    },
+  });
 
   /* Jalan dan sungai sengaja TIDAK diberi pane sendiri. Pane terpisah
      memang menjaga garis di atas poligon, tetapi kanvas pane itu menelan
@@ -846,6 +852,13 @@ function pasangKontrol() {
   pasang('lyr-desa', 'desa');
   pasang('lyr-jalan', 'jalan');
   pasang('lyr-sungai', 'sungai');
+
+  const pilihDasar = document.getElementById('pilih-peta-dasar');
+  if (pilihDasar) {
+    pilihDasar.addEventListener('change', function () {
+      if (kontrolPetaDasar) kontrolPetaDasar.ganti(this.value);
+    });
+  }
 
   const panel = document.getElementById('panel');
   const tombol = document.getElementById('panel-toggle');
